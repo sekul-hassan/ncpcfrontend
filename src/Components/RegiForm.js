@@ -101,10 +101,11 @@ function RegiForm() {
 
 
     return (
-        <Container fluid="true" className="registration">
-
+        <Container fluid="true" className="registration mt-3">
             <form className="formBorder" action="">
-                <h4 className="boldTitle mb-5">Registration Form</h4>
+               <div className="registrationTitleDiv">
+                   <h4 className="boldTitle">Registration Form</h4>
+               </div>
                 <div className="responsiveRegi">
                     {
                         !second && first && !third && !fourth?<FirstContestant secondCall={secondCall} inputChange={inputChange}/>:""

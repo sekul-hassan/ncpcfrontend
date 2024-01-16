@@ -2,6 +2,7 @@ import React, {Fragment,useState} from 'react';
 import '../Assets/CSS/Registration.css';
 import RegiForm from "../Components/RegiForm";
 import FormContext from "../Components/Context/FormContext";
+import TopMenu from "../Components/TopMenu";
 
 function Registration(props) {
 
@@ -9,8 +10,6 @@ function Registration(props) {
     const [second,setSecond] = useState(false);
     const [third,setThird] = useState(false);
     const [fourth,setFourth] = useState(false);
-
-    const[institute,setInstitute] = useState("");
 
 
     const [data,setData] = useState({
@@ -48,12 +47,14 @@ function Registration(props) {
         teacherGender:"",
         teacherTShirt:"",
         teacherId:null,
-        teacherPhoto:null
+        teacherPhoto:null,
+        transaction:""
     });
 
     return (
         <Fragment>
-           <FormContext.Provider value={{setInstitute,institute,data,setData,first,setFirst,second,setSecond,third,setThird,fourth,setFourth}}>
+            <TopMenu/>
+           <FormContext.Provider value={{data,setData,first,setFirst,second,setSecond,third,setThird,fourth,setFourth}}>
                <RegiForm/>
            </FormContext.Provider>
         </Fragment>

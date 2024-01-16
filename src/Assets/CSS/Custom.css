@@ -1,41 +1,23 @@
 .topBanner{
     background-color: #1b182e;
-   
-  
-    /* background-color: #272343; */
-    /* background: linear-gradient(to bottom, #272343, #1b182e); */
 }
-
 .navBar{
     max-width: 100%;
     height: 60px;
-    /* background-color: #1b182e; */
     background: linear-gradient(to right, #272343, #1b182e);
-    /* background-color: #485059; */
     transition: 0.5s;
 }
 .nav{
     margin-top: -18px;
 }
-
 .navLink{
     color: rgb(219, 219, 219)!important;
-    font-family: Roboto,serif;
-    font-size: 16px!important;
-    font-weight: 300!important;
+    font-family: Roboto,serif!important;
+    font-size: 18px!important;
+    font-weight: 400!important;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.3s;
     padding-top: 0;
-
-    
-}
-.ddBox a{
-    margin-top: 0;
-}
-
-.ddBoxScroll a{
-    margin-top: 0;
-
 }
 .navBarScroll{
     position: fixed !important;
@@ -48,109 +30,48 @@
     transition: 0.5s;
 }
 .navLinkScroll{
-    /* color: rgba(0,0,0,6) !important; */
     color: rgb(99, 99, 99)!important;
     font-family: Roboto,serif;
-    font-size: 16px!important;
-    font-weight: 300!important;
+    font-size: 18px!important;
+    font-weight: 400!important;
     text-decoration: none;
-    transition: 0.5s;
-}
-.ddMenu{
-    
-    font-family: Roboto,serif!important;
-    font-weight: 300!important;
-    background-color: rgba(0,0,0,0)!important;
-    width: 130px!important;
-    padding:0!important;
-    border: none!important;
-}
-.ddMenu:hover{
-    padding: 0!important;
-    color: white!important;
-    background-color: #413c69!important;
-    /* background-color: #616878!important; */
+    transition: 0.3s;
 }
 .navLink:hover{
     color:white !important;
     background-color: #413c69!important;
-    /* background-color: #616878!important; */
     padding: 18px;
 }
 .navLinkScroll:hover{
     color:white!important;
-    background-color: #1b182e!important;
-    /* background-color: #485059!important; */
-    padding: 18px;
+    background-color: rgba(27, 24, 46, 0.8) !important;
+    padding: 20px 18px 18px 18px;
 }
 .logoImg{
     width: 100px;
     height: 60px;
     padding: 0;
 }
-
-.ddBox{
-    background-color: #1b182e!important;
-    /* background-color: #485059!important; */
-    font-size: 16px;
-    font-weight: 300;
-    transition: 0.5s;
-    border-radius: 2px!important;
-    border: none!important;
-}
-.ddBoxScroll{
-   
-    font-size: 18px!important;
-    font-weight: 300!important;
-    transition: 0.5s;
-    border: none!important;
-    border-radius: 2px!important;
-    padding: 50px;
-}
-
 .carouselImg{
     width: 100%;
     height: 550px;
 }
-
-/* .logoContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 100px;
-}
-
-.logoLeftDiv img{
-    width:60%!important;
-    height: auto;
-    max-width: 120px;
-}
-
-
-.logoRightDiv img{
-    width: 40%;
-    height: auto;
-    max-width: 120px;
-}
-
-.logoRightDiv{
-    display: flex;
-    justify-content: right;
-} */
 .logoContainer{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;   
+    justify-content: space-between;
 }
 .logoLeftDiv img{
-    width: 25%;
-    height: auto;
-    max-width: 150px;
-}
-.logoRightDiv img{
-    width: 25%;
+    width: 100%;
     height: auto;
     max-width: 120px;
+    padding: 0 10px 0 10px;
+}
+.logoRightDiv img{
+    width: 100%;
+    height: auto;
+    max-width: 120px;
+    padding: 0 10px 0 10px;
 }
 .logoRightDiv{
     display: flex;
@@ -178,7 +99,6 @@
     letter-spacing: 1PX;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-
 .buttonBanner {
     width:45% !important;
     height: 95% !important;
@@ -192,12 +112,10 @@
     height: 100px;
     border-radius: 50%;
 }
-
 .card{
     height: 380px!important;
     border-radius: 0!important;
     text-align: center;
-    /* background-color: rgb(221, 230, 237) !important; */
     background-color: white!important;
 }
 .contactBtn{
@@ -208,30 +126,15 @@
     font-family: Montserrat, serif!important;
     font-weight: 300!important;
     border-radius:2%!important;
-    
 }
 .contactBtn:hover{
     border: 1px solid rgb(214, 213, 213)!important;
     background-color: rgb(214, 213, 213)!important;
     color: black !important;
-    
 }
 Button{
     font-family: Montserrat, serif!important;  
 }
-.committeeBody{
-    color:white;
-    margin:1%;
-    font-size: 22px;
-    font-family: Montserrat, serif;
-    font-weight: 500;
-    box-shadow: 0 0 4px rgb(48, 64, 87);
-}
-.committeeTitleBorder{
-    background-color:#1b182e; 
-    box-shadow: 0 0 4px rgb(48, 64, 87);
-}
-
 .choyonSir{
     width: 100% !important;
     height: 200px!important;
@@ -257,7 +160,6 @@ Button{
 .teacherDescription{
     font-size: 14px;
     display: none;
-    
 }
 .teacherDescriptionShow{
     font-size: 14px;
@@ -287,27 +189,21 @@ Button{
     font-weight: 500!important;
     font-family:Montserrat, serif!important;
 }
-
-
 .description{
     font-size: 16px;
     font-family: Montserrat, serif;
     font-weight: 500;
     color: rgba(0,0,0,0.7);
-    
 }
-
-
 .subTitle{
     font-size: 17px;
     font-family: poppin, serif;
     font-weight: 500;
     color: rgba(0,0,0,0.8);
 }
-.honorContainer{
+.honorContainer {
     background-color: white;
 }
-
 .honorContainer .card{
     background-color: white!important;
     height:auto!important;
@@ -316,47 +212,33 @@ Button{
     font-family:Montserrat, serif;
     margin:1%;
     width:auto!important;
-    /* color:rgb(163, 163, 226)!important;  */
     color: rgba(0,0,0,0.4)!important;
-  
 }
 .honorContainer .card:hover{
     color:rgb(41, 41, 45)!important;
     font-weight:800!important;
-    /* border:1px solid rgb(143, 143, 143)!important; */
 }
-
 .titleSeeMoreNotice{
     font-size: 18px!important;
     font-family: Montserrat, serif;
     font-weight: 500!important;
-    
 }
-
-
 .honorContainer .noticeDivLeft .card-carousel {
-    /* margin-left:1%; */
     margin: 0 6% 1% 4%;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); */  
-  } 
-
-  .honorContainer .carouselImg{
+  }
+.honorContainer .carouselImg{
     height:490px;
   }
-  .honorContainer .noticeDivLeft .alumniDescription{
-    /* margin-left:1%; */
+.honorContainer .noticeDivLeft .alumniDescription{
     margin-right: 6%;
     margin-left: 4%;
-    
   }
 .honorContainer .strategyWidth{
     background-color: white!important;
     border:2px solid silver!important;
 }
 .honorContainer .strategyWidth:hover{
-    
     box-shadow: -2px 1px 12px 1px rgba(64,105,135,0.75);
-    
 }
 .noticeDivLeft{
     background-color:white;  
@@ -364,12 +246,9 @@ Button{
 }
 .noticeDivLeft .noticeTitle{
     background-color: #cdcfd1!important;
-    /* background-color: #1b182e; */
     margin-right: 6%;
     margin-left: 4%;
     box-shadow: 0 0 2px rgba(50, 49, 49, 0.3)!important;
-    /* padding-top:2%;
-    padding-bottom: 1%; */
 }
 
 .carouselCaptionDivLeftHonor{
@@ -384,16 +263,11 @@ Button{
     background-color: rgb(255, 255, 255);
     color:rgb(22, 21, 21);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    /* padding: 0 2% 2% 2%; */
-    /* margin:2%; */
-   
 }
-
 .carouselItemContainerSpeech{
     background-color:white;
     color:silver;  
-    margin-right:8%; 
-    /* box-shadow: 0 0 20px rgba(50, 49, 49, 0.3)!important; */
+    margin-right:8%;
 }
 .noticeTitle{
     text-transform: uppercase;
@@ -402,40 +276,24 @@ Button{
     font-weight: 400;
     text-align: center;
     color:rgba(0,0,0,0.6) !important;
-    /* padding:2%; */
-    /* color: rgba(0,0,0,0.5)!important; */
-    
 }
 
 .jucseDescriptionTitle{
     font-family: Montserrat, serif;
     font-size: 20px;
 }
-
 .noticeTitleSpeech{
-    
-    /* padding:2%; */
     font-family: Montserrat, serif;
     font-size: 20px;
-    /* margin-left:2%;
-    margin-right:2%; */
     font-weight: 400;
-    /* background-color:#1b182e!important; */
-    background-color: #cdcfd1; 
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    background-color: #cdcfd1;
     color: rgba(0,0,0,0.6)!important;
-    /* color: silver!important; */
 }
 
 .noticeDivRightHeading{
-    /* color: silver!important; */
     color: rgba(0,0,0,0.6)!important;
-    background-color: #cdcfd1; 
-    /* background-color: #1b182e; */
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    background-color: #cdcfd1;
     font-family: Montserrat, serif;
-   
-    
 }
 
 .noticeDivRight a{
@@ -448,32 +306,24 @@ Button{
     font-size: 14px;
     padding-left:3%;
 }
-
 .noticeDivRight hr{
     margin-right: 4%;
     margin-left: 3%;
     border:1px solid #021b4a;
 }
-
 .noticeDivRight a:hover{
-    text-decoration: underline;
     color:rgb(163, 163, 226)!important;
     transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
     text-decoration: none;
 }
-
 .seeMoreLink {
     color: blue!important;
     font-size: 16px;
     font-family: Montserrat, serif;
     font-weight: 700;
 }
-/* .carouselVideo{
-    padding: 2%;
-} */
 .carouselVideo:hover{
     cursor: pointer;
-    
 }
 .contact{
     padding-left: 10% !important;
@@ -510,21 +360,19 @@ Button{
     font-weight: 400;
     cursor: pointer;
 }
-
 .copyWrite{
     background-color: #63666e;
     width: 100% !important;
     margin: 0;
     padding: 0;
 }
-.footerCredit{
-    background-color: rgba(255,255,255,0.7) !important;
-    color: rgba(0,0,0,0.8) !important;
+.footerCredit {
+    background-color: rgba(255, 255, 255, 0.7) !important;
+    color: rgba(0, 0, 0, 0.8) !important;
     font-family: Roboto, serif;
     font-size: 14px;
     font-weight: 400;
-    margin-top: 10px!important;
-
+    margin-top: 10px !important;
 }
 .footerCredit a{
     text-decoration: none;
@@ -535,7 +383,6 @@ Button{
 .footerCredit a:hover{
     color: #041145!important;
     cursor: pointer;
-
 }
 .iconDiv {
     display: flex;
@@ -543,7 +390,6 @@ Button{
     margin-top: 5px;
     margin-bottom: 4px;
 }
-
 .contactLink {
     display: flex;
     justify-content: center;
@@ -560,7 +406,6 @@ Button{
     background-color: white;
     border-radius: 50%;
 }
-
 .contactLink:hover {
     background-color: #0d39e1!important;
     transition: 0.3s;
@@ -569,13 +414,11 @@ Button{
 .supportImg{
     width: 100%;
     height: 250px;
-    min-height: 250px; 
-    /* margin: 5px; */
+    min-height: 250px;
     padding: 50px;
     border-radius: 2px;
     border:1px solid rgb(175, 190, 196);    
 }
-
 .supportImg:hover{
     cursor:pointer;
     box-shadow: 0 0 4px #8a85af;  
@@ -584,9 +427,7 @@ Button{
 }
 .supportDiv{
     padding: 0 0 5% 0;
- 
 }
-
 .topImg{
     width: 30%;
     margin: 0 auto!important;
@@ -650,36 +491,30 @@ Button{
     right: 16%!important;
     margin-top: 1%;
 }
-
 .supportImgJU{
     width:30%;
     height: auto;
 }
-
 .cardImgStrategy{
     width: 100px;
     height: 85px;
     border-radius: 20%;
 }
-
 .strategyWidth{
     width: 100% !important;
     height: 200px!important;
     
 }
-
-.strategyWidth:hover{
-    box-shadow: -2px 1px 12px 1px rgba(64,105,135,0.75);
-    -webkit-box-shadow: -2px 1px 12px 1px rgba(64,105,135,0.75);
-    -moz-box-shadow: -2px 1px 12px 1px rgba(64,105,135,0.75);
+.strategyWidth:hover {
+    box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+    -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+    -moz-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
     transition: 0.3s;
     cursor: pointer;
 }
-
 .strategyDescription{
     font-size: 24px;
     display: none;
-    
 }
 .strategyDescriptionShow{
     font-size: 16px;
@@ -689,7 +524,6 @@ Button{
     display: block;
     text-align: center!important;
     margin-top:11%;
-
 }
 .StrategyCardsCol{
     padding:0 5% 0 5%!important;
@@ -730,7 +564,6 @@ Button{
 
 .StrategyTitleBorder{
     font-size: 26px!important;
-    /* background-color:#e7e8ec;  */
     color: rgba(0,0,0,0.7)!important;
     padding-top:1%;
     font-weight:300;
@@ -832,112 +665,86 @@ Button{
 }
 
 .timer-container {
-    /* background-color: #ffffff; */
-    /* justify-content: center;
-    align-items: center; */
     font-family: Montserrat, serif;
-    
-    
   }
   
   .timer-circle {
     font-family: Montserrat, serif;
     font-size: 35px;
     color:white;
-    /* justify-content: center;
-    align-items: center; */
-    
   }
-   
-
   .Dates_Counts{
-    
-   /* background-color: #cdcfd1; */
    background: rgb(255, 253, 253) linear-gradient(to bottom, rgba(27,24,46,0.8) 29.5%, rgb(255, 254, 254) 29.5%, rgb(255, 255, 255) 69.5%);
-   /* background: rgb(255, 253, 253) linear-gradient(to bottom, #1b182e 29.5%, rgb(255, 254, 254) 29.5%, rgb(255, 255, 255) 69.5%); */
-   /* background: rgb(255, 253, 253) linear-gradient(to bottom, #cdcfd1 29.5%, rgb(255, 254, 254) 29.5%, rgb(255, 255, 255) 69.5%); */
    box-shadow: 0 0 10px rgba(50, 49, 49, 0.5)!important;
    margin:9%;
    border-radius: 2%!important;
    height:300px;
-
 }
 .Dates_Counts:hover{
     box-shadow: 0 4px 4px rgba(50, 49, 49, 0.3)!important;
-    /* background-color:rgb(143, 143, 143)!important; */
     background: rgb(255, 253, 253) linear-gradient(to bottom, rgba(27,24,46,0.4) 29.5%, rgb(255, 254, 254) 29.5%, rgb(255, 255, 255) 69.5%);
     color:rgb(91, 90, 90)!important;
-    /* border:1px solid rgb(143, 143, 143)!important; */
     transform: scale(1.01)!important;
-    
  }
  .DatesRow{
     margin:0 5% 4% 5%!important;
     padding:2% 5% 0 5%;
-   
  }
-
-  .DatesRow .ncpc_Counts:hover{
+.DatesRow .ncpc_Counts:hover{
   cursor: pointer;
   }
-  .DatesRow .card{
+.DatesRow .card{
     padding:10%;
     box-shadow: 0 0 20px rgba(50, 49, 49, 0.3)!important; 
     border-radius: 2%!important;
-  }
-  .DatesRow .card:hover{
+}
+.DatesRow .card:hover{
     cursor:pointer!important;
- 
   }
-  .titleDates{
+.titleDates{
     font-size: 20px!important;
     color: rgba(0,0,0,0.7)!important; 
     font-family: Montserrat, serif;
     font-weight: 450!important;
     padding-top:15%!important;
   }
-  .subTitleDates{
+.subTitleDates{
     font-size: 16px;
     font-family: Montserrat, serif;
     font-weight: 400;
     color: #908d8d;
-    
 }
-  
-  .titleH6{
-    
+.titleH6{
     color: rgba(0,0,0,0.3)!important;
     font-family: Montserrat, serif;
   }
-  
-  .titleH6:hover{
+.titleH6:hover{
     color:rgb(143, 143, 143)!important;
   }
-  
- 
-  
   .rulesImg {
     width:400px!important;
     height:auto;
   }
-  
   .titleRules{
     font-size: 22px;
     font-family: Montserrat, serif;
     font-weight: 400;
     color: #5f5c5c;
   }
-  
   .subtitleRules{
     font-size: 30px;
     font-family: Montserrat, serif;
     font-weight: 700;
     color: #5f5c5c;
   }
-
-  .RulesDescription{
+.RulesDescription{
     font-weight:400;
     font-family: Roboto, serif;
     font-size: 14px;
     text-align: justify;
+}
+.committeeTextDiv{
+    background-color: #1B182E;
+    text-align: center;
+    padding:7px 0 1px 0;
 }

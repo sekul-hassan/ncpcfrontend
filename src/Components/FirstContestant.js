@@ -30,7 +30,7 @@ function FirstContestant({secondCall,inputChange}) {
     console.log(data.instituteName);
 
     return (
-        <div className="firstContestant mt-4">
+        <div className="firstContestant mt-3">
             <Row className="m-0 p-0">
                 <Col md={6} sm={12} lg={6}>
                     <label htmlFor="x"><FontAwesomeIcon icon={faBuildingColumns} />  Institute Name</label>

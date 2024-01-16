@@ -1,4 +1,4 @@
-import React, {useContext,useState} from 'react';
+import React, {useContext} from 'react';
 import {Button, Col, Row} from "react-bootstrap";
 import FormContext from "./Context/FormContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -15,7 +15,6 @@ import bkash from "../Assets/Images/bkash.jpg";
 function TeacherData({thirdCall,inputChange,postDataToBackend}) {
 
     const {data} = useContext(FormContext);
-    const [inputValue, setInputValue] = useState('');
     return (
         <div className="firstContestant mt-5">
             <hr/>
@@ -145,12 +144,9 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
                         type="text"
                         placeholder="bKash TransactionID"
                         className="form-control"
-                        name="transactionID"
-                        // onChange={inputChange}
-                        onChange={(e) => setInputValue(e.target.value)}
-                        value={inputValue}
-                        style={styles.input}
-
+                        name="transaction"
+                        onChange={inputChange}
+                        value={!data.transaction===""?"":data.transaction}
                     />
                 </Col>
                 
@@ -160,8 +156,8 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
 
                 <div className="text-center">
                     <button className="submitBtn btn btn-success" onClick={postDataToBackend}
-                    style={inputValue.length === 0? styles.disabledButton : styles.enabledButton}
-                    disabled={inputValue.length === 0}
+                    style={data.transaction.length === 0? styles.disabledButton : styles.enabledButton}
+                    disabled={data.transaction.length === 0}
                     >
                     Submit</button>
                 </div>

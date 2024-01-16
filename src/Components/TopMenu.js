@@ -7,8 +7,7 @@ function TopMenu() {
     const [isScroll,setIsScroll] = useState(false);
     const [css,setCss] = useState({
         navBar:'navBar',
-        navLink:'navLink',
-        ddBox:'ddBox'
+        navLink:'navLink'
     })
 
     useEffect(()=>{
@@ -17,16 +16,14 @@ function TopMenu() {
                 setIsScroll(true);
                 setCss({
                     navBar:'navBarScroll',
-                    navLink:'navLinkScroll',
-                    ddBox:'ddBoxScroll'
+                    navLink:'navLinkScroll'
                 })
             }
             else{
                 setIsScroll(false);
                 setCss({
                     navBar:'navBar',
-                    navLink:'navLink',
-                    ddBox:'ddBox'
+                    navLink:'navLink'
                 })
             }
 
@@ -47,7 +44,7 @@ function TopMenu() {
                            <Nav.Link ><Link to="/about"  className={css.navLink} >About</Link></Nav.Link>
                            <Nav.Link ><Link to="/registration"  className={css.navLink} >Registration</Link></Nav.Link>
                            <Nav.Link ><Link to="/committee"  className={css.navLink} >Committee</Link></Nav.Link>
-                           <Nav.Link><Link to="gallery"  className={css.navLink} >Gallery</Link></Nav.Link>
+                           <Nav.Link><Link to="/gallery"  className={css.navLink} >Gallery</Link></Nav.Link>
                        </Nav>
                    </Navbar.Collapse>
                </Navbar>

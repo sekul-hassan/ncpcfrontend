@@ -5,10 +5,12 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import Gallery from '../Components/Gallery';
 import GalleryTop from "../OthersComponents/GalleryTop";
+import TopMenu from "../Components/TopMenu";
 
 function GalleryPage(props) {
     return (
         <Fragment>
+            <TopMenu/>
             <GalleryTop/>
             <Gallery/>
         </Fragment>

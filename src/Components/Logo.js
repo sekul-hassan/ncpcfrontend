@@ -10,7 +10,7 @@ import ju_cse_copy from '../Assets/Images/dept/ju_cse_alumni - Copy.png';
 function Logo(props) {
    
     return (
-        <Container fluid="true" className="logoContainer p-2">
+        <Container fluid="true" className="logoContainer">
            <div className="logoLeftDiv">
                <img src={logo_NCPC} alt=""/>
                <img src={ju} alt=""/>

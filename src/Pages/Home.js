@@ -6,13 +6,15 @@ import Sponsor from "../Components/Sponsor";
 import Alumni1 from "../Components/Alumni1";
 import AboutNcpc from "../OthersComponents/AboutNcpc";
 import Strategy from '../OthersComponents/Strategy';
-import CountApp from './CountApp';
+import TopMenu from "../Components/TopMenu";
+import Dates from "../Components/DatesFolder/Dates";
 
 function Home(props) {
     return (
         <Fragment>
+            <TopMenu/>
             <TopBanner/>
-            <CountApp/>
+            <Dates/>
             <AboutSection/>
             
             <AboutNcpc/>
