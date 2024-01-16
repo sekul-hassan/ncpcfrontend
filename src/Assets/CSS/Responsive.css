@@ -1,0 +1,377 @@
+@media (max-width: 1074px){
+    .countdown-box {
+        border-radius: 9px;
+        margin: 5px;
+        max-width: 20% !important;
+        max-height: 70px !important;
+        padding-top: 13px;
+        box-shadow: 0 0 1px 2px rgba(255, 255, 255, 0.7);
+        animation: colorChange 1s infinite;
+    }
+    .countTxt{
+        color:#fff;
+        font-family: Roboto, serif;
+        font-weight: 400;
+        font-size: 15px!important;
+    }
+    .legend {
+        color:#fff;
+        font-family: Montserrat, sans-serif, serif;
+        font-weight: 400;
+        font-size: 10px!important;
+    }
+
+    .honorContainer.carouselImg{
+        width:100%;
+        height:300px!important;
+    }
+
+    .DatesRow{ 
+        margin:2% 0 4% 0 !important;
+        padding:0!important;
+       
+     }
+     .Dates_Counts{
+        padding:0!important;
+        
+     }
+
+
+}
+
+@media (max-width: 771px) {
+    .responsiveRegi{
+        margin-top: 90px!important;
+    }
+    .boldTitle{
+        font-size: 35px!important;
+        font-weight: 400!important;
+        padding-top: 20px;
+    }
+
+    .countTxt{
+        color:#fff;
+        font-family: Roboto, serif;
+        font-weight: 400;
+        font-size: 12px!important;
+        padding: 0!important;
+        margin: 0!important;
+    }
+    .legend {
+        color:#fff;
+        font-family: Montserrat, sans-serif, serif;
+        font-weight: 400;
+        font-size: 8px!important;
+        padding: 0!important;
+    }
+    .deptInfo{
+       font-size:14px;
+       font-weight:250;
+      }
+      .honorContainer .noticeDivLeft .card-carousel {
+      
+        margin: 2% 1% 1% 0;
+       
+      } 
+
+      .honorContainer .noticeDivLeft .alumniDescription{
+        margin: 2% 1% 1% 0;
+    
+      }
+      .honorContainer .carouselImg{
+        height:250px;
+      }
+      .noticeDivLeft .noticeTitle{
+        margin: 0 1% 1% 0;
+      }
+
+      .noticeDivRight{
+        margin:0 0 4% 0;
+      }
+      .carouselItemContainerSpeech{
+        margin:4% 0 4% 0;
+      }
+      .titleDates{
+        font-size: 14px!important;
+        padding-top:10%!important;
+      }
+
+      .subTitleDates{
+        font-size: 12px;
+        font-weight: 350;
+      }
+      .titleH6{
+        font-size: 11px;
+      }
+   
+     /* .DatesRow{ 
+        margin:2% 0 3% 0 !important;
+        padding:0!important;
+       
+     }
+     .Dates_Counts{
+        padding:0!important;
+        margin:2%;
+        height:250px;
+     } */
+
+     .Dates_Counts{
+        height:250px;
+     }
+  
+     .App{
+        height:auto!important;
+     }
+     .importantDates{
+        font-size:24px!important;
+     }
+     .logoLeftDiv img{
+        width: 40px;
+        height: auto;
+       
+    }
+    .logoRightDiv img{
+        width: 44px;
+        height: auto;
+        
+    }
+}
+
+@media (max-width: 225px) {
+    .responsiveRegi{
+        margin-top: 130px!important;
+    }
+    .boldTitle{
+        font-size: 23px!important;
+        font-weight: 300!important;
+    }
+  
+}
+
+@media (max-width: 575px) {
+    a {
+        margin-top: 0!important;
+    }
+    .custom-hamburger {
+        background-color: white!important;
+        border: 1px solid #fff;
+        margin-left: 10px;
+    }
+    .nav{
+        position: absolute;
+        z-index: 100000;
+        margin: 0!important;
+        background-color: #1b182e!important;
+    }
+    .navLink{
+        color: rgba(0,0,0,1) !important;
+        font-family: Roboto,serif;
+        font-size: 15px!important;
+        font-weight: 400!important;
+        text-decoration: none;
+        transition: 0.5s;
+        display: flex;
+        justify-content: left;
+        color:silver!important;
+        background-color: #3a355d!important;
+        padding: 5px 0 5px 35px;
+    }
+    .navLink:hover{
+        padding: 5px 0 5px 35px!important;
+        background-color: #7168b3!important;
+        color:white!important;
+    }
+    .navLinkScroll{
+        color: rgba(0,0,0,1) !important;
+        font-family: Roboto,serif;
+        font-size: 15px!important;
+        font-weight: 400!important;
+        text-decoration: none;
+        transition: 0.5s;
+        display: flex;
+        justify-content: left;
+        color:silver!important;
+        background-color: #3a355d;
+        padding: 5px 0 5px 35px;
+
+    }
+    .navLinkScroll:hover{
+        padding: 5px 0 5px 35px!important;
+        background-color: #7168b3!important;
+        color: white!important;
+    }
+    .ddMenu{
+        display: flex!important;
+        background-color: #3a355d!important;
+        border: none!important;
+        justify-content: left;
+        margin: 0!important;
+        padding: 5px 0 5px 35px!important;
+    }
+    .ddMenu:hover{
+        padding: 5px 0 5px 35px!important;
+        background-color: #7168b3!important;
+        color: white!important;
+    }
+
+    .responsiveSubmenu{
+        background-color: #1b182e!important;
+        margin: 5px 0;
+        padding: 5px!important;
+    }
+    .responsiveSubmenu:hover{
+        padding: 5px!important;
+        background-color: #7168b3!important;
+        color: black;
+    }
+
+    .ddBox{
+        position: absolute!important;
+        left: 150px!important;
+        margin: -40px 0 0 0 !important;
+        background-color: #1b182e!important;
+        transition: 0.5s;
+        border: none!important;
+        border-radius: 2px!important;
+        padding: 0!important;
+
+    }
+    .ddBoxScroll{
+        position: absolute!important;
+        left: 150px!important;
+        margin: -40px 0 0 0 !important;
+        background-color: #1b182e!important;
+        transition: 0.5s;
+        border: none!important;
+        border-radius: 2px!important;
+        padding: 0!important;
+    }
+      .carouselImg{
+        width:100%;
+        height:320px;
+    }
+
+    .deptInfo{
+        font-size:16px!important;
+        font-weight: 200 !important;
+       }
+    
+       .honorContainer{
+        margin:3%!important;
+       }
+    .noticeDivLeft{
+        margin:0!important;
+    }
+    .noticeDivLeft .noticeTitle{
+       margin: 0 !important;  
+    } 
+    .honorContainer .noticeDivLeft .card-carousel {
+        margin: 0 !important;
+      } 
+      .honorContainer .noticeDivLeft .alumniDescription{
+        margin: 0 !important;
+      }
+    
+      .aboutNcpc{
+      margin:3% 3% 7% 3% !important;
+    }
+ 
+
+    .contactBtn{
+         width: 60% !important;
+        font-size: 14px!important;
+    }
+   
+    .submitBtn{
+        width: 60% !important;
+        font-weight:350!important;
+    }
+    .nextBtn{
+        font-weight:350!important;    
+    }
+    .nextBtn2{
+        font-weight:350!important;    
+    }
+    .backBtn{
+        font-weight:350!important;  
+    } 
+    .StrategyTitleBorder h6{
+        font-size: 9px!important;
+    }
+
+     /* .countRow{
+        height:570px;
+        background: url('../Images/dept/rsz_1logo_ncpc.jpg');
+     }
+     .ncpc_Counts{
+      margin:0%;
+    }
+
+    .mid{
+        margin-top:2%;
+        padding:4%;
+    } */
+
+    
+    .App{
+        height:auto!important;
+        background-color: white!important;
+    
+        /* background: url("../Images/dept/code_elevate_camp_edited.jpg") no-repeat fixed center;   */
+    }
+    .titleDates{
+        font-size: 22px!important;
+        padding-top:10%!important;
+      }
+
+      .subTitleDates{
+        font-size: 16px;
+        font-weight: 380;
+      }
+      .titleH6{
+        font-size: 12px;
+      }
+      .DatesRow{ 
+        padding:0!important;
+     }
+     .Dates_Counts{
+        height:250px;
+        margin:4%;
+     }
+     .topBanner{
+        background-color: #1b182e;
+     }
+   
+  
+    .logoLeftDiv img{
+        width: 40px;
+        height: auto;
+       
+    }
+    .logoRightDiv img{
+        width: 44px;
+        height: auto;
+        
+    }
+
+    .rulesImg {
+        width:300px!important;
+        height:10px!important;
+      }
+
+      .subtitleRules{
+        font-weight: 700!important;
+        font-size: 14px!important;
+      }
+      
+      .firstContestant h3{
+       font-size:16px;
+       font-weight: 300;
+    }
+    .PaymentImg{
+     width:100px!important;
+     margin:4%!important;
+    }
+   
+}
+

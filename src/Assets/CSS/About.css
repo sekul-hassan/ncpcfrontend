@@ -1,0 +1,35 @@
+.aboutJuBanner {
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background: url("../Images/dept/code_elevate_camp.jpg") no-repeat fixed center;
+}
+.overLay{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.4);
+}
+.overlayContent{
+    margin-top: 222px;
+}
+.galleryTop {
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background: url("../Images/GallerySlider/5.png") no-repeat fixed center;
+}
+.overLayGalleryTop{
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.4);
+}
+.overlayContentGalleryTop{
+    margin-top: 200px;
+}
+body {
+    overflow-x: hidden;
+}
+
+

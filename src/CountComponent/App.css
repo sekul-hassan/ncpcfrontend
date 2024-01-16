@@ -1,0 +1,126 @@
+.page {
+  
+  padding-top: 7%;
+  width: 100%;
+  height: 550px;
+  text-align: center; 
+  /* background-color:rgba(27,24,46,0.97);  */
+  background-color:#1b182e;
+  /* background: linear-gradient(to bottom, #272343, #1b182e); */
+  /* background-color: #282c34!important; */
+}
+@media (max-width: 1100px) {
+
+  .fixCountDown{
+    width: 100%;
+    height: auto;
+    margin-left: 18px;
+  }
+}
+@media (max-width: 575px) {
+.page{
+  background-color: #1b182e;
+}
+}
+.typing-container{
+  color: #a6b1e1;
+  font-size: 19px;
+}
+
+.countdown-box {
+  border-radius: 9px;
+  margin:2px 5px 10px 5px;
+  padding-top: 13px;
+  box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.7);
+  animation: colorChange 2s infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    background-color:#1b182e;
+    /* background-color: #282c34; */
+  }
+  50% {
+    background-color:#202038;
+    /* background-color: #31383e; */
+    /* background-color: #32363f; */
+    
+    
+  }
+  100% {
+    background-color: #1b182e;
+    /* background-color: #282c34; */
+  }
+}
+.legend {
+  color:#ccc7c7;
+  font-family: Montserrat, sans-serif, serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.btn {
+  width: 300px;
+  height: 40px;
+  margin-top: 20px;
+  outline: none;
+  border: 1px rgba(255, 255, 255, 0.2) solid;
+  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+  transition: 0.5s!important;
+}
+a {
+  color: #7f78d2;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.type{
+  margin-top:20px;
+  color:white;
+  font-weight: 500;
+  font-size: 22px;
+  font-family: Montserrat, serif;
+  margin-bottom: 23px;
+}
+.typing{
+  margin-top: 20px;
+  color:#ccc7c7;
+  font-weight: 200!important;
+  font-size: 16px;
+  font-family: Montserrat, serif;
+}
+.caption{
+  font-weight: 200;
+  /* color:#e5e3e3; */
+  color:white;
+  margin-top: 70px;
+  font-size: 24px;
+}
+.ncpcType{
+  font-size: 26px;
+  margin-top: 26px;
+  color:#e5e3e3;
+  font-weight: 390;
+  font-family:Montserrat, serif;
+}
+.countTxt{
+  color:white;
+  font-family: Montserrat, serif;
+  font-weight:350;
+  font-size: 23px;
+}
+.deptInfo{
+  color:#fff;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: Montserrat, serif;
+ 
+}
+

@@ -1,0 +1,48 @@
+div img{
+    width: 100%;
+    height: 170px;
+}
+.galleryImage :hover{
+    cursor:pointer;
+    box-shadow: 0 0 4px #0d0d0d;
+    transform: scale(1.01);
+}
+
+.zoomedImageOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zoomedImage {
+    width: 50%;
+    height: 500px;   
+}
+.closeButton {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.closeButton:hover{
+    background-color: #e7e8ec;
+}
+
+
+@media (max-width: 575px) {
+    .zoomedImage {
+        width: 70%;
+        height: 240px;
+    }
+ 
+}
