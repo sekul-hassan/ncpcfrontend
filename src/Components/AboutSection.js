@@ -15,7 +15,6 @@ function AboutSection(props) {
             <Row className="p-0 m-0">
                 <Col className="noticeDivLeft mt-2 p-0" md={7} lg={9} sm={12}>
                     <Carousel className="card-carousel" interval={6000}>
-                  
                         <Carousel.Item>
                             <img className="carouselImg" src={green} alt=""/>
                         </Carousel.Item>

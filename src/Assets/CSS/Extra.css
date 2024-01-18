@@ -4,7 +4,6 @@
 }
 .aboutNcpc{
     background-color:#F3F8FA;
-    margin: 6% 3% 2% 3%;
 }
 .aboutNcpcRow{
     background-color:rgba(243, 243, 243,0.3);
@@ -12,11 +11,5 @@
 }
 .aboutNcpc .title{
     font-size: 22px!important;
-}
-.aboutNcpc img{
-    width: 100%;
-    height: auto;
-    max-width: 400px;
-    padding: 10px 10px 10px 10px;
 }
 

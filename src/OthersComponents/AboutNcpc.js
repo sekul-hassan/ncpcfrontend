@@ -3,7 +3,7 @@ import {Col, Container, Row} from "react-bootstrap";
 import logo_NCPC  from "../Assets/Images/ncpc_logo_transparent.png"
 function AboutNcpc() {
     return (
-       <Container fluid="true" className="text-center aboutNcpc p-3">
+       <Container fluid="true" className="text-center mx-3 aboutNcpc p-3">
            <Row className="mx-0 aboutNcpcRow">
                <h4 className="title pt-4 pb-5">ABOUT NCPC 2023</h4>
                <Col md={12} lg={5} sm={12}>
