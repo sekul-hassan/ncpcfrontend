@@ -4,15 +4,15 @@ import spns from "../Assets/Images/sponsor.png";
 
 function Sponsor(props) {
     return (
-        <Container fluid="true" className="text-center supportDiv mt-5">
+        <Container fluid="true" className="text-center p-3">
             <Row className="m-0">
                 <Col lg={6} md={6} sm={12}>
-                    <h4 className="titleSponsor">Gold Sponsors</h4>
-                    <a href="#abc" target="blank"><img className="supportImg" src={spns} alt=""/></a>
+                    <h4 className="titleSponsor mt-3">Gold Sponsors</h4>
+                    <img className="supportImg mt-3" src={spns} alt=""/>
                 </Col>
                 <Col lg={6} md={6} sm={12}>
-                    <h4 className="titleSponsor">Others Sponsors</h4>
-                    <img className="supportImg" src={spns} alt=""/>
+                    <h4 className="titleSponsor mt-3">Other Sponsors</h4>
+                    <img className="supportImg mt-3" src={spns} alt=""/>
                 </Col>
             </Row>
         </Container>

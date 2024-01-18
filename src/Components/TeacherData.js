@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {Button, Col, Row} from "react-bootstrap";
+import {Button, Col, Container, Row} from "react-bootstrap";
 import FormContext from "./Context/FormContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faAddressCard} from "@fortawesome/free-solid-svg-icons";
@@ -16,7 +16,7 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
 
     const {data} = useContext(FormContext);
     return (
-        <div className="firstContestant mt-5">
+        <Container fluid="true" className="firstContestant mt-5">
             <hr/>
             <h4 className="title mt-5 mb-4"><FontAwesomeIcon icon={faChalkboardUser} />   Coach Info</h4>
             <hr/>
@@ -136,10 +136,10 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
                     
                     <h3 className="text-center">Payment</h3>
                     <div className="d-flex justify-content-center">
-                    <a href="https://www.bkash.com/" target="blank"><img className="PaymentImg" src={bkash} alt=""/></a>
+                        <a href="https://www.bkash.com/" target="blank"><img className="PaymentImg" src={bkash} alt=""/></a>
                     <br/>
                     </div>
-                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} />Transaction ID:</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Transaction ID:</label>
                     <input
                         type="text"
                         placeholder="bKash TransactionID"
@@ -162,7 +162,7 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
                     Submit</button>
                 </div>
             </Row>
-        </div>
+        </Container>
     );
 }
 

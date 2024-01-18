@@ -1,20 +1,19 @@
 import React from 'react';
 import {Container} from "react-bootstrap";
-import logo_NCPC  from "../Assets/Images/Contents/logo_NCPC.jpeg"
-import ju from '../Assets/Images/juLogo.jpg';
+import ju from '../Assets/Images/juLogoBlue.png';
 import bcc from '../Assets/Images/bcc_logo.png';
 import db from '../Assets/Images/digital-bangladesh.png';
 import ict from '../Assets/Images/ICT_Division.png';
-import ju_cse_copy from '../Assets/Images/dept/ju_cse_alumni - Copy.png';
-    
+import tLogo from "../Assets/Images/ncpc_logo_transparent.png";
+import cseLogo from "../Assets/Images/cse_logo.png";
 function Logo(props) {
    
     return (
         <Container fluid="true" className="logoContainer">
-           <div className="logoLeftDiv">
-               <img src={logo_NCPC} alt=""/>
-               <img src={ju} alt=""/>
-               <img src={ju_cse_copy} alt=""/>
+           <div className="logoLeftDiv d-flex ms-0">
+               <img className="logoLeftDivImg" src={tLogo} alt=""/>
+               <img className="logoLeftDivImg ms-0" src={ju} alt=""/>
+               <img className="cseLogo" src={cseLogo} alt=""/>
            </div>
          
             <div className="logoRightDiv">

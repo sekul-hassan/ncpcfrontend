@@ -9,12 +9,11 @@ import _2021 from "../Assets/Images/alumni_photos/2021.jpg";
 function Alumni1(props) {
     return (
         <Fragment>
-            <Container fluid="true" className='alumniFullBanner text-center p-0'>
-                {/* <h4 className="title pt-4 pb-3 text-white"></h4> */}
-                <Row className="p-0 mx-0 rowBackground">
+            <Container fluid="true" className='aboutNcpc text-center p-3'>
+                <Row className="mx-0 aboutNcpcRow">
                     <Col md={12} lg={6} sm={12} className="m-0 px-0 alumniColumn">
                         <h3 className="alumniTitle">ALUMNI STORIES</h3>
-                        <p className="alumniDescription">The Department of Computer Science and Engineering,Jahangirnagar University,has seen many brilliant contestants who excelled in programming contests, both nationally and internationally.These individuals have not just secured good positions but have also firmly stamped the department's and the university's name in the hall of fame within the tech world.</p>
+                        <p className="alumniDescription p-2">The Department of Computer Science and Engineering,Jahangirnagar University,has seen many brilliant contestants who excelled in programming contests, both nationally and internationally.These individuals have not just secured good positions but have also firmly stamped the department's and the university's name in the hall of fame within the tech world.</p>
                     </Col>
                     <Col md={12} lg={6} sm={12} className="m-0 p-0">
                         <Carousel interval={6000}>

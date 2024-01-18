@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {Button, Col, Row} from "react-bootstrap";
+import {Button, Col, Container, Row} from "react-bootstrap";
 import FormContext from "./Context/FormContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPeopleGroup} from "@fortawesome/free-solid-svg-icons";
@@ -30,7 +30,7 @@ function FirstContestant({secondCall,inputChange}) {
     console.log(data.instituteName);
 
     return (
-        <div className="firstContestant mt-3">
+        <Container fluid="true" className="firstContestant mt-3">
             <Row className="m-0 p-0">
                 <Col md={6} sm={12} lg={6}>
                     <label htmlFor="x"><FontAwesomeIcon icon={faBuildingColumns} />  Institute Name</label>
@@ -163,7 +163,7 @@ function FirstContestant({secondCall,inputChange}) {
                     </div>
                 </Col>
             </Row>
-        </div>
+        </Container>
     );
 }
 

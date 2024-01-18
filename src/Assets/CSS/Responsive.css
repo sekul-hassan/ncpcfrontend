@@ -25,12 +25,6 @@
         width:100%;
         height:300px!important;
     }
-
-    .DatesRow{ 
-        margin:2% 0 4% 0 !important;
-        padding:0!important;
-       
-     }
      .Dates_Counts{
         padding:0!important;
         
@@ -40,6 +34,9 @@
 }
 
 @media (max-width: 771px) {
+    .dateCard{
+        padding-top: 30px;
+    }
     .responsiveRegi{
         margin-top: 90px!important;
     }
@@ -68,72 +65,46 @@
        font-size:14px;
        font-weight:250;
       }
-      .honorContainer .noticeDivLeft .card-carousel {
-        margin: 2% 1% 1% 0;
-      }
-      .honorContainer .noticeDivLeft .alumniDescription{
-        margin: 2% 1% 1% 0;
-      }
-      .honorContainer .carouselImg{
-        height:250px;
-      }
-      .noticeDivLeft .noticeTitle{
-        margin: 0 1% 1% 0;
-      }
 
-      .noticeDivRight{
-        margin:0 0 4% 0;
+      .logoLeftDivImg{
+          width: 60px;
+          height: 60px;
+          margin-left: 0;
       }
-      .carouselItemContainerSpeech{
-        margin:4% 0 4% 0;
+      .cseLogo{
+         display: none;
       }
-      .titleDates{
-        font-size: 14px!important;
-        padding-top:10%!important;
+      .logoRightDiv img{
+          width: 60px;
+          height: 60px;
       }
-
-      .subTitleDates{
-        font-size: 12px;
-        font-weight: 350;
-      }
-      .titleH6{
-        font-size: 11px;
-      }
-
-     .Dates_Counts{
-        height:250px;
-     }
-  
-     .App{
-        height:auto!important;
-     }
-     .importantDates{
-        font-size:24px!important;
-     }
-    .logoLeftDiv img{
-        width: 30%;
-        height: 30px;
-        padding: 0 2px 0 5px;
-    }
-    .logoRightDiv img{
-        width: 30%;
-        height: 30px;
-        padding: 0 2px 0 5px;
-    }
 }
 
 @media (max-width: 225px) {
-
     .boldTitle{
         font-size: 23px!important;
         font-weight: 300!important;
     }
-  
 }
 
 @media (max-width: 575px) {
+    .dateCard{
+        padding-top: 40px;
+    }
     .responsiveRegi{
         margin-top: 10px!important;
+    }
+    .registration {
+        background-color: rgb(255, 255, 255);
+        padding:2px!important;
+        width: 100%;
+        height: auto;
+    }
+    .registrationTitleDiv{
+        padding:0 10px 10px 10px!important;
+    }
+    .registrationTitleDiv .boldTitle{
+        font-size: 30px!important;
     }
     a {
         margin-top: 0!important;
@@ -141,13 +112,32 @@
     .custom-hamburger {
         background-color: white!important;
         border: 1px solid #fff;
-        margin-left: 10px;
+        margin: -3px 0 0 10px;
+        width: 60px!important;
+        height: 30px!important;
+        padding: 0!important;
     }
     .nav{
         position: absolute;
         z-index: 100000;
         margin: 0!important;
+        width: 100%;
         background-color: #1b182e!important;
+    }
+    .navBar{
+        height: 40px;
+        background-color: #1b182e!important;
+        transition: 0.5s;
+    }
+    .navBarScroll{
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        height: 40px;
+        background-color: #1b182e!important;
+        transition: 0.5s;
     }
     .navLink{
         color: rgba(0,0,0,1) !important;
@@ -157,13 +147,13 @@
         text-decoration: none;
         transition: 0.5s;
         display: flex;
-        justify-content: left;
+        justify-content: center;
         color:silver!important;
         background-color: #3a355d!important;
-        padding: 5px 0 5px 35px;
+        padding: 5px 0 5px 0;
     }
     .navLink:hover{
-        padding: 5px 0 5px 35px!important;
+        padding: 5px 0 5px 0!important;
         background-color: #7168b3!important;
         color:white!important;
     }
@@ -175,62 +165,29 @@
         text-decoration: none;
         transition: 0.5s;
         display: flex;
-        justify-content: left;
+        justify-content: center;
         color:silver!important;
         background-color: #3a355d;
-        padding: 5px 0 5px 35px;
+        padding: 5px 0 5px 0;
 
     }
     .navLinkScroll:hover{
-        padding: 5px 0 5px 35px!important;
+        padding: 5px 0 5px 0!important;
         background-color: #7168b3!important;
         color: white!important;
     }
-    .responsiveSubmenu{
-        background-color: #1b182e!important;
-        margin: 5px 0;
-        padding: 5px!important;
-    }
-    .responsiveSubmenu:hover{
-        padding: 5px!important;
-        background-color: #7168b3!important;
-        color: black;
-    }
-
       .carouselImg{
         width:100%;
         height:320px;
     }
 
-    .deptInfo{
-        font-size:16px!important;
-        font-weight: 200 !important;
-       }
-    
-       .honorContainer{
-        margin:3%!important;
-       }
-    .noticeDivLeft{
-        margin:0!important;
-    }
-    .noticeDivLeft .noticeTitle{
-       margin: 0 !important;  
-    } 
-    .honorContainer .noticeDivLeft .card-carousel {
-        margin: 0 !important;
-      } 
-      .honorContainer .noticeDivLeft .alumniDescription{
-        margin: 0 !important;
-      }
-    
-      .aboutNcpc{
-      margin:3% 3% 7% 3% !important;
-    }
- 
-
     .contactBtn{
-         width: 60% !important;
+        width: 200px !important;
         font-size: 14px!important;
+        margin-left: -10px;
+        font-weight: 400!important;
+        border: 1px solid #1b182e!important;
+        background-color: #1b182e!important;
     }
    
     .submitBtn{
@@ -252,42 +209,6 @@
     .StrategyTitleBorder h6{
         font-size: 9px!important;
     }
-    .App{
-        height:auto!important;
-        background-color: white!important;
-    }
-    .titleDates{
-        font-size: 22px!important;
-        padding-top:10%!important;
-      }
-
-      .subTitleDates{
-        font-size: 16px;
-        font-weight: 380;
-      }
-      .titleH6{
-        font-size: 12px;
-      }
-      .DatesRow{ 
-        padding:0!important;
-     }
-     .Dates_Counts{
-        height:250px;
-        margin:4%;
-     }
-     .topBanner{
-        background-color: #1b182e;
-     }
-
-    .rulesImg {
-        width:300px!important;
-        height:10px!important;
-      }
-
-      .subtitleRules{
-        font-weight: 700!important;
-        font-size: 14px!important;
-      }
       
       .firstContestant h3{
        font-size:16px;

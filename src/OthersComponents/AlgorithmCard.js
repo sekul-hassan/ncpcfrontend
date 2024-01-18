@@ -17,7 +17,7 @@ function AlgorithmCard({ strategize }) {
 
     return (
        <Fragment>
-           <Card className={css.strategyWidth} onClick={changeDes}>
+           <Card className={`${css.strategyWidth} mt-3`} onClick={changeDes}>
                <Card.Body>
                    <img className="cardImgStrategy" src={strategize} alt="af" />
                    <Card.Title className="titleStrategy mt-4">STRATEGIZE</Card.Title>

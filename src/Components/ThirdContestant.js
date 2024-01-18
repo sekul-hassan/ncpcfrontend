@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import {Button, Col, Row} from "react-bootstrap";
+import {Button, Col, Container, Row} from "react-bootstrap";
 import FormContext from "./Context/FormContext";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faUser} from "@fortawesome/free-solid-svg-icons";
@@ -15,7 +15,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
 
     const {data} = useContext(FormContext);
     return (
-        <div className="firstContestant mt-5">
+        <Container fluid="true" className="firstContestant mt-5 px-3">
             <hr/>
             <h4 className="title mb-4"><FontAwesomeIcon icon={faUser} />    Team Member-3</h4>
             <hr/>
@@ -124,7 +124,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                     <Button className="nextBtn2" onClick={fourthCall}>Next</Button>
                 </div>
             </Row>
-        </div>
+        </Container>
     );
 }
 

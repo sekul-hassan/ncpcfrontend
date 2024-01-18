@@ -67,7 +67,7 @@ function RegiForm() {
                  window.alert(response.data);
             })
             .catch(error => {
-                console.error('There was an error!', error);
+                window.alert("Some problem occur\nPlease Contact Developer team");
             });
 
     };

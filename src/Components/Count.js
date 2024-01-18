@@ -1,10 +1,10 @@
 import React from 'react';
-import Birthday from "../CountComponent/Birthday";
+import CountCalculation from "../CountComponent/CountCalculation";
 import '../CountComponent/App.css';
 
 function Count(props) {
     return (
-        <Birthday day={49} month={0}/>
+        <CountCalculation day={49} month={0}/>
     );
 }
 

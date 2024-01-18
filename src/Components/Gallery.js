@@ -1,9 +1,8 @@
 
-import React, {Fragment, useEffect, useState} from 'react';
+import React, {Fragment, useState} from 'react';
 import { Container, Row } from 'react-bootstrap';
 
 import Slider from 'react-slick';
-import axios from "axios";
 
 function Gallery() {
     const images = require.context('../Assets/Images/GallerySlider', true);
@@ -67,11 +66,11 @@ function Gallery() {
         setZoomedImg(null);
     };
 
-    useEffect(()=>{
-        axios.get("https://pc.cse.juniv.edu/api/test").then((res)=>{
-            console.log(res.data);
-        })
-    })
+    // useEffect(()=>{
+    //     axios.get("https://pc.cse.juniv.edu/api/test").then((res)=>{
+    //         console.log(res.data);
+    //     })
+    // })
 
 
     return (

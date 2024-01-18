@@ -17,7 +17,7 @@ function CodeCard({ code }) {
 
     return (
        <Fragment>
-           <Card className={css.strategyWidth} onClick={changeDes}>
+           <Card className={`${css.strategyWidth} mt-3`} onClick={changeDes}>
                <Card.Body>
                    <img className="cardImgStrategy" src={code} alt="af" />
                    <Card.Title className="titleStrategy mt-4">CODE</Card.Title>

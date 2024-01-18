@@ -7,7 +7,7 @@ import Alumni1 from "../Components/Alumni1";
 import AboutNcpc from "../OthersComponents/AboutNcpc";
 import Strategy from '../OthersComponents/Strategy';
 import TopMenu from "../Components/TopMenu";
-import Dates from "../Components/DatesFolder/Dates";
+import Dates from "../Components/Dates";
 
 function Home(props) {
     return (
@@ -16,7 +16,6 @@ function Home(props) {
             <TopBanner/>
             <Dates/>
             <AboutSection/>
-            
             <AboutNcpc/>
             <Alumni1/>
             <Strategy/>  

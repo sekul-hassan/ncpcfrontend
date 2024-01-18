@@ -30,7 +30,7 @@
     transition: 0.5s;
 }
 .navLinkScroll{
-    color: rgb(99, 99, 99)!important;
+    color: rgb(0,0,0,1)!important;
     font-family: Roboto,serif;
     font-size: 18px!important;
     font-weight: 400!important;
@@ -61,21 +61,31 @@
     flex-direction: row;
     justify-content: space-between;
 }
-.logoLeftDiv img{
+
+.logoLeftDivImg{
     width: 100%;
-    height: auto;
-    max-width: 120px;
-    padding: 0 10px 0 10px;
+    max-width: 90px;
+    padding: 10px;
+    height: 70px;
+    margin-left: 30px;
+}
+.cseLogo{
+    width: 100%;
+    height: 70px;
+    max-width: 270px;
+    padding: 10px;
 }
 .logoRightDiv img{
     width: 100%;
-    height: auto;
-    max-width: 120px;
-    padding: 0 10px 0 10px;
+    height: 70px;
+    max-width: 100px;
+    padding: 10px;
 }
+
 .logoRightDiv{
     display: flex;
     justify-content: right;
+    margin-right: 30px;
 }
 .bannerRight{
     width: 28%;
@@ -137,10 +147,10 @@ Button{
 }
 .choyonSir{
     width: 100% !important;
-    height: 200px!important;
+    height: 300px!important;
 }
 .choyonSirWidth{
-    height: auto;
+    height: 300px!important;
     transition: 0.5s;
 }
 .choyonSir:hover{
@@ -201,9 +211,7 @@ Button{
     font-weight: 500;
     color: rgba(0,0,0,0.8);
 }
-.honorContainer {
-    background-color: white;
-}
+
 .honorContainer .card{
     background-color: white!important;
     height:auto!important;
@@ -322,9 +330,7 @@ Button{
     font-family: Montserrat, serif;
     font-weight: 700;
 }
-.carouselVideo:hover{
-    cursor: pointer;
-}
+
 .contact{
     padding-left: 10% !important;
 }
@@ -351,6 +357,10 @@ Button{
     color: silver;
     font-family: Roboto, serif;
     font-weight: 400;
+}
+.carouselVideo{
+    cursor: pointer!important;
+    padding: 5px!important;
 }
 .contact span{
     text-decoration: none;
@@ -411,22 +421,26 @@ Button{
     transition: 0.3s;
     color: white!important;
 }
+.supportDiv:hover{
+    box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+    -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+    -moz-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+    transition: 0.3s;
+    cursor: pointer;
+}
 .supportImg{
     width: 100%;
-    height: 250px;
-    min-height: 250px;
+    height: 200px;
     padding: 50px;
     border-radius: 2px;
     border:1px solid rgb(175, 190, 196);    
 }
 .supportImg:hover{
-    cursor:pointer;
-    box-shadow: 0 0 4px #8a85af;  
-    transition: 0.2s;
-    border:3px solid rgb(175, 190, 196);
-}
-.supportDiv{
-    padding: 0 0 5% 0;
+    box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+    -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+    -moz-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+    transition: 0.3s;
+    cursor: pointer;
 }
 .topImg{
     width: 30%;
@@ -503,7 +517,6 @@ Button{
 .strategyWidth{
     width: 100% !important;
     height: 200px!important;
-    
 }
 .strategyWidth:hover {
     box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
@@ -524,10 +537,6 @@ Button{
     display: block;
     text-align: center!important;
     margin-top:11%;
-}
-.StrategyCardsCol{
-    padding:0 5% 0 5%!important;
-  
 }
 
 .StrategyCardsCol .card{
@@ -553,13 +562,6 @@ Button{
     font-weight: 500;
     color: rgba(0,0,0,0.4)!important;
 }
-.StrategyBody{
-    color:white;
-    font-size: 18px;
-    font-family: Montserrat, serif;
-    font-weight: 200;
-    margin:9% 0 9% 0;
-}
 
 
 .StrategyTitleBorder{
@@ -570,181 +572,35 @@ Button{
     letter-spacing: 3px;
     font-style: italic;
 }
-
-.StrategyTitleBorder2{
-    font-size: 31px;
-    font-style: normal;
-}
-
-
-.marquee {
-    padding:9px;
-    white-space: nowrap;
-    animation: marquee 30s linear infinite; 
-    font-family: Roboto, serif;
-    font-weight: 400!important;
-    color: rgba(0,0,0,0.6)!important;
-    font-size: 14px;
-  }
-  .marquee:hover{
-    color:#413c69!important;
-    cursor:pointer;
-  }
-  .marquee span:not(:last-child) {
-    margin-right: 40px; 
-  }
-   
- 
-  /* CountdownTimer.css */
-.App{
-    width: 100%;
-    height: auto!important;  
-    
-    
-}
-
-.importantDates{
-    
-    font-weight: 400!important;
-    font-size: 32px!important;
-    color:rgb(119, 116, 116)!important;
-    /* color:rgb(143, 143, 143)!important; */
-}
-
-.App h4{
-    font-family: Montserrat, serif;
-    color:white; 
-    font-size:39px;
-    font-weight: 600;
-    letter-spacing: 2px;
-    
-}
-
-.ncpc_Counts{
-    margin-left:30%;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
-    /* background: url('../Images/dept/rsz_1logo_ncpc.jpg'); */
-    /* background: rgb(255, 253, 253) linear-gradient(to bottom, #1b182e 35.5%, rgb(255, 254, 254) 35.5%, rgb(255, 255, 255) 64.5%); */
-}
-.ncpc_Counts:hover{
-    cursor:pointer;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); */
-}
-.ncpc_Counts h1{
-    color:silver;
-    
-}
-.ncpc_Counts h3{
-    font-weight: 250!important;
-    font-size: 20px;
-}
-
-.mid{
-    /* border:15px solid #1b182e; */
-    margin:7% 15% 15% 15%;
-    padding:16% 0 15% 0;
-    border-radius: 50%;
-    /* background-color: rgba(0,0,0,0.5); */
-    background-color: rgba(27,24,46,0.8);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6)!important;
-    color:white;
-}
-.mid:hover{
-    box-shadow: 0 4px 4px rgba(47, 47, 47, 0.3)!important;
-    transform: scale(1.04)!important;
-    background-color:  rgba(27,24,46,0.5);
-    color:rgb(91, 90, 90)!important;
-}
-.mid h1{
-    color:white!important;
-    font-weight:300;
-}
-.mid h3{
-    color:white!important;
-    font-weight:300;
-}
-
-.timer-container {
-    font-family: Montserrat, serif;
-  }
-  
-  .timer-circle {
-    font-family: Montserrat, serif;
-    font-size: 35px;
-    color:white;
-  }
-  .Dates_Counts{
-   background: rgb(255, 253, 253) linear-gradient(to bottom, rgba(27,24,46,0.8) 29.5%, rgb(255, 254, 254) 29.5%, rgb(255, 255, 255) 69.5%);
-   box-shadow: 0 0 10px rgba(50, 49, 49, 0.5)!important;
-   margin:9%;
-   border-radius: 2%!important;
-   height:300px;
-}
-.Dates_Counts:hover{
-    box-shadow: 0 4px 4px rgba(50, 49, 49, 0.3)!important;
-    background: rgb(255, 253, 253) linear-gradient(to bottom, rgba(27,24,46,0.4) 29.5%, rgb(255, 254, 254) 29.5%, rgb(255, 255, 255) 69.5%);
-    color:rgb(91, 90, 90)!important;
-    transform: scale(1.01)!important;
- }
- .DatesRow{
-    margin:0 5% 4% 5%!important;
-    padding:2% 5% 0 5%;
- }
-.DatesRow .ncpc_Counts:hover{
-  cursor: pointer;
-  }
-.DatesRow .card{
-    padding:10%;
-    box-shadow: 0 0 20px rgba(50, 49, 49, 0.3)!important; 
-    border-radius: 2%!important;
-}
-.DatesRow .card:hover{
-    cursor:pointer!important;
-  }
-.titleDates{
-    font-size: 20px!important;
-    color: rgba(0,0,0,0.7)!important; 
-    font-family: Montserrat, serif;
-    font-weight: 450!important;
-    padding-top:15%!important;
-  }
-.subTitleDates{
-    font-size: 16px;
-    font-family: Montserrat, serif;
-    font-weight: 400;
-    color: #908d8d;
-}
-.titleH6{
-    color: rgba(0,0,0,0.3)!important;
-    font-family: Montserrat, serif;
-  }
-.titleH6:hover{
-    color:rgb(143, 143, 143)!important;
-  }
-  .rulesImg {
-    width:400px!important;
-    height:auto;
-  }
-  .titleRules{
-    font-size: 22px;
-    font-family: Montserrat, serif;
-    font-weight: 400;
-    color: #5f5c5c;
-  }
-  .subtitleRules{
-    font-size: 30px;
-    font-family: Montserrat, serif;
-    font-weight: 700;
-    color: #5f5c5c;
-  }
-.RulesDescription{
-    font-weight:400;
-    font-family: Roboto, serif;
-    font-size: 14px;
-    text-align: justify;
-}
 .committeeTextDiv{
     background-color: #1B182E;
     text-align: center;
     padding:7px 0 1px 0;
+    margin: 0 0.67rem;
+}
+.vcDiv{
+   display: flex;
+    justify-content: center;
+}
+.vcDiv img{
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+}
+.dateCard{
+    border-radius: 3px!important;
+    border: 1px solid silver !important;
+    height: 200px!important;
+    padding: 20px 0 10px 0;
+    background-color: rgba(27, 24, 46, 0.1) !important;
+}
+.dateCard:hover{
+    background-color:rgba(215, 233, 255, 0.5) !important;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.dateDiv{
+    background-color: rgba(215, 233, 255, 0.5);
+    margin: 20px 15px;
 }

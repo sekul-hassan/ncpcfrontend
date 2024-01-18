@@ -1,16 +1,18 @@
-.marquee-container {
-    width: 100%;
-    overflow: hidden;
-}
 
 .marquee {
+    padding:4px 0 2px 0;
     white-space: nowrap;
-    overflow: hidden;
-    animation: marquee 10s linear infinite;
-    font-family: Montserrat, sans-serif, serif;
-    font-size: 14px;
+    animation: marquee 30s linear infinite;
+    font-family: Roboto, serif;
     font-weight: 400;
-    display: inline-block;
+    color:#413c69;;
+    font-size: 14px;
+}
+.marquee span{
+    cursor: pointer;
+}
+.marquee span:not(:last-child) {
+    margin-right: 40px;
 }
 
 @keyframes marquee {

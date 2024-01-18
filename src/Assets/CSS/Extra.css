@@ -1,22 +1,22 @@
-.ncpcImgDiv img{
-    width: 100%;
-    min-height: 435px;
+.rulesImg{
+    width: 50%;
     height: auto;
 }
 .aboutNcpc{
     background-color:#F3F8FA;
     margin: 6% 3% 2% 3%;
-    
-    
 }
 .aboutNcpcRow{
-    /* background-color: #e7e8ec; */
-    background-color:rgb(243, 243, 243); 
-    padding: 5%;
+    background-color:rgba(243, 243, 243,0.3);
     box-shadow: 0 4px 4px rgba(50, 49, 49, 0.3)!important;
 }
-
 .aboutNcpc .title{
     font-size: 22px!important;
+}
+.aboutNcpc img{
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    padding: 10px 10px 10px 10px;
 }
 

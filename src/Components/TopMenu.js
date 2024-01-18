@@ -35,29 +35,26 @@ function TopMenu() {
 
     return (
         <Fragment>
-           <Container fluid="true" className="text-center">
-               <Navbar className={isScroll?'navBarScroll':'navBar'}  collapseOnSelect expand="sm">
-                   <Navbar.Toggle className="custom-hamburger" aria-controls="responsive-navbar-nav" />
-                   <Navbar.Collapse  className="justify-content-center" id="responsive-navbar-nav">
-                       <Nav className="nav">
-                           <Nav.Link ><Link to="/" className={css.navLink} >Home</Link></Nav.Link>
-                           <Nav.Link ><Link to="/about"  className={css.navLink} >About</Link></Nav.Link>
-                           <Nav.Link ><Link to="/registration"  className={css.navLink} >Registration</Link></Nav.Link>
-                           <Nav.Link ><Link to="/committee"  className={css.navLink} >Committee</Link></Nav.Link>
-                           <Nav.Link><Link to="/gallery"  className={css.navLink} >Gallery</Link></Nav.Link>
-                       </Nav>
-                   </Navbar.Collapse>
-               </Navbar>
-               <div className="marquee-container">
-               <div className="marquee">
-                   <span>Preliminary Registration: 17-31 January</span>
-                   <span>Preliminary Contest: 3 February</span>
-                   <span>Main Contest: 7-8 March</span>
-               </div>
-                   
-               </div>
+            <Container fluid="true" className="text-center">
+                <Navbar className={isScroll ? 'navBarScroll' : 'navBar'} collapseOnSelect expand="sm">
+                    <Navbar.Toggle className="custom-hamburger" aria-controls="responsive-navbar-nav"/>
+                    <Navbar.Collapse className="justify-content-center" id="responsive-navbar-nav">
+                        <Nav className="nav">
+                            <Nav.Link><Link to="/" className={css.navLink}>Home</Link></Nav.Link>
+                            <Nav.Link><Link to="/about" className={css.navLink}>About</Link></Nav.Link>
+                            <Nav.Link><Link to="/registration" className={css.navLink}>Registration</Link></Nav.Link>
+                            <Nav.Link><Link to="/committee" className={css.navLink}>Committee</Link></Nav.Link>
+                            <Nav.Link><Link to="/gallery" className={css.navLink}>Gallery</Link></Nav.Link>
+                        </Nav>
+                    </Navbar.Collapse>
+                </Navbar>
+                <div className="marquee">
+                    <span>Preliminary Registration: 17-31 January</span>
+                    <span>Preliminary Contest: 3 February</span>
+                    <span>Main Contest: 7-8 March</span>
+                </div>
 
-           </Container>
+            </Container>
         </Fragment>
     );
 }
