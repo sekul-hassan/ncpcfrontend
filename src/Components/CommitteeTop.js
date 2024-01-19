@@ -4,7 +4,7 @@ import vc from "../Assets/Images/juVC.jpg";
 
 function CommitteeTop(props) {
     return (
-        <Container fluid="true" className="text-center p-3">
+        <Container fluid="true" className="text-center">
             <div className="vcDiv">
                 <img src={vc} alt=""/>
             </div>

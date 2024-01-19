@@ -8,7 +8,7 @@ function Rules(props) {
     return (
        <Fragment>
            <TopMenu/>
-           <Container fluid="true" className="p-3">
+           <Container fluid="true">
                <Row className="text-center mx-0">
                    <h4 className="title">
                        National Collegiate Programming Contest NCPC 2023 Rules

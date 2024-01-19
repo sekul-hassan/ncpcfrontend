@@ -7,7 +7,7 @@ function GlobalCard({ choyon ,name,post}) {
 
     return (
        <Fragment>
-           <Card className="h-100 p-3">
+           <Card className="h-100">
                <Card.Body className="mt-3">
                    <img className="cardImg" src={choyon} alt="af" />
                    <Card.Title className="cardTitle">{name}</Card.Title>
