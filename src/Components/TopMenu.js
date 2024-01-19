@@ -53,7 +53,6 @@ function TopMenu() {
                     <span>Preliminary Contest: 3 February</span>
                     <span>Main Contest: 7-8 March</span>
                 </div>
-
             </Container>
         </Fragment>
     );

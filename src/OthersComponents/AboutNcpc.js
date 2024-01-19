@@ -7,7 +7,7 @@ function AboutNcpc() {
            <Row className="mx-0 aboutNcpcRow">
                <h4 className="title pt-4 pb-5">ABOUT NCPC 2023</h4>
                <Col md={12} lg={5} sm={12}>
-                   <img src={logo_NCPC} alt="aboutNcpc"/>
+                   <img src={logo_NCPC} className="aboutNcpcLogo" alt="aboutNcpc"/>
                </Col>
                <Col md={12} lg={7} sm={12}>
                    <h4 className="title text-dark mt-5 mb-4">National Collegiate Programming Contest NCPC 2023</h4>
