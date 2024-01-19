@@ -18,7 +18,7 @@ function Home(props) {
             <AboutSection/>
             <AboutNcpc/>
             <Alumni1/>
-            <Strategy/>  
+            {/*<Strategy/>  */}
             <Support/>
             <Sponsor/>
         </Fragment>

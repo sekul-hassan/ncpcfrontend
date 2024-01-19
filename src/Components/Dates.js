@@ -7,8 +7,6 @@ import {faCalendarDays} from "@fortawesome/free-solid-svg-icons";
 
 const Dates = () => {
   return (
-    
-    
     <Container fluid="true" className="text-center dateDiv p-3">
        <Row className="mx-0">
            <Col className="mt-3" lg={4} md={4} sm={4}>
