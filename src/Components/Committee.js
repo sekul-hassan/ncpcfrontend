@@ -5,7 +5,7 @@ import GlobalCard from "./GlobalCard";
 function Committee({imageUrls,executiveNameList,executivePostList,committeeName}) {
     
     return (
-        <Container fluid="true" className="mt-3 p-3">
+        <Container fluid="true" className="mt-3">
            <div className="committeeTextDiv">
                <h4 className="title text-white">{committeeName}</h4>
            </div>

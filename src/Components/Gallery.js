@@ -75,7 +75,7 @@ function Gallery() {
 
     return (
         <Fragment>
-            <Container fluid="true" className="mb-5 p-3">
+            <Container fluid="true" className="mb-5">
                 <Row className="mx-0 px-0" noGutters>
                     <Slider {...settings}>
                         {imageUrls.map((img, idx) => (

@@ -11,7 +11,7 @@ import ReactPlayer from "react-player/youtube";
 
 function AboutSection(props) {
     return (
-        <Container fluid="true" className="text-center p-3">
+        <Container fluid="true" className="text-center">
             <Row className="p-0 m-0">
                 <Col className="noticeDivLeft mt-2 p-0" md={7} lg={9} sm={12}>
                     <Carousel className="card-carousel" interval={6000}>

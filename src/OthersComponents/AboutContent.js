@@ -3,7 +3,7 @@ import {Container} from "react-bootstrap";
 
 function AboutContent(props) {
     return (
-        <Container fluid="true" className="mt-2 mb-3 p-3">
+        <Container fluid="true" className="mt-2 mb-3">
             <div className="alumniDescription text-dark">
             The Department of Computer Science and Engineering, Jahangirnagar University has consistently been recognized for its outstanding facilities, academic excellence and its dedication to shaping well-rounded professionals in the dynamic field of technology.
             Established in 1991, the department has been working for producing highly skilled IT professionals and researchers. Dedicated faculty and highly rich labs contribute to a rich academic experience. The department is well-equipped with dedicated lab facilities, ensuring ample space to accommodate students' needs. Each lab is tailored to specific disciplines, offering a conducive environment for practical learning and experimentation.

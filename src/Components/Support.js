@@ -7,7 +7,7 @@ import ju_cse from "../Assets/Images/dept/ju_cse.png";
 
 function Support(props) {
     return (
-        <Container fluid="true" className="text-center p-3">
+        <Container fluid="true" className="text-center">
             <Row className="m-0 p-0">
                 <h4 className="boldTitle text-dark">Hosted By</h4>
                 <div>
