@@ -48,11 +48,11 @@ function TopMenu() {
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
-                {/*<div className="marquee">*/}
-                {/*    <span>Preliminary Registration: 17-31 January</span>*/}
-                {/*    <span>Preliminary Contest: 3 February</span>*/}
-                {/*    <span>Main Contest: 7-8 March</span>*/}
-                {/*</div>*/}
+                <div className="marquee">
+                    <span>Preliminary Registration: 17-31 January</span>
+                    <span className="mx-5">Preliminary Contest: 3 February</span>
+                    <span>Main Contest: 7-8 March</span>
+                </div>
             </Container>
         </Fragment>
     );

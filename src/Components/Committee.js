@@ -12,7 +12,7 @@ function Committee({imageUrls,executiveNameList,executivePostList,committeeName}
             <Row className="mt-2 p-0 mx-0">
                 {imageUrls.map((img, idx) => (
                     <Col className="mt-3" lg={3} md={4} sm={6}>
-                        <GlobalCard choyon={img} name={executiveNameList[idx]} post={executivePostList[idx]}/>
+                        <GlobalCard image={img} name={executiveNameList[idx]} post={executivePostList[idx]}/>
                     </Col>
                 ))}
             </Row>

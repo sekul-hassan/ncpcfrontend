@@ -1,85 +1,76 @@
 import React, { useState, useEffect } from "react";
-import {Container} from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Countdown from "./Countdown";
 import Typing from "./Typing";
 
-
-const CountCalculation = ({ day, month }) => {
+const CountCalculation = ({ day }) => {
   const [state, setState] = useState({
     seconds: 0,
     hours: 0,
     minutes: 0,
     days: 0,
-    isItBday: false,
   });
 
-  const currentTime = new Date();
-  const currentYear = currentTime.getFullYear();
-  const isItBday =
-    currentTime.getDate() === day && currentTime.getMonth() === month - 1;
-
   useEffect(() => {
-    setInterval(() => {
-      const countdown = () => {
-        const dateAtm = new Date();
-        let birthdayDay = new Date(currentYear, month - 1, day);
-        if (dateAtm > birthdayDay) {
-          birthdayDay = new Date(currentYear + 1, month - 1, day);
-        } else if (dateAtm.getFullYear() === birthdayDay.getFullYear() + 1) {
-          birthdayDay = new Date(currentYear, month - 1, day);
-        }
+    const countdown = () => {
+      const currentTime = new Date();
+      const currentYear = currentTime.getFullYear();
 
-        const currentTime = dateAtm.getTime();
-        const birthdayTime = birthdayDay.getTime();
-        const timeRemaining = birthdayTime - currentTime;
-        let seconds = Math.floor(timeRemaining / 1000);
-        let minutes = Math.floor(seconds / 60);
-        let hours = Math.floor(minutes / 60);
-        let days = Math.floor(hours / 24);
+      let birthdayDay = new Date(currentYear, currentTime.getMonth(), day, 0, 0, 0);
 
-        seconds %= 60;
-        minutes %= 60;
-        hours %= 24;
-
-        setState((prevState) => ({
-          ...prevState,
-          seconds,
-          minutes,
-          hours,
-          days,
-          isItBday,
-        }));
-      };
-      if (!isItBday) {
-        countdown();
-      } else {
-        setState((prevState) => ({
-          ...prevState,
-          isItBday: true,
-        }));
+      if (currentTime > birthdayDay) {
+        // If the birthday has already passed this year, set it for the next year
+        birthdayDay.setFullYear(currentYear + 1);
       }
-    }, 1000);
-  }, [currentYear, day, isItBday, month]);
+
+      const timeRemaining = birthdayDay.getTime() - currentTime.getTime();
+
+      if (timeRemaining <= 0) {
+        // Birthday has passed, stop the countdown
+        setState((prevState) => ({
+          ...prevState
+        }));
+        return;
+      }
+
+      const totalDaysRemaining = day;
+      const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+      setState({
+        seconds,
+        minutes,
+        hours,
+        days: totalDaysRemaining,
+        isItBday: false,
+      });
+    };
+
+    // Set up the interval to update the countdown every second
+    const intervalId = setInterval(countdown, 1000);
+
+    // Clean up the interval when the component unmounts
+    return () => clearInterval(intervalId);
+  }, [day]);
 
   return (
-    <Container fluid="true" className="page">
-      <div>
-      <h5 className="ncpcType">
-         NCPC 2023
-      </h5>
-      </div>
-      <div className="typing">
-       <Typing />
-      </div>
-      <Countdown countdownData={state}/>
-      <div className="caption">
-        <h5 className="type">Hosted By</h5>
-        <h5 className="deptInfo">
-          Department of Computer Science and Engineering
-        </h5>
-        <h4 className="deptInfo">Jahangirnagar University</h4>
-      </div>
-    </Container>
+      <Container fluid="true" className="page">
+        <div>
+          <h5 className="ncpcType">NCPC 2023</h5>
+        </div>
+        <div className="typing">
+          <Typing />
+        </div>
+        <Countdown countdownData={state} />
+        <div className="caption">
+          <h5 className="type">Hosted By</h5>
+          <h5 className="deptInfo">
+            Department of Computer Science and Engineering
+          </h5>
+          <h4 className="deptInfo">Jahangirnagar University</h4>
+        </div>
+      </Container>
   );
 };
 

@@ -11,10 +11,6 @@
 .marquee span{
     cursor: pointer;
 }
-.marquee span:not(:last-child) {
-    margin-right: 40px;
-}
-
 @keyframes marquee {
     0% {
         transform: translateX(100%);

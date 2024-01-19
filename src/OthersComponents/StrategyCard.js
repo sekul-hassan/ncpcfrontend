@@ -1,7 +1,7 @@
 
 import React, {Fragment, useState} from 'react';
 import { Card } from "react-bootstrap";
-function StrategyCard({ think }) {
+function StrategyCard({ pic,title,subTitle,description }) {
     const [css, setCss] = useState({
         strategyWidth: 'strategyWidth',
         strategyDescription: 'strategyDescription'
@@ -19,11 +19,11 @@ function StrategyCard({ think }) {
        <Fragment>
            <Card className={`${css.strategyWidth} mt-3`} onClick={changeDes}>
                <Card.Body>
-                   <img className="cardImgStrategy" src={think} alt="af" />
-                   <Card.Title className="titleStrategy mt-4">THINK</Card.Title>
+                   <img className="cardImgStrategy" src={pic} alt="af" />
+                   <Card.Title className="titleStrategy mt-4">{title}</Card.Title>
                    <Card.Text>
-                       <h5 className="subTitleStrategy">Critical Thinking</h5>
-                       <p className={css.strategyDescription}>Analyze problems to formulate effective solutions.</p>
+                       <h5 className="subTitleStrategy">{subTitle}</h5>
+                       <p className={css.strategyDescription}>{description}</p>
                    </Card.Text>
                </Card.Body>
            </Card>

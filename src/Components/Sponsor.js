@@ -6,11 +6,11 @@ function Sponsor(props) {
     return (
         <Container fluid="true" className="text-center p-2">
             <Row className="m-0">
-                <Col lg={6} md={6} sm={12}>
+                <Col lg={6} md={6} sm={12} className="px-1">
                     <h4 className="titleSponsor mt-3">Gold Sponsors</h4>
                     <img className="supportImg mt-3" src={spns} alt=""/>
                 </Col>
-                <Col lg={6} md={6} sm={12}>
+                <Col lg={6} md={6} sm={12} className="px-1">
                     <h4 className="titleSponsor mt-3">Other Sponsors</h4>
                     <img className="supportImg mt-3" src={spns} alt=""/>
                 </Col>
