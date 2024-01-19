@@ -39,10 +39,10 @@ div img{
 }
 
 
-@media (max-width: 575px) {
-    .zoomedImage {
-        width: 70%;
-        height: 240px;
-    }
- 
-}
+/*@media (max-width: 575px) {*/
+/*    .zoomedImage {*/
+/*        width: 70%;*/
+/*        height: 240px;*/
+/*    }*/
+/* */
+/*}*/
