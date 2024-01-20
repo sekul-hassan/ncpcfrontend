@@ -6,10 +6,20 @@ const transportCommitteeImages = images.keys().map((image) => images(image));
 
 
 
-const transportCommitteeNameList= ["Dr. Md. Ezharul Islam","Bulbul Ahammad","Dr. Morium Akter","Md. Masum Bhuiyan"];
+const transportCommitteeNameList= [
+    "Dr. Md. Ezharul Islam",
+    "Bulbul Ahammad",
+    "Dr. Morium Akter",
+    "Md. Masum Bhuiyan"
+];
 
 
-const transportCommitteePostList = ["Convener","Coordinator","Member","Member"];
+const transportCommitteePostList = [
+    "Convener",
+    "Coordinator",
+    "Member",
+    "Member"
+];
 
 
 const transportCommittee = "Transport Committee";

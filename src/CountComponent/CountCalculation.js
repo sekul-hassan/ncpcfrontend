@@ -18,10 +18,10 @@ const CountCalculation = ({ day }) => {
 
       let birthdayDay = new Date(currentYear, currentTime.getMonth(), day, 0, 0, 0);
 
-      if (currentTime > birthdayDay) {
-        // If the birthday has already passed this year, set it for the next year
-        birthdayDay.setFullYear(currentYear + 1);
-      }
+      // if (currentTime > birthdayDay) {
+      //   // If the birthday has already passed this year, set it for the next year
+      //   birthdayDay.setFullYear(currentYear + 1);
+      // }
 
       const timeRemaining = birthdayDay.getTime() - currentTime.getTime();
 
@@ -33,7 +33,7 @@ const CountCalculation = ({ day }) => {
         return;
       }
 
-      const totalDaysRemaining = day;
+      const totalDaysRemaining = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
       const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);

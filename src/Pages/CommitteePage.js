@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import Committee from "../Components/Committee";
-import {executiveCommittee, executiveCommitteeImages, executiveNameList, executivePostList} from "../Components/Context/Committee";
+import {executiveCommittee, executiveCommitteeImages, executiveNameList, executivePostList} from "../Components/Context/ExecutiveCommittee";
 import {webCommitteeNameList,webCommitteePostList,webCommittee,webCommitteeImages} from "../Components/Context/WebDevelopmentCommittee";
 import {transportCommitteeImages,transportCommitteeNameList,transportCommitteePostList,transportCommittee} from "../Components/Context/Transport";
 import {invitationCommitteeImages,invitationNameList,invitationPostList,invitationCommittee} from "../Components/Context/Invitation";

@@ -8,7 +8,8 @@ const webCommitteeImages = images.keys().map((image) => images(image));
 
 const webCommitteeNameList=[
     "Dr. Abu Sayed Md. Mostafizur Rahaman",
-    "Anup Majumder","Nadia Afrin Ritu",
+    "Anup Majumder",
+    "Nadia Afrin Ritu",
     "Md. Masum Bhuiyan"
 ];
 

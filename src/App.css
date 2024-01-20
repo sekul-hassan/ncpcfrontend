@@ -21,6 +21,24 @@
 /*    }*/
 /*}*/
 
+marquee {
+    padding:4px 0 2px 0;
+    font-family: Roboto, serif;
+    font-weight: 400;
+    color:#413c69;;
+    font-size: 14px;
+    scrollamount: 6;
+}
+marquee span{
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    marquee {
+        scrollamount: 1!important;
+    }
+}
+
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
