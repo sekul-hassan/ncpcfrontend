@@ -14,9 +14,8 @@ function Footer(props) {
                 <Col className="contact" md={6} sm={12} lg={6}>
                     <h4>Important Links</h4>
                     <Link to="/rules">Notice</Link><br/>
-                    <Link to="/registraion">Registration</Link><br/>
+                    <Link to="/registration">Registration</Link><br/>
                     <a href="https://juniv.edu/department/cse" target="_blank" rel="noreferrer">JU CSE</a><br/>
-
                 </Col>
                 <Col className="contact" md={6} sm={12} lg={6}>
                     <h4>Contact Us</h4>
