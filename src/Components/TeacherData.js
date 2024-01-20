@@ -12,6 +12,7 @@ import {faIdCardClip} from "@fortawesome/free-solid-svg-icons";
 import {faImage} from "@fortawesome/free-solid-svg-icons";
 import {faChalkboardUser} from "@fortawesome/free-solid-svg-icons";
 import bkash from "../Assets/Images/bkash.jpg";
+import {registrationOff} from "./Context/WebConf";
 function TeacherData({thirdCall,inputChange,postDataToBackend}) {
 
     const {data} = useContext(FormContext);
@@ -157,7 +158,7 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
                 <div className="text-center">
                     <button className="submitBtn btn btn-success" onClick={postDataToBackend}
                     style={data.transaction.length === 0? styles.disabledButton : styles.enabledButton}
-                    disabled={data.transaction.length === 0}
+                    disabled={registrationOff}
                     >
                     Submit</button>
                 </div>

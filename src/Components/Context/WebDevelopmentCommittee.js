@@ -21,6 +21,6 @@ const webCommitteePostList= [
     "Member"
 ];
 
-const webCommittee = "Web Development Committee";
+const webCommittee = "Registration and Website Management Committee";
 
 export {webCommitteeNameList,webCommitteePostList,webCommittee,webCommitteeImages};

@@ -2,8 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Container } from "react-bootstrap";
 import Countdown from "./Countdown";
 import Typing from "./Typing";
+import {currentEvent} from "../Components/Context/WebConf";
 
 const CountCalculation = ({ day }) => {
+
   const [state, setState] = useState({
     seconds: 0,
     hours: 0,
@@ -11,12 +13,14 @@ const CountCalculation = ({ day }) => {
     days: 0,
   });
 
+  const currentEventDate= currentEvent.date
+
   useEffect(() => {
     const countdown = () => {
       const currentTime = new Date();
       const currentYear = currentTime.getFullYear();
 
-      let birthdayDay = new Date(currentYear, currentTime.getMonth(), day, 0, 0, 0);
+      let birthdayDay = new Date(currentEventDate);
 
       // if (currentTime > birthdayDay) {
       //   // If the birthday has already passed this year, set it for the next year

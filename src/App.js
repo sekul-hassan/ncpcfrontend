@@ -18,6 +18,7 @@ import Rules from './Pages/Rules';
 
 
 function App() {
+
   return (
     <div>
         <Logo/>
@@ -28,7 +29,7 @@ function App() {
             <Route path="committee" element={<CommitteePage/>}/>
             <Route path="gallery" element={<GalleryPage/>}/>
             <Route path="about" element={<AboutPage/>}/>
-            <Route path="/*" element={<Home/>}/>
+            <Route path="/*" element={<Rules/>}/>
           </Routes>
         <Footer/>
     </div>

@@ -18,6 +18,6 @@ const logisticPostList=[
     "Member",
     "Member"
 ];
-const logisticCommittee = "Logistic Committee";
+const logisticCommittee = "Logistics Committee";
 
 export {logisticCommitteeImages,logisticNameList,logisticPostList,logisticCommittee};

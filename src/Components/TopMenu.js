@@ -1,6 +1,7 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import {Container,Nav, Navbar} from "react-bootstrap";
 import {Link} from "react-router-dom";
+import {noticeBar, preRegiStartDate} from "./Context/WebConf";
 
 
 function TopMenu() {
@@ -49,9 +50,7 @@ function TopMenu() {
                     </Navbar.Collapse>
                 </Navbar>
                 <marquee>
-                    <span>Preliminary Registration: 17-31 January</span>
-                    <span className="mx-5">Preliminary Contest: 3 February</span>
-                    <span>Main Contest: 7-8 March</span>
+                    <span>{noticeBar}</span>
                 </marquee>
             </Container>
         </Fragment>

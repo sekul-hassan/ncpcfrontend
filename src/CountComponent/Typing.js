@@ -1,10 +1,13 @@
 import React, { useEffect } from "react";
 import Typewriter from "typewriter-effect/dist/core";
+import {currentEvent} from "../Components/Context/WebConf";
 
 const Typing = () => {
+  const currentEventName = currentEvent.name
+
   useEffect(() => {
     const typewriter = new Typewriter("#typewriter", {
-      strings: ["Think | Strategize | Code","Registration starts in", "Register fast"],
+      strings: ["Think | Strategize | Code", currentEventName, "Register fast"],
       autoStart: true,
       delay: 75,
       typeSpeed: 100,

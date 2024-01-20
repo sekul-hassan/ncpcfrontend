@@ -272,6 +272,7 @@ Button{
     color:rgb(22, 21, 21);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 .carouselItemContainerSpeech{
     background-color:white;
     color:silver;  
@@ -581,13 +582,10 @@ Button{
     border: 1px solid silver !important;
     height: 200px!important;
     padding: 20px 0 10px 0;
-    background-color: rgba(27, 24, 46, 0.1) !important;
+    background-color: white !important;
 }
 .dateCard:hover{
     background-color:rgba(215, 233, 255, 0.5) !important;
     transition: 0.3s;
     cursor: pointer;
-}
-.dateDiv{
-    background-color: rgba(215, 233, 255, 0.5);
 }

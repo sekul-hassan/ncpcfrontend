@@ -36,11 +36,11 @@ function AboutSection(props) {
                         <h3 className="noticeTitle p-3"><FontAwesomeIcon icon={faBell} beatFade size="l"/><span>     </span>Notice</h3>
                         <Link to="/rules">1. Registration Rules</Link>
                         <hr/>
-                        <Link to="/rules">2. Accommodation</Link>
+                        <Link to="/">2. Accommodation</Link>
                         <hr/>
-                        <Link to="/rules">3. Payment Details</Link>
+                        <Link to="/">3. Payment Details</Link>
                         <hr/>
-                        <Link to="/rules">4. Main Contest Date</Link>
+                        <Link to="/">4. Main Contest Date</Link>
                         <hr/>
                     </div>
                     <Carousel className='carouselVideo'>

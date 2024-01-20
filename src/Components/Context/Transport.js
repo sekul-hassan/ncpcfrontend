@@ -22,6 +22,6 @@ const transportCommitteePostList = [
 ];
 
 
-const transportCommittee = "Transport Committee";
+const transportCommittee = "Transportation and Accommodation Committee";
 
 export {transportCommitteeImages,transportCommitteeNameList,transportCommitteePostList,transportCommittee};
