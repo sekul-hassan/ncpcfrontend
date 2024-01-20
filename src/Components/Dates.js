@@ -14,7 +14,7 @@ const Dates = () => {
                    <Card.Body>
                        <span><FontAwesomeIcon icon={faCalendarDays} size="l"/></span>
                        <Card.Text>
-                           <h4 className="title m-1">24 February 2024</h4>
+                           <h4 className="title m-1">5 March 2024</h4>
                            <h4 className="description mt-3">Registration Deadline</h4>
                        </Card.Text>
                    </Card.Body>
@@ -25,7 +25,7 @@ const Dates = () => {
                    <Card.Body>
                        <span><FontAwesomeIcon icon={faCalendarDays} size="l"/></span>
                        <Card.Text>
-                           <h4 className="title m-1">29 February 2024</h4>
+                           <h4 className="title m-1">7-9 March 2024</h4>
                            <h4 className="description mt-3">Main Contest</h4>
                        </Card.Text>
                    </Card.Body>
@@ -36,7 +36,7 @@ const Dates = () => {
                    <Card.Body>
                        <span><FontAwesomeIcon icon={faCalendarDays} size="l"/></span>
                        <Card.Text>
-                           <h4 className="title m-1">26 February 2024</h4>
+                           <h4 className="title m-1">5 March 2024</h4>
                            <h4 className="description mt-3">Payment Deadline</h4>
                        </Card.Text>
                    </Card.Body>
