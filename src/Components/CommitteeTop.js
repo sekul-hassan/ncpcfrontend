@@ -9,7 +9,7 @@ function CommitteeTop(props) {
                 <img src={vc} alt=""/>
             </div>
             <div className="committeeTextDiv mt-2">
-                <h4 className="title text-white">Prof. Dr. Nurul Islam Honourable Vice Chancellor (Jahangirnagar University)</h4>
+                <p className="title text-white">Prof. Dr. Nurul Islam <br/> Honourable Vice Chancellor <br/> Jahangirnagar University</p>
             </div>
         </Container>
     );
