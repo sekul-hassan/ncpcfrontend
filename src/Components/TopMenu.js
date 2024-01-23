@@ -1,7 +1,7 @@
 import React, {Fragment, useEffect, useState} from 'react';
 import {Container,Nav, Navbar} from "react-bootstrap";
 import {Link} from "react-router-dom";
-import {noticeBar, preRegiStartDate} from "./Context/WebConf";
+import {noticeBar} from "./Context/WebConf";
 
 
 function TopMenu() {

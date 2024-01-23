@@ -4,7 +4,7 @@ import '../CountComponent/App.css';
 
 function Count(props) {
     return (
-        <CountCalculation day={23}/>
+        <CountCalculation/>
     );
 }
 

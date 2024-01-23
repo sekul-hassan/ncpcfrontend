@@ -4,7 +4,7 @@ import Countdown from "./Countdown";
 import Typing from "./Typing";
 import {currentEvent} from "../Components/Context/WebConf";
 
-const CountCalculation = ({ day }) => {
+const CountCalculation = () => {
 
   const [state, setState] = useState({
     seconds: 0,
@@ -18,19 +18,12 @@ const CountCalculation = ({ day }) => {
   useEffect(() => {
     const countdown = () => {
       const currentTime = new Date();
-      const currentYear = currentTime.getFullYear();
 
       let birthdayDay = new Date(currentEventDate);
-
-      // if (currentTime > birthdayDay) {
-      //   // If the birthday has already passed this year, set it for the next year
-      //   birthdayDay.setFullYear(currentYear + 1);
-      // }
 
       const timeRemaining = birthdayDay.getTime() - currentTime.getTime();
 
       if (timeRemaining <= 0) {
-        // Birthday has passed, stop the countdown
         setState((prevState) => ({
           ...prevState
         }));
@@ -47,7 +40,6 @@ const CountCalculation = ({ day }) => {
         minutes,
         hours,
         days: totalDaysRemaining,
-        isItBday: false,
       });
     };
 
@@ -56,7 +48,7 @@ const CountCalculation = ({ day }) => {
 
     // Clean up the interval when the component unmounts
     return () => clearInterval(intervalId);
-  }, [day]);
+  }, [currentEventDate]);
 
   return (
       <Container fluid="true" className="page">

@@ -18,7 +18,7 @@ const Typing = () => {
     return () => {
       typewriter.stop();
     };
-  }, []);
+  }, [currentEventName]);
 
   return <div id="typewriter" />;
 };
