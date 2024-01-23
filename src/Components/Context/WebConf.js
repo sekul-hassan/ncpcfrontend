@@ -1,10 +1,10 @@
 
 const currentEvent = {
-    "name": "Preliminary Registration starts in",
+    "name": "Preliminary Registration ends in",
     "date": "2024-02-06"
 }
 
-const noticeBar = "* Welcome, honorable Vice Chancellor Dr. Md. Nurul Islam Sir to the National Collegiate Programming Contest 2023 *"
+const noticeBar = "*** Welcome, Honorable Vice Chancellor Dr. Md. Nurul Islam Sir to the National Collegiate Programming Contest 2023 ***"
 
 
 const event1 = {
