@@ -54,9 +54,7 @@ function Registration(props) {
     return (
         <Fragment>
             <TopMenu/>
-           <FormContext.Provider value={{data,setData,first,setFirst,second,setSecond,third,setThird,fourth,setFourth}}>
-               <RegiForm/>
-           </FormContext.Provider>
+           <h4 className='title text-center text-dark'>Registration will be starting soon.</h4>
         </Fragment>
     );
 }
