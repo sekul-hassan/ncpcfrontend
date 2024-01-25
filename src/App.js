@@ -29,7 +29,7 @@ function App() {
             <Route path="committee" element={<CommitteePage/>}/>
             <Route path="gallery" element={<GalleryPage/>}/>
             <Route path="about" element={<AboutPage/>}/>
-            <Route path="/*" element={<Rules/>}/>
+            <Route path="/*" element={<Home/>}/>
           </Routes>
         <Footer/>
     </div>
