@@ -15,6 +15,7 @@ import CommitteePage from "./Pages/CommitteePage";
 import GalleryPage from './Pages/GalleryPage';
 import AboutPage from "./Pages/AboutPage";
 import Rules from './Pages/Rules';
+import RegistrationProcess from './MyComponents/RegistrationProcess';
 
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         <Logo/>
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="registration" element={<Registration/>}/>
+            <Route path="registration" element={<RegistrationProcess/>}/>
             <Route path="rules" element={<Rules/>}/>
             <Route path="committee" element={<CommitteePage/>}/>
             <Route path="gallery" element={<GalleryPage/>}/>
