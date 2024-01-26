@@ -7,14 +7,15 @@ import Alumni1 from "../Components/Alumni1";
 import AboutNcpc from "../OthersComponents/AboutNcpc";
 import Strategy from '../OthersComponents/Strategy';
 import TopMenu from "../Components/TopMenu";
-import Dates from "../Components/Dates";
+import EventDate from '../MyComponents/EventDate';
+
 
 function Home(props) {
     return (
         <Fragment>
             <TopMenu/>
             <TopBanner/>
-            <Dates/>
+            <EventDate/>
             <AboutSection/>
             <AboutNcpc/>
             <Alumni1/>

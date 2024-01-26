@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBell} from "@fortawesome/free-solid-svg-icons";
 import {Link} from "react-router-dom";
 import ReactPlayer from "react-player/youtube";
+import NoticeBoard from '../MyComponents/NoticeBoard';
 
 
 function AboutSection(props) {
@@ -32,7 +33,7 @@ function AboutSection(props) {
                     </p>
                 </Col>
                 <Col md={5} lg={3} sm={12} className="m-0 p-0" >
-                    <div className="noticeDivRight pb-2">
+                    {/* <div className="noticeDivRight pb-2">
                         <h3 className="noticeTitle p-3"><FontAwesomeIcon icon={faBell} beatFade size="l"/><span>     </span>Notice</h3>
                         <Link to="/rules">1. Registration Rules</Link>
                         <hr/>
@@ -42,6 +43,9 @@ function AboutSection(props) {
                         <hr/>
                         <Link to="/">4. Main Contest Date</Link>
                         <hr/>
+                    </div> */}
+                    <div>
+                        <NoticeBoard/>
                     </div>
                     <Carousel className='carouselVideo'>
                         <Carousel.Item>

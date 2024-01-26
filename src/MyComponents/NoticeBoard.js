@@ -7,7 +7,7 @@ const NoticeBoard = () => {
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     overflow: 'hidden',
     margin: '20px',
-    width: '350px',
+    width: '90%',
   };
 
   const headerCellStyle = {
