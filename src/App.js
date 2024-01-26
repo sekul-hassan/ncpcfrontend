@@ -16,6 +16,9 @@ import GalleryPage from './Pages/GalleryPage';
 import AboutPage from "./Pages/AboutPage";
 import Rules from './Pages/Rules';
 import RegistrationProcess from './MyComponents/RegistrationProcess';
+import TransportantionSchedule from './MyComponents/TransportantSchedule';
+import Accomodation from './MyComponents/Accomodation';
+import TeamStatus from './MyComponents/TeamStatus';
 
 
 function App() {
@@ -26,6 +29,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="registration" element={<RegistrationProcess/>}/>
+            <Route path='registration-process' element={<RegistrationProcess/>}/>
+            <Route path='transport' element={<TransportantionSchedule/>}/>
+            <Route path='accomodation' element={<Accomodation/>}/>
+            <Route path='status' element={<TeamStatus/>}/>
             <Route path="rules" element={<Rules/>}/>
             <Route path="committee" element={<CommitteePage/>}/>
             <Route path="gallery" element={<GalleryPage/>}/>

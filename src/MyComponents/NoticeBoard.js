@@ -6,7 +6,8 @@ const NoticeBoard = () => {
     borderRadius: '10px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     overflow: 'hidden',
-    margin: '20px',
+    marginLeft: '20px',
+    marginBottom: '20px',
     width: '90%',
   };
 
@@ -33,10 +34,10 @@ const NoticeBoard = () => {
 
   // Replace this array with your list of notices
   const notices = [
-    { id: 1, title: 'Registration Process', link: '/Home' },
-    { id: 2, title: 'Transporation Schedule', link: '/Home' },
-    { id: 3, title: 'Accomodation', link: '/Home' },
-    { id: 4, title: 'Team Status', link: '/Home' },
+    { id: 1, title: 'Registration Process', link: '/registration-process' },
+    { id: 2, title: 'Transporation Schedule', link: '/transport' },
+    { id: 3, title: 'Accomodation', link: '/accomodation' },
+    { id: 4, title: 'Team Status', link: '/status' },
     // Add more notices as needed
   ];
 
