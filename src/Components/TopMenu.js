@@ -2,7 +2,7 @@ import React, {Fragment, useEffect, useState} from 'react';
 import {Container,Nav, Navbar} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {noticeBar} from "./Context/WebConf";
-
+import NoticeBar from "../MyComponents/NoticeBar.js";
 
 function TopMenu() {
     const [isScroll,setIsScroll] = useState(false);
@@ -49,9 +49,7 @@ function TopMenu() {
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
-                <marquee>
-                    <span>{noticeBar}</span>
-                </marquee>
+                <NoticeBar text={noticeBar}/>
             </Container>
         </Fragment>
     );
