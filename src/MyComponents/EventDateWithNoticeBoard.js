@@ -49,6 +49,7 @@ const styles = {
     justifyContent: 'center',
     gap: '20px', // Adjust the gap between cards
     marginTop: '40px', // Add some top margin for spacing
+    flexWrap: 'wrap', // Allow cards to wrap on smaller screens
   },
 };
 
