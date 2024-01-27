@@ -8,14 +8,18 @@ import AboutNcpc from "../OthersComponents/AboutNcpc";
 import Strategy from '../OthersComponents/Strategy';
 import TopMenu from "../Components/TopMenu";
 import EventDate from '../MyComponents/EventDate';
-
+import ImageSlider from '../MyComponents/ImageSlider';
+import MyAboutSection from '../MyComponents/MyAboutSection';
+import ImageCard from '../MyComponents/ImageCard';
+import strategyImageSrc1 from '../Assets/Images/dept/coding.jpg'
+import EventDateWithNoticeBoard from '../MyComponents/EventDateWithNoticeBoard';
 
 function Home(props) {
     return (
         <Fragment>
             <TopMenu/>
             <TopBanner/>
-            <EventDate/>
+            <EventDateWithNoticeBoard/>
             <AboutSection/>
             <AboutNcpc/>
             <Alumni1/>

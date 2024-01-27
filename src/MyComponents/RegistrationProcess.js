@@ -23,18 +23,18 @@ function RegistrationProcess(props) {
             <TopMenu/>
             <Container fluid="true" className="p-3">
                 <Row className="text-center mx-0" style={{paddingBottom: '20px'}}>
-                    <CustomButton buttonText="NCPC 2023 REGISTRATION PROCESS" linksTo="#"/>
+                    <CustomButton buttonText="NCPC 2023 REGISTRATION PROCESS"/>
                 </Row>
                 
                 <div className="title" style={containerStyle}>
                     <ul>
-                        <CustomButton buttonText="Registration" linksTo="#"/>
+                        <CustomButton buttonText="Registration"/>
                         <ul style={ulStyle}>
                             <li>The registration procedure requires filling out the team and institute name, followed by information for the team members and their coach. </li>
                             <li>It is essential that the coach and all team members complete their registration in the NCPC Registration System before participating in the contest.</li>
                             <li>All team members must be enrolled in the same institution.  A contact at the team institution, typically a faculty member, must be designated and registered as the “team coach”. The team coach must certify the eligibility of contestants and be the official point-of-contact with the team before and during contest activities.  A team may only have one registered coach, and that coach cannot also be a contestant.</li>
                         </ul>
-                        <CustomButton buttonText="Payment" linksTo="#"/>
+                        <CustomButton buttonText="Payment"/>
                         <ul style={ulStyle}>
                             <li>A bKash marchant account will be provided for payment.</li>
                             <li>Registration will not be verified unless a team completes payment and provides payment  information, including the bKash Transaction ID.</li>

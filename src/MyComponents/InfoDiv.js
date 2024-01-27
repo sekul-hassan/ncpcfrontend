@@ -8,6 +8,7 @@ const InfoDiv = ({ info, gradient }) => {
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
     color: '#fff',
     textAlign: "center",
+    cursor: 'default',
     fontSize: "18px",
   };
 

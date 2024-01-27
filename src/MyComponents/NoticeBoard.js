@@ -1,30 +1,29 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 
 const NoticeBoard = () => {
-  const boardStyle = {
+    const boardStyle = {
     borderRadius: '10px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     overflow: 'hidden',
     marginLeft: '20px',
     marginBottom: '20px',
-    width: '90%',
+    width: "350px",
   };
 
   const headerCellStyle = {
-    background: 'linear-gradient(45deg, #1a237e 30%, #283593 90%)', // Updated Bluish gradient background
+    background: 'linear-gradient(45deg, #FF5252 30%, #FF1744 90%)',
     color: 'white',
     padding: '12px',
     textAlign: 'center',
     borderBottom: '1px solid #ddd',
-  };
+      };
 
   const bodyCellStyle = {
-    backgroundColor: 'white', // White background for body
+backgroundColor: 'white', // White background for body
     padding: '12px',
     textAlign: 'center',
     borderBottom: '1px solid #ddd',
-  };
+      };
 
   const linkStyle = {
     textDecoration: 'none', // Remove link underline

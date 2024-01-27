@@ -5,7 +5,7 @@ const NoticeBar = ({ text }) => {
     noticeBarContainer: {
       width: '100%',
       overflow: 'hidden',
-      background: 'linear-gradient(135deg, #FF8C00 0%, #FFA500 100%)', // Slightly darker orangish gradient
+      background: 'linear-gradient(45deg, #FF4081 30%, #FF9800 90%)', // Slightly darker orangish gradient
       padding: '5px', // Add some padding for better visibility
     },
     noticeBarText: {
