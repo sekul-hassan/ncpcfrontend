@@ -2,10 +2,22 @@ import React from 'react';
 import {Col, Container, Row} from "react-bootstrap";
 import logo_NCPC  from "../Assets/Images/ncpc_logo_transparent.png"
 function AboutNcpc() {
+    const headerStyles = {
+        background: 'linear-gradient(45deg, #FF4081 30%, #FF9800 90%)',
+    };
+
+    const containerStyles = {
+        background: "#fff",
+    };
+
+    const rowStyles = {
+        background: "#fff"
+    }
+
     return (
-       <Container fluid="true" className="text-center mx-3 aboutNcpc p-3">
-           <Row className="mx-0 aboutNcpcRow">
-               <h4 className="title pt-4 pb-5">ABOUT NCPC 2023</h4>
+       <Container fluid="true" className="text-center mx-3 aboutNcpc p-3" style={containerStyles}>
+           <Row className="mx-0 aboutNcpcRow" style={rowStyles}>
+               <h4 className="title pt-4 pb-5 text-white" style={headerStyles}>ABOUT NCPC 2023</h4>
                <Col md={12} lg={5} sm={12}>
                    <img src={logo_NCPC} className="aboutNcpcLogo" alt="aboutNcpc"/>
                </Col>
