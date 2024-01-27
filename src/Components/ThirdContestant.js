@@ -10,8 +10,9 @@ import {faPhone} from "@fortawesome/free-solid-svg-icons";
 import {faVenusMars} from "@fortawesome/free-solid-svg-icons";
 import {faShirt} from "@fortawesome/free-solid-svg-icons";
 import {faImage} from "@fortawesome/free-solid-svg-icons";
+import FormValidationAlert from "../MyComponents/FormValidataionAlert";
 
-function ThirdContestant({fourthCall,secondCall,inputChange}) {
+function ThirdContestant({fourthCall,secondCall,inputChange,thirdNext}) {
 
     const {data} = useContext(FormContext);
     return (
@@ -80,7 +81,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                         value={!data.thirdUserTShirt===""?"":data.thirdUserTShirt}
 
                     >
-                        <option value="0">Select</option>
+                        <option value="">Select</option>
                         <option value="s">S</option>
                         <option value="m">M</option>
                         <option value="l">L</option>
@@ -119,7 +120,14 @@ function ThirdContestant({fourthCall,secondCall,inputChange}) {
                         )
                     }
                 </Col>
-                <div className="d-flex">
+                {
+                    thirdNext && (
+                        <div className="mt-4">
+                            <FormValidationAlert info="Please fill out all the fields."/>
+                        </div>
+                    )
+                }
+                <div className="d-flex position-relative">
                     <Button className="backBtn" onClick={secondCall}>Back</Button>
                     <Button className="nextBtn2" onClick={fourthCall}>Next</Button>
                 </div>

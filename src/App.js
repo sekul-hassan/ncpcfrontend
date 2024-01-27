@@ -19,6 +19,7 @@ import RegistrationProcess from './MyComponents/RegistrationProcess';
 import TransportantionSchedule from './MyComponents/TransportantSchedule';
 import Accomodation from './MyComponents/Accomodation';
 import TeamStatus from './MyComponents/TeamStatus';
+import TestRegistration from "./Pages/TestRegistration";
 
 
 function App() {
@@ -37,6 +38,7 @@ function App() {
             <Route path="committee" element={<CommitteePage/>}/>
             <Route path="gallery" element={<GalleryPage/>}/>
             <Route path="about" element={<AboutPage/>}/>
+            <Route path="test" element={<Registration/>}/>
             <Route path="/*" element={<Home/>}/>
           </Routes>
         <Footer/>

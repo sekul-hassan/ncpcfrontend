@@ -11,7 +11,6 @@ function Registration(props) {
     const [third,setThird] = useState(false);
     const [fourth,setFourth] = useState(false);
 
-
     const [data,setData] = useState({
         teamName:"",
         instituteName:"",
@@ -51,10 +50,13 @@ function Registration(props) {
         transaction:""
     });
 
+
     return (
         <Fragment>
             <TopMenu/>
-           <h4 className='title text-center text-dark'>Registration starts soon.</h4>
+            <FormContext.Provider value={{data,setData,first,setFirst,second,setSecond,third,setThird,fourth,setFourth}}>
+                <RegiForm/>
+            </FormContext.Provider>
         </Fragment>
     );
 }

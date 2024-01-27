@@ -481,7 +481,6 @@ Button{
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-top: 1%;
 }
 .nextBtn2{
     position: absolute!important;
@@ -491,8 +490,7 @@ Button{
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
-    right: 16%!important;
-    margin-top: 1%;
+    right: 11px;
 }
 .supportImgJU{
     width:30%;

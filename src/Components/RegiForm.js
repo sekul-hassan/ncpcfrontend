@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import {Container} from "react-bootstrap";
 import FirstContestant from "./FirstContestant";
 import SecondContestant from "./SecondContestant";
@@ -7,8 +7,60 @@ import TeacherData from "./TeacherData";
 import axios from "axios";
 import FormContext from "./Context/FormContext";
 
+const validateFirstUser = (data) => {
+    if (data.teamName === "") return false;
+    if (data.instituteName === "") return false;
+    if (data.firstUserName === "") return false;
+    if (data.firstUserEmail === "") return false;
+    if (data.firstUserPhone === "") return false;
+    if (data.firstUserGender === "") return false;
+    if (data.firstUserTShirt === "") return false;
+    if (data.firstUserPhoto === null) return false;
+    return data.firstUserId !== null;
+
+}
+
+const validateSecondUser = (data) => {
+    if (data.secondUserName === "") return false;
+    if (data.secondUserEmail === "") return false;
+    if (data.secondUserPhone === "") return false;
+    if (data.secondUserGender === "") return false;
+    if (data.secondUserTShirt === "") return false;
+    if (data.secondUserPhoto === null) return false;
+    if (data.secondUserId === null) return false;
+    return true;
+}
+
+const validateThirdUser = (data) => {
+
+    if (data.thirdUserName === "") return false;
+    if (data.thirdUserEmail === "") return false;
+    if (data.thirdUserPhone === "") return false;
+    if (data.thirdUserGender === "") return false;
+    if (data.thirdUserTShirt === "") return false;
+    if (data.thirdUserPhoto === null) return false;
+    return data.thirdUserId !== null;
+
+}
+const validateCoachData = (data) => {
+
+    if (data.teacherName === "") return false;
+    if (data.teacherEmail === "") return false;
+    if (data.teacherPhone === "") return false;
+    if (data.teacherGender === "") return false;
+    if (data.teacherTShirt === "") return false;
+    if (data.teacherPhoto === null) return false;
+    return data.teacherId !== null;
+
+}
 
 function RegiForm() {
+
+    const [firstNext,setFirstNext] = useState(false);
+    const [secondNext,setSecondNext] = useState(false);
+    const [thirdNext,setThirdNext] = useState(false);
+    const [submit,setSubmit] = useState(false);
+
 
     const {data,setData,first,setFirst,second,setSecond,third,setThird,fourth,setFourth} = useContext(FormContext);
     
@@ -44,15 +96,9 @@ function RegiForm() {
 
     const postDataToBackend = (e) => {
         e.preventDefault();
-        
-        const emptyFields = Object.entries(data).filter(([key, value]) => {
-            return value === "" || value === null || value === undefined;
-        });
-
-        if (emptyFields.length > 0) {
-            const emptyFieldNames = emptyFields.map(([key, value]) => key).join(', ');
-            window.alert(`Please fill in the following fields: ${emptyFieldNames}`);
-            return;
+        setSubmit(true)
+        if (!validateCoachData(data)) {
+            return false;
         }
 
         const formData = new FormData();
@@ -74,24 +120,42 @@ function RegiForm() {
 
 
     const firstCall =()=>{
+        setFirstNext(false);
         setSecond(false);
         setFourth(false);
         setFirst(true);
         setThird(false);
     }
     const secondCall = ()=>{
+        setSecondNext(false);
+        setFirstNext(true);
+        if (!validateFirstUser(data)) {
+            return false;
+        }
         setSecond(true);
         setFourth(false);
         setFirst(false);
         setThird(false);
+        return true;
     }
     const thirdCall = ()=>{
+        setThirdNext(false)
+        setSecondNext(true);
+        if (!validateSecondUser(data)) {
+            return false;
+        }
+
         setSecond(false);
         setFourth(false);
         setFirst(false);
         setThird(true);
     }
     const fourthCall = ()=>{
+        setThirdNext(true);
+        setSubmit(false);
+        if (!validateThirdUser(data)) {
+            return false;
+        }
         setSecond(false);
         setFourth(true);
         setFirst(false);
@@ -108,16 +172,16 @@ function RegiForm() {
                </div>
                 <div className="responsiveRegi">
                     {
-                        !second && first && !third && !fourth?<FirstContestant secondCall={secondCall} inputChange={inputChange}/>:""
+                        !second && first && !third && !fourth?<FirstContestant secondCall={secondCall} inputChange={inputChange} firstNext={firstNext}/>:""
                     }
                     {
-                        second && !first && !third && !fourth?<SecondContestant firstCall={firstCall} thirdCall={thirdCall} inputChange={inputChange}/>:""
+                        second && !first && !third && !fourth?<SecondContestant firstCall={firstCall} thirdCall={thirdCall} inputChange={inputChange} secondNext={secondNext}/>:""
                     }
                     {
-                        third && !first && !second && !fourth?<ThirdContestant secondCall={secondCall} fourthCall={fourthCall} inputChange={inputChange}/>:""
+                        third && !first && !second && !fourth?<ThirdContestant secondCall={secondCall} fourthCall={fourthCall} inputChange={inputChange} thirdNext={thirdNext}/>:""
                     }
                     {
-                        !third && !first && !second && fourth?<TeacherData thirdCall={thirdCall} inputChange={inputChange} postDataToBackend={postDataToBackend}/>:""
+                        !third && !first && !second && fourth?<TeacherData thirdCall={thirdCall} inputChange={inputChange} postDataToBackend={postDataToBackend} submit={submit}/>:""
                     }
                 </div>
 

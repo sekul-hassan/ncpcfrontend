@@ -26,15 +26,6 @@
     border: 2px solid skyblue!important;   
 }
 
-.submitBtn{
-    color: white;
-    border: 1px solid black;
-    background-color: rgba(0, 0, 200, 0.4);
-    font-family: Montserrat, serif;
-    font-size: 20px;
-    font-weight: 700;
-}
-
 .nextBtn{
     margin-left:30%;
 }
@@ -92,7 +83,8 @@
 }
 .submitBtn:hover{
     background-color: darkgreen!important;
-    color:white;
+    color:white!important;
+    cursor: pointer!important;
 }
 .registrationTitleDiv{
     background-color: #1B182E;

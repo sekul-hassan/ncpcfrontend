@@ -13,7 +13,8 @@ import {faImage} from "@fortawesome/free-solid-svg-icons";
 import {faChalkboardUser} from "@fortawesome/free-solid-svg-icons";
 import bkash from "../Assets/Images/bkash.jpg";
 import {registrationOff} from "./Context/WebConf";
-function TeacherData({thirdCall,inputChange,postDataToBackend}) {
+import FormValidationAlert from "../MyComponents/FormValidataionAlert";
+function TeacherData({thirdCall,inputChange,postDataToBackend,submit}) {
 
     const {data} = useContext(FormContext);
     return (
@@ -96,7 +97,7 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
                         value={!data.teacherTShirt===""?"":data.teacherTShirt}
 
                     >
-                        <option value="0">Select</option>
+                        <option value="">Select</option>
                         <option value="s">S</option>
                         <option value="m">M</option>
                         <option value="l">L</option>
@@ -150,17 +151,26 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
                         value={!data.transaction===""?"":data.transaction}
                     />
                 </Col>
-                
+                {
+                    submit && (
+                        <div className="mt-4">
+                            <FormValidationAlert info="Please fill out all the fields."/>
+                        </div>
+                    )
+                }
                 <div className="d-flex">
                     <Button className="backBtn" onClick={thirdCall}>Back</Button>
                 </div>
 
                 <div className="text-center">
-                    <button className="submitBtn btn btn-success" onClick={postDataToBackend}
-                    style={data.transaction.length === 0? styles.disabledButton : styles.enabledButton}
-                    disabled={registrationOff}
-                    >
-                    Submit</button>
+                    <button
+                        className="submitBtn btn btn-success"
+                        onClick={postDataToBackend}
+                        style={data.transaction.length === 0? styles.disabledButton : styles.enabledButton}
+                        // disabled={registrationOff}
+                        >
+                        Submit
+                    </button>
                 </div>
             </Row>
         </Container>
@@ -170,8 +180,8 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
 export default TeacherData;
 
 const styles = {
-   
-    
+
+
     disabledButton: {
         backgroundColor: 'gray',
         border:'none',
@@ -183,7 +193,7 @@ const styles = {
         backgroundColor: 'green',
         color: 'white',
         cursor: 'pointer',
-        
+
     },
-    
+
 };
