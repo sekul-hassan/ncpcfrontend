@@ -34,8 +34,8 @@ backgroundColor: 'white', // White background for body
   // Replace this array with your list of notices
   const notices = [
     { id: 1, title: 'Registration Process', link: '/registration-process' },
-    { id: 2, title: 'Transporation Schedule', link: '/transport' },
-    { id: 3, title: 'Accomodation', link: '/accomodation' },
+    { id: 2, title: 'Transportation Schedule', link: '/transport' },
+    { id: 3, title: 'Accommodation', link: '/accomodation' },
     { id: 4, title: 'Team Status', link: '/status' },
     // Add more notices as needed
   ];
