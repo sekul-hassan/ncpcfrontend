@@ -14,14 +14,25 @@ function Alumni1(props) {
     const rowStyles = {
         background: 'linear-gradient(45deg, #8BC34A 30%, #CDDC39 90%)',
     }
+    
+    const headerFontStyle = {
+        fontFamily: "Montserrat",
+        fontSize: "20px",
+    }
+
+    const paraFontStyle = {
+        fontFamily: "Montserrat",
+        fontSize: "16px",
+        textAlign: "justify",
+    }
 
     return (
         <Fragment>
             <Container fluid="true" className='text-center p-3' style={containerStyles}>
                 <Row className="mx-0 aboutNcpcRow" style={rowStyles}>
                     <Col md={12} lg={6} sm={12} className="m-0 px-4 pt-5 alumniColumn">
-                        <h3 className="title">ALUMNI STORIES</h3>
-                        <p className="alumniDescription p-4">The Department of Computer Science and Engineering,Jahangirnagar University,has seen many brilliant contestants who excelled in programming contests, both nationally and internationally.These individuals have not just secured good positions but have also firmly stamped the department's and the university's name in the hall of fame within the tech world.</p>
+                        <h3 style={headerFontStyle}>ALUMNI STORIES</h3>
+                        <p className="p-4" style={paraFontStyle}>The Department of Computer Science and Engineering,Jahangirnagar University,has seen many brilliant contestants who excelled in programming contests, both nationally and internationally.These individuals have not just secured good positions but have also firmly stamped the department's and the university's name in the hall of fame within the tech world.</p>
                     </Col>
                     <Col md={12} lg={6} sm={12} className="noticeDivLeft mt-0 p-0">
                         <Carousel interval={6000} controls={false} >

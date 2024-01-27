@@ -14,6 +14,17 @@ function AboutNcpc() {
         background: "#fff"
     }
 
+    const headerFontStyle = {
+        fontFamily: "Montserrat",
+        fontSize: "20px",
+    }
+
+    const paraFontStyle = {
+        fontFamily: "Montserrat",
+        fontSize: "16px",
+        textAlign: "justify",
+    }
+
     return (
        <Container fluid="true" className="text-center mx-3 aboutNcpc p-3" style={containerStyles}>
            <Row className="mx-0 aboutNcpcRow" style={rowStyles}>
@@ -22,8 +33,8 @@ function AboutNcpc() {
                    <img src={logo_NCPC} className="aboutNcpcLogo" alt="aboutNcpc"/>
                </Col>
                <Col md={12} lg={7} sm={12}>
-                   <h4 className="title text-dark mt-5 mb-4">National Collegiate Programming Contest NCPC 2023</h4>
-                   <p className="alumniDescription">
+                   <h4 className="m-5" style={headerFontStyle}>National Collegiate Programming Contest NCPC 2023</h4>
+                   <p style={paraFontStyle}>
                    National Collegiate Programming Contest NCPC is a prestigious programming contest organized at national level for enhancing programming capacity and problem solving skills among the university students in Bangladesh. It was patronized by Bangladesh Computer Council(BCC) in 1998.Since its inception, this competition has effectively ignited a passion for programming among the country's aspiring coders. This year, the Department of Computer Science and Engineering, Jahangirnagar University, is set to host the event NCPC 2023. With participants from over 100 universities across Bangladesh, this event is expected to be an exciting and highly competitive coding challenge.
                   </p>
                </Col>
