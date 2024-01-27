@@ -1,0 +1,12 @@
+
+.notice-link {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+  }
+  
+ 
+  .notice-link:hover {
+    color: #e95959!important; 
+  }
+  
