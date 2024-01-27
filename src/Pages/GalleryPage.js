@@ -11,7 +11,6 @@ function GalleryPage(props) {
     return (
         <Fragment>
             <TopMenu/>
-            <GalleryTop/>
             <Gallery/>
         </Fragment>
     );

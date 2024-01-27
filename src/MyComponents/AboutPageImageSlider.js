@@ -3,8 +3,8 @@ import { Container, Row } from 'react-bootstrap';
 
 import Slider from 'react-slick';
 
-function Gallery() {
-    const images = require.context('../Assets/Images/GallerySlider', true);
+function AboutPageImageSlider() {
+    const images = require.context("../Assets/Images/about_images", true);
     const imageUrls = images.keys().map((image) => images(image));
 
     const settings = {
@@ -97,4 +97,4 @@ function Gallery() {
     );
 }
 
-export default Gallery;
+export default AboutPageImageSlider;
