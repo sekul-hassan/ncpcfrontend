@@ -2,7 +2,7 @@ import React, {Fragment, useEffect, useState} from 'react';
 import {Container,Nav, Navbar} from "react-bootstrap";
 import {Link} from "react-router-dom";
 import {noticeBar} from "./Context/WebConf";
-
+import NoticeBar from "../MyComponents/NoticeBar.js";
 
 function TopMenu() {
     const [isScroll,setIsScroll] = useState(false);
@@ -44,14 +44,12 @@ function TopMenu() {
                             <Nav.Link><Link to="/" className={css.navLink}>Home</Link></Nav.Link>
                             <Nav.Link><Link to="/about" className={css.navLink}>About</Link></Nav.Link>
                             <Nav.Link><Link to="/registration" className={css.navLink}>Registration</Link></Nav.Link>
-                            <Nav.Link><Link to="/committee" className={css.navLink}>Committee</Link></Nav.Link>
+                            {/* <Nav.Link><Link to="/committee" className={css.navLink}>Committee</Link></Nav.Link> */}
                             <Nav.Link><Link to="/gallery" className={css.navLink}>Gallery</Link></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Navbar>
-                <marquee>
-                    <span>{noticeBar}</span>
-                </marquee>
+                <NoticeBar text={noticeBar}/>
             </Container>
         </Fragment>
     );

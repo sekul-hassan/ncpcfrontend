@@ -4,7 +4,7 @@ const currentEvent = {
     "date": "2024-02-01"
 }
 
-const noticeBar = "*** Welcome to JU NCPC 2023 ***"
+const noticeBar = "Welcome to JU NCPC 2023, Organized by Department of Computer Science and Engineering."
 
 
 const event1 = {
