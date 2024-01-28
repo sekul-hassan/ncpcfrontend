@@ -587,3 +587,19 @@ Button{
     transition: 0.3s;
     cursor: pointer;
 }
+.successBackground {
+    background-size: cover;
+    background: url("../Images/banner.png") no-repeat;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.successContent {
+    text-align: center;
+    z-index: 1;
+}
+

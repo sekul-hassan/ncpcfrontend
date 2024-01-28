@@ -20,6 +20,7 @@ import TransportantionSchedule from './MyComponents/TransportantSchedule';
 import Accomodation from './MyComponents/Accomodation';
 import TeamStatus from './MyComponents/TeamStatus';
 import TestRegistration from "./Pages/TestRegistration";
+import RegiSuccess from "./MyComponents/RegiSuccess";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
             <Route path="gallery" element={<GalleryPage/>}/>
             <Route path="about" element={<AboutPage/>}/>
             <Route path="test" element={<Registration/>}/>
+            <Route path="regiSuccess" element={<RegiSuccess/>}/>
             <Route path="/*" element={<Home/>}/>
           </Routes>
         <Footer/>

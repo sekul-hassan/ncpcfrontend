@@ -15,8 +15,10 @@ import bkash from "../Assets/Images/bkash.jpg";
 import {registrationOff} from "./Context/WebConf";
 import FormValidationAlert from "../MyComponents/FormValidataionAlert";
 import FormSuccessAlert from "../MyComponents/FormSuccessAlert";
+import {useNavigate} from "react-router-dom";
 function TeacherData({thirdCall,inputChange,postDataToBackend,submit,success,response}) {
 
+    const navigate = useNavigate();
     const {data} = useContext(FormContext);
     return (
         <Container fluid="true" className="firstContestant mt-5">
@@ -167,7 +169,13 @@ function TeacherData({thirdCall,inputChange,postDataToBackend,submit,success,res
                 {
                     success && response!=null && (
                         <div className="mt-4">
-                            <FormSuccessAlert message={response}/>
+                            {
+                                response==="Registration success"?(
+                                    <navigate to="regiSuccess"/>
+                                ):(
+                                    <FormSuccessAlert message={response}/>
+                                )
+                            }
                         </div>
                     )
                 }

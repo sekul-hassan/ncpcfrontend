@@ -6,6 +6,8 @@ import ThirdContestant from "./ThirdContestant";
 import TeacherData from "./TeacherData";
 import axios from "axios";
 import FormContext from "./Context/FormContext";
+import {useNavigate} from "react-router-dom";
+
 
 const validateFirstUser = (data) => {
     if (data.teamName === "") return false;
@@ -27,8 +29,8 @@ const validateSecondUser = (data) => {
     if (data.secondUserGender === "") return false;
     if (data.secondUserTShirt === "") return false;
     if (data.secondUserPhoto === null) return false;
-    if (data.secondUserId === null) return false;
-    return true;
+    return data.secondUserId !== null;
+
 }
 
 const validateThirdUser = (data) => {
@@ -55,6 +57,7 @@ const validateCoachData = (data) => {
 }
 
 function RegiForm() {
+
 
     const [firstNext,setFirstNext] = useState(false);
     const [secondNext,setSecondNext] = useState(false);
@@ -96,6 +99,8 @@ function RegiForm() {
         }
     };
 
+
+
     const postDataToBackend = (e) => {
         e.preventDefault();
         setSubmit(true)
@@ -116,6 +121,7 @@ function RegiForm() {
                 setResponse(response.data);
                 setSuccess(true);
                 setSubmit(false);
+                console.log(response.data);
             })
             .catch(error => {
                 setSubmit(true);
