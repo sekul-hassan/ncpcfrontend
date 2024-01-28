@@ -11,19 +11,13 @@ import {faShirt} from "@fortawesome/free-solid-svg-icons";
 import {faIdCardClip} from "@fortawesome/free-solid-svg-icons";
 import {faImage} from "@fortawesome/free-solid-svg-icons";
 import {faChalkboardUser} from "@fortawesome/free-solid-svg-icons";
-import bkash from "../Assets/Images/bkash.jpg";
-import {registrationOff} from "./Context/WebConf";
 import FormValidationAlert from "../MyComponents/FormValidataionAlert";
 import FormSuccessAlert from "../MyComponents/FormSuccessAlert";
-import {useNavigate} from "react-router-dom";
 function TeacherData({thirdCall,inputChange,postDataToBackend,submit,success,response}) {
-
-    const navigate = useNavigate();
     const {data} = useContext(FormContext);
     return (
-        <Container fluid="true" className="firstContestant mt-5">
-            <hr/>
-            <h4 className="title mt-5 mb-4"><FontAwesomeIcon icon={faChalkboardUser} />   Coach Info</h4>
+        <Container fluid="true" className="firstContestant mt-4">
+            <h4 className="title"><FontAwesomeIcon icon={faChalkboardUser} /> Coach Info</h4>
             <hr/>
             <Row className="mx-0">
                 <Col>
@@ -156,7 +150,7 @@ function TeacherData({thirdCall,inputChange,postDataToBackend,submit,success,res
                 </Col>
                 {
                     submit && !response && success && (
-                        <p>loading....</p>
+                        <FormValidationAlert info="Loading..." gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
                     )
                 }
                 {
@@ -167,15 +161,16 @@ function TeacherData({thirdCall,inputChange,postDataToBackend,submit,success,res
                     )
                 }
                 {
-                    success && response!=null && (
+                    success && response==="Team already exist please change your team name" && (
                         <div className="mt-4">
-                            {
-                                response==="Registration success"?(
-                                    <navigate to="regiSuccess"/>
-                                ):(
-                                    <FormSuccessAlert message={response}/>
-                                )
-                            }
+                            <FormValidationAlert info={response}/>
+                        </div>
+                    )
+                }
+                {
+                    success && response==="Registration Successful" && (
+                        <div className="mt-4">
+                            <FormSuccessAlert info={response}/>
                         </div>
                     )
                 }

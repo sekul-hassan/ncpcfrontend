@@ -14,12 +14,10 @@ import Logo from "./Components/Logo";
 import CommitteePage from "./Pages/CommitteePage";
 import GalleryPage from './Pages/GalleryPage';
 import AboutPage from "./Pages/AboutPage";
-import Rules from './Pages/Rules';
 import RegistrationProcess from './MyComponents/RegistrationProcess';
 import TransportantionSchedule from './MyComponents/TransportantSchedule';
 import Accomodation from './MyComponents/Accomodation';
 import TeamStatus from './MyComponents/TeamStatus';
-import TestRegistration from "./Pages/TestRegistration";
 import RegiSuccess from "./MyComponents/RegiSuccess";
 
 
@@ -40,7 +38,7 @@ function App() {
             <Route path="gallery" element={<GalleryPage/>}/>
             <Route path="about" element={<AboutPage/>}/>
             <Route path="test" element={<Registration/>}/>
-            <Route path="regiSuccess" element={<RegiSuccess/>}/>
+            <Route path="regi-success" element={<RegiSuccess/>}/>
             <Route path="/*" element={<Home/>}/>
           </Routes>
         <Footer/>

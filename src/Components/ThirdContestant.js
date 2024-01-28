@@ -16,13 +16,12 @@ function ThirdContestant({fourthCall,secondCall,inputChange,thirdNext}) {
 
     const {data} = useContext(FormContext);
     return (
-        <Container fluid="true" className="firstContestant mt-5 px-3">
+        <Container fluid="true" className="firstContestant mt-4 px-1">
+            <h4 className="title mb-4"><FontAwesomeIcon icon={faUser} /> Team Member-3</h4>
             <hr/>
-            <h4 className="title mb-4"><FontAwesomeIcon icon={faUser} />    Team Member-3</h4>
-            <hr/>
-            <Row className="px-0">
+            <Row className="mx-0">
                 <Col>
-                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} />   Name</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Name</label>
                     <input
                         type="text"
                         placeholder="Name "

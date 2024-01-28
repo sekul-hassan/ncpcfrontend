@@ -18,7 +18,6 @@ function SecondContestant({thirdCall,firstCall,inputChange,secondNext}) {
 
     return (
         <Container fluid="true" className="firstContestant mt-4 px-1">
-            <hr/>
             <h4 className="title mb-4"><FontAwesomeIcon icon={faUser} />    Team Member-2</h4>
             <hr/>
             <Row className="mx-0">
