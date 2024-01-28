@@ -1,10 +1,10 @@
 import React from 'react';
 
-const FormValidationAlert = ({ info, gradient }) => {
+function FormSuccessAlert({message}) {
     const infoStyle = {
         padding: "10px",
         borderRadius: '5px',
-        background: 'linear-gradient(to right, #ffcc00, #ff6699)',
+        background: 'linear-gradient(to right, #4CAF50, #2196F3)',
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
         color: '#fff',
         textAlign: "center",
@@ -15,9 +15,9 @@ const FormValidationAlert = ({ info, gradient }) => {
 
     return (
         <div className='text-white' style={infoStyle}>
-            {info}
+            {message}
         </div>
     );
 };
 
-export default FormValidationAlert;
+export default FormSuccessAlert;

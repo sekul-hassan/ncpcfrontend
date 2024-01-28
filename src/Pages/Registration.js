@@ -47,7 +47,7 @@ function Registration(props) {
         teacherTShirt:"",
         teacherId:null,
         teacherPhoto:null,
-        transaction:""
+        transaction:"abc"
     });
 
 

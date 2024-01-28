@@ -14,7 +14,8 @@ import {faChalkboardUser} from "@fortawesome/free-solid-svg-icons";
 import bkash from "../Assets/Images/bkash.jpg";
 import {registrationOff} from "./Context/WebConf";
 import FormValidationAlert from "../MyComponents/FormValidataionAlert";
-function TeacherData({thirdCall,inputChange,postDataToBackend,submit}) {
+import FormSuccessAlert from "../MyComponents/FormSuccessAlert";
+function TeacherData({thirdCall,inputChange,postDataToBackend,submit,success,response}) {
 
     const {data} = useContext(FormContext);
     return (
@@ -136,25 +137,37 @@ function TeacherData({thirdCall,inputChange,postDataToBackend,submit}) {
                         )
                     }
                     
-                    <h3 className="text-center">Payment</h3>
-                    <div className="d-flex justify-content-center">
-                        <a href="https://www.bkash.com/" target="blank"><img className="PaymentImg" src={bkash} alt=""/></a>
-                    <br/>
-                    </div>
-                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Transaction ID:</label>
-                    <input
-                        type="text"
-                        placeholder="bKash TransactionID"
-                        className="form-control"
-                        name="transaction"
-                        onChange={inputChange}
-                        value={!data.transaction===""?"":data.transaction}
-                    />
+                    {/*<h3 className="text-center">Payment</h3>*/}
+                    {/*<div className="d-flex justify-content-center">*/}
+                    {/*    <a href="https://www.bkash.com/" target="blank"><img className="PaymentImg" src={bkash} alt=""/></a>*/}
+                    {/*<br/>*/}
+                    {/*</div>*/}
+                    {/*<label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Transaction ID:</label>*/}
+                    {/*<input*/}
+                    {/*    type="text"*/}
+                    {/*    placeholder="bKash TransactionID"*/}
+                    {/*    className="form-control"*/}
+                    {/*    name="transaction"*/}
+                    {/*    onChange={inputChange}*/}
+                    {/*    value={!data.transaction===""?"":data.transaction}*/}
+                    {/*/>*/}
                 </Col>
                 {
-                    submit && (
+                    submit && !response && success && (
+                        <p>loading....</p>
+                    )
+                }
+                {
+                    submit && !response && !success && (
                         <div className="mt-4">
                             <FormValidationAlert info="Please fill out all the fields."/>
+                        </div>
+                    )
+                }
+                {
+                    success && response!=null && (
+                        <div className="mt-4">
+                            <FormSuccessAlert message={response}/>
                         </div>
                     )
                 }
@@ -166,7 +179,6 @@ function TeacherData({thirdCall,inputChange,postDataToBackend,submit}) {
                     <button
                         className="submitBtn btn btn-success"
                         onClick={postDataToBackend}
-                        style={data.transaction.length === 0? styles.disabledButton : styles.enabledButton}
                         // disabled={registrationOff}
                         >
                         Submit
@@ -179,21 +191,3 @@ function TeacherData({thirdCall,inputChange,postDataToBackend,submit}) {
 
 export default TeacherData;
 
-const styles = {
-
-
-    disabledButton: {
-        backgroundColor: 'gray',
-        border:'none',
-        color: 'white',
-        cursor: 'not-allowed',
-        boxShadow: "0px 0px 10px 0px grey",
-    },
-    enabledButton: {
-        backgroundColor: 'green',
-        color: 'white',
-        cursor: 'pointer',
-
-    },
-
-};

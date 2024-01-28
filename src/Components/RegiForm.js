@@ -60,6 +60,8 @@ function RegiForm() {
     const [secondNext,setSecondNext] = useState(false);
     const [thirdNext,setThirdNext] = useState(false);
     const [submit,setSubmit] = useState(false);
+    const [success,setSuccess] = useState(false);
+    const [response,setResponse] = useState(null);
 
 
     const {data,setData,first,setFirst,second,setSecond,third,setThird,fourth,setFourth} = useContext(FormContext);
@@ -97,6 +99,7 @@ function RegiForm() {
     const postDataToBackend = (e) => {
         e.preventDefault();
         setSubmit(true)
+
         if (!validateCoachData(data)) {
             return false;
         }
@@ -109,10 +112,15 @@ function RegiForm() {
         axios.post('https://pc.cse.juniv.edu/api/addUser', formData)
 
             .then(response => {
-                 console.log(response.data);
-                 window.alert(response.data);
+
+                setResponse(response.data);
+                setSuccess(true);
+                setSubmit(false);
             })
             .catch(error => {
+                setSubmit(true);
+                setSuccess(false);
+                setResponse("Some problem occur\nPlease Contact Developer team");
                 window.alert("Some problem occur\nPlease Contact Developer team");
             });
 
@@ -152,7 +160,9 @@ function RegiForm() {
     }
     const fourthCall = ()=>{
         setThirdNext(true);
+        setResponse(null)
         setSubmit(false);
+
         if (!validateThirdUser(data)) {
             return false;
         }
@@ -181,7 +191,7 @@ function RegiForm() {
                         third && !first && !second && !fourth?<ThirdContestant secondCall={secondCall} fourthCall={fourthCall} inputChange={inputChange} thirdNext={thirdNext}/>:""
                     }
                     {
-                        !third && !first && !second && fourth?<TeacherData thirdCall={thirdCall} inputChange={inputChange} postDataToBackend={postDataToBackend} submit={submit}/>:""
+                        !third && !first && !second && fourth?<TeacherData thirdCall={thirdCall} inputChange={inputChange} postDataToBackend={postDataToBackend} submit={submit} success={success} response={response}/>:""
                     }
                 </div>
 
