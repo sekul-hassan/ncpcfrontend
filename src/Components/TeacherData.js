@@ -161,14 +161,14 @@ function TeacherData({thirdCall,inputChange,postDataToBackend,submit,success,res
                     )
                 }
                 {
-                    success && response==="Team already exist please change your team name" && (
+                    submit && success && response==="Team already exist please change your team name" && (
                         <div className="mt-4">
                             <FormValidationAlert info={response}/>
                         </div>
                     )
                 }
                 {
-                    success && response==="Registration Successful" && (
+                    submit && success && response==="Registration Successful" && (
                         <div className="mt-4">
                             <FormSuccessAlert info={response}/>
                         </div>

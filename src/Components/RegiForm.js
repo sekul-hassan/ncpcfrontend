@@ -45,13 +45,13 @@ const validateThirdUser = (data) => {
 
 }
 const validateCoachData = (data) => {
-
     if (data.teacherName === "") return false;
     if (data.teacherEmail === "") return false;
     if (data.teacherPhone === "") return false;
     if (data.teacherGender === "") return false;
     if (data.teacherTShirt === "") return false;
     if (data.teacherPhoto === null) return false;
+    if (data.teacherDesignation === "") return false;
     return data.teacherId !== null;
 
 }
@@ -106,6 +106,8 @@ function RegiForm() {
         setSubmit(true)
 
         if (!validateCoachData(data)) {
+            setSuccess(false)
+            setResponse(null)
             return false;
         }
 
