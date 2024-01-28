@@ -6,11 +6,10 @@ import NoticeBoard from './NoticeBoard';
 const styles = {
   card: {
     width: '350px',
-    height: '200px',
+    height: '268px',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     overflow: 'hidden',
-    marginTop: "30px",
     transition: 'transform 0.3s ease-in-out',
     cursor: 'default',
     '&:hover': {

@@ -6,6 +6,8 @@ import ThirdContestant from "./ThirdContestant";
 import TeacherData from "./TeacherData";
 import axios from "axios";
 import FormContext from "./Context/FormContext";
+import {useNavigate} from "react-router-dom";
+
 
 const validateFirstUser = (data) => {
     if (data.teamName === "") return false;
@@ -27,8 +29,8 @@ const validateSecondUser = (data) => {
     if (data.secondUserGender === "") return false;
     if (data.secondUserTShirt === "") return false;
     if (data.secondUserPhoto === null) return false;
-    if (data.secondUserId === null) return false;
-    return true;
+    return data.secondUserId !== null;
+
 }
 
 const validateThirdUser = (data) => {
@@ -43,24 +45,25 @@ const validateThirdUser = (data) => {
 
 }
 const validateCoachData = (data) => {
-
     if (data.teacherName === "") return false;
     if (data.teacherEmail === "") return false;
     if (data.teacherPhone === "") return false;
     if (data.teacherGender === "") return false;
     if (data.teacherTShirt === "") return false;
     if (data.teacherPhoto === null) return false;
+    if (data.teacherDesignation === "") return false;
     return data.teacherId !== null;
 
 }
 
 function RegiForm() {
 
+
     const [firstNext,setFirstNext] = useState(false);
     const [secondNext,setSecondNext] = useState(false);
     const [thirdNext,setThirdNext] = useState(false);
-    const [submit,setSubmit] = useState(false);
-    const [success,setSuccess] = useState(false);
+    const [valid,setValid] = useState(false);
+    const [submit, setSubmit] = useState(false)
     const [response,setResponse] = useState(null);
 
 
@@ -96,13 +99,21 @@ function RegiForm() {
         }
     };
 
+
+
     const postDataToBackend = (e) => {
         e.preventDefault();
-        setSubmit(true)
+
+        setResponse(null)
+        setValid(true);
+        setSubmit(true);
 
         if (!validateCoachData(data)) {
+            setValid(false)
             return false;
         }
+
+
 
         const formData = new FormData();
         Object.entries(data).forEach(([key, value]) => {
@@ -110,18 +121,12 @@ function RegiForm() {
         });
 
         axios.post('https://pc.cse.juniv.edu/api/addUser', formData)
-
             .then(response => {
-
                 setResponse(response.data);
-                setSuccess(true);
-                setSubmit(false);
+                console.log(response.data);
             })
             .catch(error => {
-                setSubmit(true);
-                setSuccess(false);
-                setResponse("Some problem occur\nPlease Contact Developer team");
-                window.alert("Some problem occur\nPlease Contact Developer team");
+                setResponse("Some problem occurred.");
             });
 
     };
@@ -161,7 +166,6 @@ function RegiForm() {
     const fourthCall = ()=>{
         setThirdNext(true);
         setResponse(null)
-        setSubmit(false);
 
         if (!validateThirdUser(data)) {
             return false;
@@ -191,7 +195,7 @@ function RegiForm() {
                         third && !first && !second && !fourth?<ThirdContestant secondCall={secondCall} fourthCall={fourthCall} inputChange={inputChange} thirdNext={thirdNext}/>:""
                     }
                     {
-                        !third && !first && !second && fourth?<TeacherData thirdCall={thirdCall} inputChange={inputChange} postDataToBackend={postDataToBackend} submit={submit} success={success} response={response}/>:""
+                        !third && !first && !second && fourth?<TeacherData thirdCall={thirdCall} inputChange={inputChange} postDataToBackend={postDataToBackend} submit={submit} valid={valid} response={response}/>:""
                     }
                 </div>
 

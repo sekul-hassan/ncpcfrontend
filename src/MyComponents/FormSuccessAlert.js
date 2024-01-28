@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FormSuccessAlert({message}) {
+function FormSuccessAlert({info}) {
     const infoStyle = {
         padding: "10px",
         borderRadius: '5px',
@@ -9,13 +9,13 @@ function FormSuccessAlert({message}) {
         color: '#fff',
         textAlign: "center",
         cursor: 'default',
-        fontSize: "12px",
+        fontSize: "16px",
         fontFamily: 'Montserrat',
     };
 
     return (
         <div className='text-white' style={infoStyle}>
-            {message}
+            {info}
         </div>
     );
 };

@@ -63,7 +63,6 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
                 </Col>
             </Row>
 
-            <hr/>
             <h4 className="title mb-4"><FontAwesomeIcon icon={faUser} /> Team Member-1</h4>
             <hr/>
             <Row className="mx-0">
