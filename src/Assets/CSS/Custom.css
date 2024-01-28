@@ -1,589 +1,623 @@
-.topBanner{
-    background-color: #19206b;
+.topBanner {
+  background-color: #19206b;
 }
-.navBar{
-    max-width: 100%;
-    height: 60px;
-    background: linear-gradient(45deg, #1a237e 30%, #283593 90%);
-    transition: 0.5s;
+.navBar {
+  max-width: 100%;
+  height: 60px;
+  background: linear-gradient(45deg, #1a237e 30%, #283593 90%);
+  transition: 0.5s;
 }
-.nav{
-    margin-top: -18px;
+.nav {
+  margin-top: -18px;
 }
-.navLink{
-    color: rgb(219, 219, 219)!important;
-    font-family: Roboto,serif!important;
-    font-size: 18px!important;
-    font-weight: 400!important;
-    text-decoration: none;
-    transition: 0.3s;
-    padding-top: 0;
+.navLink {
+  color: rgb(219, 219, 219) !important;
+  font-family: Roboto, serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  text-decoration: none;
+  transition: 0.3s;
+  padding-top: 0;
+  padding: 18px;
 }
-.navBarScroll{
-    position: fixed !important;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    height: 60px;
-    background-color: #ffffff !important;
-    transition: 0.5s;
+.navBarScroll {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 60px;
+  background-color: #ffffff !important;
+  transition: 0.5s;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-.navLinkScroll{
-    color: rgb(0,0,0,1)!important;
-    font-family: Roboto,serif;
-    font-size: 18px!important;
-    font-weight: 400!important;
-    text-decoration: none;
-    transition: 0.3s;
+.navLinkScroll {
+  color: rgb(0, 0, 0, 1) !important;
+  font-family: Roboto, serif;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 18px;
 }
-.navLink:hover{
-    color:white !important;
-    background-color: #19206b!important;
-    padding: 18px;
+.navLink:hover {
+  color: white !important;
+  background-color: rgb(65, 78, 216) !important;
 }
-.navLinkScroll:hover{
-    color:white!important;
-    background-color: rgba(27, 24, 46, 0.8) !important;
-    padding: 20px 18px 18px 18px;
+.navlink.active {
+  color: white !important;
+  background-color: rgb(65, 78, 216) !important;
 }
-.logoImg{
-    width: 100px;
-    height: 60px;
-    padding: 0;
+.navLinkScroll:hover {
+  color: white !important;
+  background-color: rgba(27, 24, 46, 0.8) !important;
+  padding: 20px 18px 18px 18px;
 }
-.carouselImg{
-    width: 100%;
-    height: 550px;
+.logoImg {
+  width: 100px;
+  height: 60px;
+  padding: 0;
 }
-.logoContainer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.carouselImg {
+  width: 100%;
+  height: 550px;
 }
-
-.logoLeftDivImg{
-    width: 100%;
-    max-width: 90px;
-    padding: 10px;
-    height: 70px;
-    margin-left: 30px;
-}
-.cseLogo{
-    width: 100%;
-    height: 70px;
-    max-width: 270px;
-    padding: 10px;
-}
-.logoRightDiv img{
-    width: 100%;
-    height: 70px;
-    max-width: 100px;
-    padding: 10px;
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.logoRightDiv{
-    display: flex;
-    justify-content: right;
-    margin-right: 30px;
+.logoLeftDivImg {
+  width: 100%;
+  max-width: 90px;
+  padding: 10px;
+  height: 70px;
+  margin-left: 30px;
 }
-.bannerRight{
-    width: 28%;
-    height: auto;
-    background:#010f29;
-    text-align: center;
-    border:1px solid rgb(97, 94, 94);
-    padding-left:1.5%;
-    padding-right: 1.5%;
-    color:rgb(254, 251, 251);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.cseLogo {
+  width: 100%;
+  height: 70px;
+  max-width: 270px;
+  padding: 10px;
 }
-.bannerRight img{
-    width:99%;
-    height:auto;
+.logoRightDiv img {
+  width: 100%;
+  height: 70px;
+  max-width: 100px;
+  padding: 10px;
 }
-.bannerRight h3{
-    font-weight: 500!important;
-    letter-spacing: 1PX;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+.logoRightDiv {
+  display: flex;
+  justify-content: right;
+  margin-right: 30px;
+}
+.bannerRight {
+  width: 28%;
+  height: auto;
+  background: #010f29;
+  text-align: center;
+  border: 1px solid rgb(97, 94, 94);
+  padding-left: 1.5%;
+  padding-right: 1.5%;
+  color: rgb(254, 251, 251);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bannerRight img {
+  width: 99%;
+  height: auto;
+}
+.bannerRight h3 {
+  font-weight: 500 !important;
+  letter-spacing: 1px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .buttonBanner {
-    width:45% !important;
-    height: 95% !important;
-    margin-top: 0 !important;;
-    padding: 0!important;
-    font-size: small;
-    margin-bottom: 5%!important;
+  width: 45% !important;
+  height: 95% !important;
+  margin-top: 0 !important;
+  padding: 0 !important;
+  font-size: small;
+  margin-bottom: 5% !important;
 }
-.cardImg{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+.cardImg {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
-.card{
-    height: 380px!important;
-    border-radius: 0!important;
-    text-align: center;
-    background-color: white!important;
+.card {
+  height: 380px !important;
+  border-radius: 0 !important;
+  text-align: center;
+  background-color: white !important;
 }
-.contactBtn{
-    background:#010f29!important;
-    border: 1px solid rgb(188, 188, 188)!important;
-    color: rgb(210, 203, 203)!important;
-    font-size: 18px!important;
-    font-family: Oswald, serif!important;
-    font-weight: 500!important;
-    border-radius:2%!important;
+.contactBtn {
+  background: #010f29 !important;
+  border: 1px solid rgb(188, 188, 188) !important;
+  color: rgb(210, 203, 203) !important;
+  font-size: 18px !important;
+  font-family: Oswald, serif !important;
+  font-weight: 500 !important;
+  border-radius: 2% !important;
 }
-.contactBtn:hover{
-    border: 1px solid rgb(214, 213, 213)!important;
-    background-color: rgb(214, 213, 213)!important;
-    color: black !important;
+.contactBtn:hover {
+  border: 1px solid rgb(214, 213, 213) !important;
+  background-color: rgb(214, 213, 213) !important;
+  color: black !important;
 }
-Button{
-    font-family: Montserrat, serif!important;  
+Button {
+  font-family: Montserrat, serif !important;
 }
-.choyonSir{
-    width: 100% !important;
-    height: 300px!important;
+.choyonSir {
+  width: 100% !important;
+  height: 300px !important;
 }
-.choyonSirWidth{
-    height: 300px!important;
-    transition: 0.5s;
+.choyonSirWidth {
+  height: 300px !important;
+  transition: 0.5s;
 }
-.choyonSir:hover{
-    box-shadow: -2px 1px 12px 1px rgba(64,105,135,0.75);
-    -webkit-box-shadow: -2px 1px 12px 1px rgba(64,105,135,0.75);
-    -moz-box-shadow: -2px 1px 12px 1px rgba(64,105,135,0.75);
-    transition: 0.3s;
-    cursor: pointer;
+.choyonSir:hover {
+  box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  -moz-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  transition: 0.3s;
+  cursor: pointer;
 }
-.choyonSirWidth:hover{
-    box-shadow: -2px 1px 12px 1px rgba(64,105,135,0.75);
-    -webkit-box-shadow: -2px 1px 12px 1px rgba(64,105,135,0.75);
-    -moz-box-shadow: -2px 1px 12px 1px rgba(64,105,135,0.75);
-    transition: 0.3s;
-    cursor: pointer;
+.choyonSirWidth:hover {
+  box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  -moz-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  transition: 0.3s;
+  cursor: pointer;
 }
-.teacherDescription{
-    font-size: 14px;
-    display: none;
+.teacherDescription {
+  font-size: 14px;
+  display: none;
 }
-.teacherDescriptionShow{
-    font-size: 14px;
-    font-family: Roboto, serif;
-    font-weight: 300;
-    color: rgba(0,0,0,0.7);
-    display: block;
-    text-align: justify!important;
+.teacherDescriptionShow {
+  font-size: 14px;
+  font-family: Roboto, serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.7);
+  display: block;
+  text-align: justify !important;
 }
-.footer{
-    background-color: #282c34!important;
-    border-radius: 0!important;
+.footer {
+  background-color: #282c34 !important;
+  border-radius: 0 !important;
 }
-.title{
-    font-size: 19px!important;
-    color: #1b182e!important;
-    font-family: Montserrat, serif;
-    font-weight: 500;
+.title {
+  font-size: 19px !important;
+  color: #1b182e !important;
+  font-family: Montserrat, serif;
+  font-weight: 500;
 }
-.cardTitle{
-    font-size: 16px!important;
-    font-family: Montserrat, serif!important;
-    font-weight: 500;
+.cardTitle {
+  font-size: 16px !important;
+  font-family: Montserrat, serif !important;
+  font-weight: 500;
 }
-.titleSponsor{
-    font-size: 21px!important;
-    font-weight: 500!important;
-    font-family:Montserrat, serif!important;
+.titleSponsor {
+  font-size: 21px !important;
+  font-weight: 500 !important;
+  font-family: Montserrat, serif !important;
 }
-.description{
-    font-size: 16px;
-    font-family: Montserrat, serif;
-    font-weight: 500;
-    color: rgba(0,0,0,0.7);
+.description {
+  font-size: 16px;
+  font-family: Montserrat, serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.7);
 }
-.subTitle{
-    font-size: 17px;
-    font-family: poppin, serif;
-    font-weight: 500;
-    color: rgba(0,0,0,0.8);
+.subTitle {
+  font-size: 17px;
+  font-family: poppin, serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.8);
 }
 
-.honorContainer .card{
-    background-color: white!important;
-    height:auto!important;
-    border:2px solid #cdcfd1!important;
-    font-weight: 700!important;
-    font-family:Montserrat, serif;
-    margin:1%;
-    width:auto!important;
-    color: rgba(0,0,0,0.4)!important;
+.honorContainer .card {
+  background-color: white !important;
+  height: auto !important;
+  border: 2px solid #cdcfd1 !important;
+  font-weight: 700 !important;
+  font-family: Montserrat, serif;
+  margin: 1%;
+  width: auto !important;
+  color: rgba(0, 0, 0, 0.4) !important;
 }
-.honorContainer .card:hover{
-    color:rgb(41, 41, 45)!important;
-    font-weight:800!important;
+.honorContainer .card:hover {
+  color: rgb(41, 41, 45) !important;
+  font-weight: 800 !important;
 }
-.titleSeeMoreNotice{
-    font-size: 18px!important;
-    font-family: Montserrat, serif;
-    font-weight: 500!important;
+.titleSeeMoreNotice {
+  font-size: 18px !important;
+  font-family: Montserrat, serif;
+  font-weight: 500 !important;
 }
 .honorContainer .noticeDivLeft .card-carousel {
-    margin: 0 6% 1% 4%;
-  }
-.honorContainer .carouselImg{
-    height:490px;
-  }
-.honorContainer .noticeDivLeft .alumniDescription{
-    margin-right: 6%;
-    margin-left: 4%;
-  }
-.honorContainer .strategyWidth{
-    background-color: white!important;
-    border:2px solid silver!important;
+  margin: 0 6% 1% 4%;
 }
-.honorContainer .strategyWidth:hover{
-    box-shadow: -2px 1px 12px 1px rgba(64,105,135,0.75);
+.honorContainer .carouselImg {
+  height: 490px;
 }
-.noticeDivLeft{
-    background-color:white;  
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+.honorContainer .noticeDivLeft .alumniDescription {
+  margin-right: 6%;
+  margin-left: 4%;
 }
-.noticeDivLeft .noticeTitle{
-    background-color: #cdcfd1!important;
-    margin-right: 6%;
-    margin-left: 4%;
-    box-shadow: 0 0 2px rgba(50, 49, 49, 0.3)!important;
+.honorContainer .strategyWidth {
+  background-color: white !important;
+  border: 2px solid silver !important;
 }
-
-.carouselCaptionDivLeftHonor{
-    position: absolute;
-    bottom: 20px;
-    color:white;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.5)!important;
+.honorContainer .strategyWidth:hover {
+  box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
 }
-.noticeDivRight{
-    margin:0 8% 0 0;
-    background-color: rgb(255, 255, 255);
-    color:rgb(22, 21, 21);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+.noticeDivLeft {
+  background-color: white;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.noticeDivLeft .noticeTitle {
+  background-color: #cdcfd1 !important;
+  margin-right: 6%;
+  margin-left: 4%;
+  box-shadow: 0 0 2px rgba(50, 49, 49, 0.3) !important;
 }
 
-.carouselItemContainerSpeech{
-    background-color:white;
-    color:silver;  
-    margin-right:8%;
+.carouselCaptionDivLeftHonor {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
-.noticeTitle{
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: Montserrat, serif;
-    font-weight: 400;
-    text-align: center;
-    color:rgba(0,0,0,0.6) !important;
-}
-
-.jucseDescriptionTitle{
-    font-family: Montserrat, serif;
-    font-size: 20px;
-}
-.noticeTitleSpeech{
-    font-family: Montserrat, serif;
-    font-size: 20px;
-    font-weight: 400;
-    background-color: #cdcfd1;
-    color: rgba(0,0,0,0.6)!important;
+.noticeDivRight {
+  margin: 0 8% 0 0;
+  background-color: rgb(255, 255, 255);
+  color: rgb(22, 21, 21);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.noticeDivRightHeading{
-    color: rgba(0,0,0,0.6)!important;
-    background-color: #cdcfd1;
-    font-family: Montserrat, serif;
+.carouselItemContainerSpeech {
+  background-color: white;
+  color: silver;
+  margin-right: 8%;
+}
+.noticeTitle {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: Montserrat, serif;
+  font-weight: 400;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6) !important;
 }
 
-.noticeDivRight a{
-    display: flex;
-    justify-content: flex-start;
-    text-decoration: none;
-    color: rgba(54, 52, 52, 0.8)!important;
-    font-family: Montserrat, serif !important;
-    font-weight: 400;
-    font-size: 14px;
-    padding-left:3%;
+.jucseDescriptionTitle {
+  font-family: Montserrat, serif;
+  font-size: 20px;
 }
-.noticeDivRight hr{
-    margin-right: 4%;
-    margin-left: 3%;
-    border:1px solid #021b4a;
+.noticeTitleSpeech {
+  font-family: Montserrat, serif;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: #cdcfd1;
+  color: rgba(0, 0, 0, 0.6) !important;
 }
-.noticeDivRight a:hover{
-    color:rgb(163, 163, 226)!important;
-    transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-    text-decoration: none;
+
+.noticeDivRightHeading {
+  color: rgba(0, 0, 0, 0.6) !important;
+  background-color: #cdcfd1;
+  font-family: Montserrat, serif;
+}
+
+.noticeDivRight a {
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  color: rgba(54, 52, 52, 0.8) !important;
+  font-family: Montserrat, serif !important;
+  font-weight: 400;
+  font-size: 14px;
+  padding-left: 3%;
+}
+.noticeDivRight hr {
+  margin-right: 4%;
+  margin-left: 3%;
+  border: 1px solid #021b4a;
+}
+.noticeDivRight a:hover {
+  color: rgb(163, 163, 226) !important;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  text-decoration: none;
 }
 .seeMoreLink {
-    color: blue!important;
-    font-size: 16px;
-    font-family: Montserrat, serif;
-    font-weight: 700;
+  color: blue !important;
+  font-size: 16px;
+  font-family: Montserrat, serif;
+  font-weight: 700;
 }
 
-.contact{
-    padding-left: 10% !important;
+.contact {
+  padding-left: 10% !important;
 }
-.contact h4{
-    color: white;
-    font-size: 20px;
-    font-family: Oswald, serif;
-    font-weight: 500;
+.contact h4 {
+  color: white;
+  font-size: 20px;
+  font-family: Oswald, serif;
+  font-weight: 500;
 }
-.contact a{
-    text-decoration: none;
-    font-size: 14px;
-    color: silver;
-    font-family: Roboto, serif;
-    font-weight: 400;
+.contact a {
+  text-decoration: none;
+  font-size: 14px;
+  color: silver;
+  font-family: Roboto, serif;
+  font-weight: 400;
 }
-.contact a:hover{
-    text-decoration: underline;
-    color: white;
+.contact a:hover {
+  text-decoration: underline;
+  color: white;
 }
-.contact h6{
-    text-decoration: none;
-    font-size: 14px;
-    color: silver;
-    font-family: Roboto, serif;
-    font-weight: 400;
+.contact h6 {
+  text-decoration: none;
+  font-size: 14px;
+  color: silver;
+  font-family: Roboto, serif;
+  font-weight: 400;
 }
-.carouselVideo{
-    cursor: pointer!important;
-    padding: 5px!important;
+.carouselVideo {
+  cursor: pointer !important;
+  padding: 5px !important;
 }
-.contact span{
-    text-decoration: none;
-    font-size: 14px;
-    color: silver;
-    font-family: Roboto, serif;
-    font-weight: 400;
-    cursor: pointer;
+.contact span {
+  text-decoration: none;
+  font-size: 14px;
+  color: silver;
+  font-family: Roboto, serif;
+  font-weight: 400;
+  cursor: pointer;
 }
-.copyWrite{
-    background-color: #63666e;
-    width: 100% !important;
-    margin: 0;
-    padding: 0;
+.copyWrite {
+  background-color: #63666e;
+  width: 100% !important;
+  margin: 0;
+  padding: 0;
 }
 .footerCredit {
-    background-color: rgba(255, 255, 255, 0.7) !important;
-    color: rgba(0, 0, 0, 0.8) !important;
-    font-family: Roboto, serif;
-    font-size: 14px;
-    font-weight: 400;
-    margin-top: 10px !important;
+  background-color: rgba(255, 255, 255, 0.7) !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-family: Roboto, serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 10px !important;
 }
-.footerCredit a{
-    text-decoration: none;
-    color: rgba(0,0,0,0.8) !important;
-    font-weight: 400;
-    font-size: 14px;
+.footerCredit a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-weight: 400;
+  font-size: 14px;
 }
-.footerCredit a:hover{
-    color: #041145!important;
-    cursor: pointer;
+.footerCredit a:hover {
+  color: #041145 !important;
+  cursor: pointer;
 }
 .iconDiv {
-    display: flex;
-    margin-left: -4px;
-    margin-top: 5px;
-    margin-bottom: 4px;
+  display: flex;
+  margin-left: -4px;
+  margin-top: 5px;
+  margin-bottom: 4px;
 }
 .contactLink {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box!important;
-    text-align: center!important;
-    text-decoration: none!important;
-    font-size: 20px!important;
-    font-family: Montserrat, serif !important;
-    font-weight: 500!important;
-    width: 30px!important;
-    height: 30px!important;
-    color: #0d39e1!important;
-    background-color: white;
-    border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  font-size: 20px !important;
+  font-family: Montserrat, serif !important;
+  font-weight: 500 !important;
+  width: 30px !important;
+  height: 30px !important;
+  color: #0d39e1 !important;
+  background-color: white;
+  border-radius: 50%;
 }
 .contactLink:hover {
-    background-color: #0d39e1!important;
-    transition: 0.3s;
-    color: white!important;
+  background-color: #0d39e1 !important;
+  transition: 0.3s;
+  color: white !important;
 }
-.supportDiv:hover{
-    box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
-    -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
-    -moz-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
-    transition: 0.3s;
-    cursor: pointer;
+.supportDiv:hover {
+  box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  -moz-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  transition: 0.3s;
+  cursor: pointer;
 }
-.supportImg{
-    width: 100%;
-    height: 200px;
-    padding: 50px;
-    border-radius: 2px;
-    border:1px solid rgb(175, 190, 196);    
+.supportImg {
+  width: 100%;
+  height: 200px;
+  padding: 50px;
+  border-radius: 2px;
+  border: 1px solid rgb(175, 190, 196);
 }
-.supportImg:hover{
-    box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
-    -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
-    -moz-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
-    transition: 0.3s;
-    cursor: pointer;
+.supportImg:hover {
+  box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  -moz-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  transition: 0.3s;
+  cursor: pointer;
 }
-.topImg{
-    width: 30%;
-    margin: 0 auto!important;
+.topImg {
+  width: 30%;
+  margin: 0 auto !important;
 }
 .carouselVideo .carousel-indicators {
-    display: none;
+  display: none;
 }
-.whiteTitle{
-    color: white;
-    font-size: 18px;
-    font-family: Montserrat, sans-serif, serif;
-    font-weight: 500;
-}
-
-.carouselItemContainerSpeech hr{
-    border:2px solid silver;
-    margin-right: 4%;
-    margin-left: 3%;
+.whiteTitle {
+  color: white;
+  font-size: 18px;
+  font-family: Montserrat, sans-serif, serif;
+  font-weight: 500;
 }
 
-.nextBtn{
-    text-align: right;
+.carouselItemContainerSpeech hr {
+  border: 2px solid silver;
+  margin-right: 4%;
+  margin-left: 3%;
 }
-.nextBtn Button{
-    background-color: gray!important;
-    width: 80px !important;
-    font-family: Montserrat, serif;
-    font-size: 20px!important;
-    font-weight: 500;
-    text-transform: uppercase;
+
+.nextBtn {
+  text-align: right;
 }
-.backBtn{
-    background-color: #1b182e!important;
-    width: 80px !important;
-    font-family: Montserrat, serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
+.nextBtn Button {
+  background-color: gray !important;
+  width: 80px !important;
+  font-family: Montserrat, serif;
+  font-size: 20px !important;
+  font-weight: 500;
+  text-transform: uppercase;
 }
-.nextBtn2{
-    position: absolute!important;
-    background-color:#1b182e!important;
-    width: 80px !important;
-    font-family: Montserrat, serif;
-    font-size: 20px;
-    font-weight: 600;
-    text-transform: uppercase;
-    right: 11px;
+.backBtn {
+  background-color: #1b182e !important;
+  width: 80px !important;
+  font-family: Montserrat, serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
-.supportImgJU{
-    width:30%;
-    height: auto;
+.nextBtn2 {
+  position: absolute !important;
+  background-color: #1b182e !important;
+  width: 80px !important;
+  font-family: Montserrat, serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  right: 11px;
 }
-.cardImgStrategy{
-    width: 100px;
-    height: 85px;
-    border-radius: 20%;
+.supportImgJU {
+  width: 30%;
+  height: auto;
 }
-.strategyWidth{
-    width: 100% !important;
-    height: 200px!important;
+.cardImgStrategy {
+  width: 100px;
+  height: 85px;
+  border-radius: 20%;
+}
+.strategyWidth {
+  width: 100% !important;
+  height: 200px !important;
 }
 .strategyWidth:hover {
-    box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
-    -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
-    -moz-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
-    transition: 0.3s;
-    cursor: pointer;
+  box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  -moz-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
+  transition: 0.3s;
+  cursor: pointer;
 }
-.strategyDescription{
-    font-size: 24px;
-    display: none;
+.strategyDescription {
+  font-size: 24px;
+  display: none;
 }
-.strategyDescriptionShow{
-    font-size: 16px;
-    font-family: Roboto, serif;
-    font-weight: 300;
-    color: rgba(0,0,0,0.7);
-    display: block;
-    text-align: center!important;
-    margin-top:11%;
-}
-
-.StrategyCardsCol .card{
-    border-radius: 1%!important;
-    padding: 2% !important;
-    
-}
-.StrategyCardsCol .card:hover{
-    box-shadow: 0 0 10px skyblue!important;
-    transform: scale(1.01)!important;
-
+.strategyDescriptionShow {
+  font-size: 16px;
+  font-family: Roboto, serif;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.7);
+  display: block;
+  text-align: center !important;
+  margin-top: 11%;
 }
 
-.titleStrategy{
-    font-size: 19px!important;
-    color: rgba(0,0,0,0.7)!important; 
-    font-family: Montserrat, serif;
-    font-weight: 600!important;
+.StrategyCardsCol .card {
+  border-radius: 1% !important;
+  padding: 2% !important;
 }
-.subTitleStrategy{
-    font-size: 16px;
-    font-family: Roboto, serif;
-    font-weight: 500;
-    color: rgba(0,0,0,0.4)!important;
+.StrategyCardsCol .card:hover {
+  box-shadow: 0 0 10px skyblue !important;
+  transform: scale(1.01) !important;
 }
 
+.titleStrategy {
+  font-size: 19px !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+  font-family: Montserrat, serif;
+  font-weight: 600 !important;
+}
+.subTitleStrategy {
+  font-size: 16px;
+  font-family: Roboto, serif;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.4) !important;
+}
 
-.StrategyTitleBorder{
-    font-size: 26px!important;
-    color: rgba(0,0,0,0.7)!important;
-    padding-top:1%;
-    font-weight:300;
-    letter-spacing: 3px;
-    font-style: italic;
+.StrategyTitleBorder {
+  font-size: 26px !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+  padding-top: 1%;
+  font-weight: 300;
+  letter-spacing: 3px;
+  font-style: italic;
 }
-.committeeTextDiv{
-    background-color: #1B182E;
-    text-align: center;
-    padding:7px 0 1px 0;
-    margin: 0 0.67rem;
+.committeeTextDiv {
+  background-color: #1b182e;
+  text-align: center;
+  padding: 7px 0 1px 0;
+  margin: 0 0.67rem;
 }
-.vcDiv{
-   display: flex;
-    justify-content: center;
+.vcDiv {
+  display: flex;
+  justify-content: center;
 }
-.vcDiv img{
-    width: 100%;
-    height: auto;
-    max-width: 500px;
-    max-height: 500px;
+.vcDiv img {
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  max-height: 500px;
 }
-.dateCard{
-    border-radius: 3px!important;
-    border: 1px solid silver !important;
-    height: 200px!important;
-    padding: 20px 0 10px 0;
-    background-color: white !important;
+.dateCard {
+  border-radius: 3px !important;
+  border: 1px solid silver !important;
+  height: 200px !important;
+  padding: 20px 0 10px 0;
+  background-color: white !important;
 }
-.dateCard:hover{
-    background-color:rgba(215, 233, 255, 0.5) !important;
-    transition: 0.3s;
-    cursor: pointer;
+.dateCard:hover {
+  background-color: rgba(215, 233, 255, 0.5) !important;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.tab_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  height: 100%;
+  background: #fafafa;
+  width: 100%;
+  margin-top: 1rem;
+}
+.single_tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  flex: 1;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.single_tab:hover {
+  background: #eee;
+}
+.single_tab.active {
+  /* color: #fff; */
+  border-bottom: 2px solid var(--bs-link-hover-color);
+  color: var(--bs-link-hover-color);
+  font-weight: 600;
+  /* background: var(--bs-link-hover-color); */
 }
