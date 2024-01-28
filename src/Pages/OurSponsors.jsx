@@ -9,16 +9,13 @@ import { culturalCommitteeImages, culturalNameList, culturalPostList, culturalCo
 import { publicationCommitteeImages, publicationNameList, publicationPostList, publicationCommittee } from "../Components/Context/Publication";
 import { logisticCommitteeImages, logisticNameList, logisticPostList, logisticCommittee } from "../Components/Context/Logistic";
 import TopMenu from "../Components/TopMenu";
-import CommitteeTop from "../Components/CommitteeTop";
+import Sponsor from '../Components/Sponsor';
 
-function CommitteePage(props) {
+function OurSponsors(props) {
     const items = [
-        { id: 1, name: 'Executive' },
-        { id: 2, name: 'Reg. and Management' },
-        { id: 3, name: 'Trans. and Accommodation' },
-        { id: 4, name: 'Invitation' },
-        { id: 5, name: 'Food' },
-        { id: 6, name: 'Cultural' },
+        { id: 1, name: 'Platinum' },
+        { id: 2, name: 'Gold' },
+        { id: 3, name: 'Silver' },
     ];
     const [activeItem, setActiveItem] = useState(items[0]);
     const onSelectCurrentLink = (item) => {
@@ -42,12 +39,9 @@ function CommitteePage(props) {
                 </div>
 
                 {
-                    activeItem?.id == 1 ? <Committee imageUrls={executiveCommitteeImages} executiveNameList={executiveNameList} executivePostList={executivePostList} committeeName={executiveCommittee} /> :
-                        activeItem?.id == 2 ? <Committee imageUrls={webCommitteeImages} executiveNameList={webCommitteeNameList} executivePostList={webCommitteePostList} committeeName={webCommittee} /> :
-                            activeItem?.id == 3 ? <Committee imageUrls={transportCommitteeImages} executiveNameList={transportCommitteeNameList} executivePostList={transportCommitteePostList} committeeName={transportCommittee} /> :
-                                activeItem?.id == 4 ? <Committee imageUrls={invitationCommitteeImages} executiveNameList={invitationNameList} executivePostList={invitationPostList} committeeName={invitationCommittee} /> :
-                                    activeItem?.id == 5 ? <Committee imageUrls={foodCommitteeImages} executiveNameList={foodNameList} executivePostList={foodPostList} committeeName={footCommittee} /> :
-                                        activeItem?.id == 6 ? <Committee imageUrls={culturalCommitteeImages} executiveNameList={culturalNameList} executivePostList={culturalPostList} committeeName={culturalCommittee} /> : ''
+                    activeItem?.id == 1 ? <Sponsor imageUrls={executiveCommitteeImages} executiveNameList={executiveNameList} executivePostList={executivePostList} committeeName={executiveCommittee} /> :
+                        activeItem?.id == 2 ? <Sponsor imageUrls={webCommitteeImages} executiveNameList={webCommitteeNameList} executivePostList={webCommitteePostList} committeeName={webCommittee} /> :
+                            activeItem?.id == 3 ? <Sponsor imageUrls={transportCommitteeImages} executiveNameList={transportCommitteeNameList} executivePostList={transportCommitteePostList} committeeName={transportCommittee} /> : ''
 
                 }
 
@@ -65,6 +59,6 @@ function CommitteePage(props) {
     );
 }
 
-export default CommitteePage;
+export default OurSponsors;
 
 

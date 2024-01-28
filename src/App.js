@@ -20,6 +20,7 @@ import TransportantionSchedule from './MyComponents/TransportantSchedule';
 import Accomodation from './MyComponents/Accomodation';
 import TeamStatus from './MyComponents/TeamStatus';
 import TestRegistration from "./Pages/TestRegistration";
+import OurSponsors from './Pages/OurSponsors';
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
             <Route path='status' element={<TeamStatus/>}/>
             {/* <Route path="rules" element={<Rules/>}/> */}
             <Route path="committee" element={<CommitteePage/>}/>
+            <Route path="sponsors" element={<OurSponsors/>}/>
             <Route path="gallery" element={<GalleryPage/>}/>
             <Route path="about" element={<AboutPage/>}/>
             <Route path="test" element={<Registration/>}/>
