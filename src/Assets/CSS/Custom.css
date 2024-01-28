@@ -1,15 +1,18 @@
 .topBanner {
   background-color: #19206b;
 }
+
 .navBar {
   max-width: 100%;
   height: 60px;
   background: linear-gradient(45deg, #1a237e 30%, #283593 90%);
   transition: 0.5s;
 }
+
 .nav {
   margin-top: -18px;
 }
+
 .navLink {
   color: rgb(219, 219, 219) !important;
   font-family: Roboto, serif !important;
@@ -20,6 +23,7 @@
   padding-top: 0;
   padding: 18px;
 }
+
 .navBarScroll {
   position: fixed !important;
   top: 0;
@@ -31,6 +35,7 @@
   transition: 0.5s;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
 .navLinkScroll {
   color: rgb(0, 0, 0, 1) !important;
   font-family: Roboto, serif;
@@ -40,28 +45,34 @@
   transition: 0.3s;
   padding: 18px;
 }
+
 .navLink:hover {
   color: white !important;
   background-color: rgb(65, 78, 216) !important;
 }
+
 .navlink.active {
   color: white !important;
   background-color: rgb(65, 78, 216) !important;
 }
+
 .navLinkScroll:hover {
   color: white !important;
   background-color: rgba(27, 24, 46, 0.8) !important;
   padding: 20px 18px 18px 18px;
 }
+
 .logoImg {
   width: 100px;
   height: 60px;
   padding: 0;
 }
+
 .carouselImg {
   width: 100%;
   height: 550px;
 }
+
 .logoContainer {
   display: flex;
   flex-direction: row;
@@ -75,12 +86,14 @@
   height: 70px;
   margin-left: 30px;
 }
+
 .cseLogo {
   width: 100%;
   height: 70px;
   max-width: 270px;
   padding: 10px;
 }
+
 .logoRightDiv img {
   width: 100%;
   height: 70px;
@@ -93,6 +106,7 @@
   justify-content: right;
   margin-right: 30px;
 }
+
 .bannerRight {
   width: 28%;
   height: auto;
@@ -106,15 +120,18 @@
   flex-direction: column;
   align-items: center;
 }
+
 .bannerRight img {
   width: 99%;
   height: auto;
 }
+
 .bannerRight h3 {
   font-weight: 500 !important;
   letter-spacing: 1px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
 .buttonBanner {
   width: 45% !important;
   height: 95% !important;
@@ -123,17 +140,20 @@
   font-size: small;
   margin-bottom: 5% !important;
 }
+
 .cardImg {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
+
 .card {
   height: 380px !important;
-  border-radius: 0 !important;
+  /* border-radius: 0 !important; */
   text-align: center;
   background-color: white !important;
 }
+
 .contactBtn {
   background: #010f29 !important;
   border: 1px solid rgb(188, 188, 188) !important;
@@ -143,22 +163,27 @@
   font-weight: 500 !important;
   border-radius: 2% !important;
 }
+
 .contactBtn:hover {
   border: 1px solid rgb(214, 213, 213) !important;
   background-color: rgb(214, 213, 213) !important;
   color: black !important;
 }
+
 Button {
   font-family: Montserrat, serif !important;
 }
+
 .choyonSir {
   width: 100% !important;
   height: 300px !important;
 }
+
 .choyonSirWidth {
   height: 300px !important;
   transition: 0.5s;
 }
+
 .choyonSir:hover {
   box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
   -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
@@ -166,6 +191,7 @@ Button {
   transition: 0.3s;
   cursor: pointer;
 }
+
 .choyonSirWidth:hover {
   box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
   -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
@@ -173,10 +199,12 @@ Button {
   transition: 0.3s;
   cursor: pointer;
 }
+
 .teacherDescription {
   font-size: 14px;
   display: none;
 }
+
 .teacherDescriptionShow {
   font-size: 14px;
   font-family: Roboto, serif;
@@ -185,32 +213,38 @@ Button {
   display: block;
   text-align: justify !important;
 }
+
 .footer {
   background-color: #282c34 !important;
   border-radius: 0 !important;
 }
+
 .title {
   font-size: 19px !important;
   color: #1b182e !important;
   font-family: Montserrat, serif;
   font-weight: 500;
 }
+
 .cardTitle {
   font-size: 16px !important;
   font-family: Montserrat, serif !important;
   font-weight: 500;
 }
+
 .titleSponsor {
   font-size: 21px !important;
   font-weight: 500 !important;
   font-family: Montserrat, serif !important;
 }
+
 .description {
   font-size: 16px;
   font-family: Montserrat, serif;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.7);
 }
+
 .subTitle {
   font-size: 17px;
   font-family: poppin, serif;
@@ -228,36 +262,45 @@ Button {
   width: auto !important;
   color: rgba(0, 0, 0, 0.4) !important;
 }
+
 .honorContainer .card:hover {
   color: rgb(41, 41, 45) !important;
   font-weight: 800 !important;
 }
+
 .titleSeeMoreNotice {
   font-size: 18px !important;
   font-family: Montserrat, serif;
   font-weight: 500 !important;
 }
+
 .honorContainer .noticeDivLeft .card-carousel {
   margin: 0 6% 1% 4%;
 }
+
 .honorContainer .carouselImg {
   height: 490px;
 }
+
 .honorContainer .noticeDivLeft .alumniDescription {
   margin-right: 6%;
   margin-left: 4%;
 }
+
 .honorContainer .strategyWidth {
   background-color: white !important;
   border: 2px solid silver !important;
 }
+
 .honorContainer .strategyWidth:hover {
   box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
 }
+
 .noticeDivLeft {
   background-color: white;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+
 .noticeDivLeft .noticeTitle {
   background-color: #cdcfd1 !important;
   margin-right: 6%;
@@ -272,6 +315,7 @@ Button {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
+
 .noticeDivRight {
   margin: 0 8% 0 0;
   background-color: rgb(255, 255, 255);
@@ -284,6 +328,7 @@ Button {
   color: silver;
   margin-right: 8%;
 }
+
 .noticeTitle {
   text-transform: uppercase;
   font-size: 20px;
@@ -297,6 +342,7 @@ Button {
   font-family: Montserrat, serif;
   font-size: 20px;
 }
+
 .noticeTitleSpeech {
   font-family: Montserrat, serif;
   font-size: 20px;
@@ -321,16 +367,19 @@ Button {
   font-size: 14px;
   padding-left: 3%;
 }
+
 .noticeDivRight hr {
   margin-right: 4%;
   margin-left: 3%;
   border: 1px solid #021b4a;
 }
+
 .noticeDivRight a:hover {
   color: rgb(163, 163, 226) !important;
   transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
   text-decoration: none;
 }
+
 .seeMoreLink {
   color: blue !important;
   font-size: 16px;
@@ -341,12 +390,14 @@ Button {
 .contact {
   padding-left: 10% !important;
 }
+
 .contact h4 {
   color: white;
   font-size: 20px;
   font-family: Oswald, serif;
   font-weight: 500;
 }
+
 .contact a {
   text-decoration: none;
   font-size: 14px;
@@ -354,10 +405,12 @@ Button {
   font-family: Roboto, serif;
   font-weight: 400;
 }
+
 .contact a:hover {
   text-decoration: underline;
   color: white;
 }
+
 .contact h6 {
   text-decoration: none;
   font-size: 14px;
@@ -365,10 +418,12 @@ Button {
   font-family: Roboto, serif;
   font-weight: 400;
 }
+
 .carouselVideo {
   cursor: pointer !important;
   padding: 5px !important;
 }
+
 .contact span {
   text-decoration: none;
   font-size: 14px;
@@ -377,12 +432,14 @@ Button {
   font-weight: 400;
   cursor: pointer;
 }
+
 .copyWrite {
   background-color: #63666e;
   width: 100% !important;
   margin: 0;
   padding: 0;
 }
+
 .footerCredit {
   background-color: rgba(255, 255, 255, 0.7) !important;
   color: rgba(0, 0, 0, 0.8) !important;
@@ -391,22 +448,26 @@ Button {
   font-weight: 400;
   margin-top: 10px !important;
 }
+
 .footerCredit a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8) !important;
   font-weight: 400;
   font-size: 14px;
 }
+
 .footerCredit a:hover {
   color: #041145 !important;
   cursor: pointer;
 }
+
 .iconDiv {
   display: flex;
   margin-left: -4px;
   margin-top: 5px;
   margin-bottom: 4px;
 }
+
 .contactLink {
   display: flex;
   justify-content: center;
@@ -423,11 +484,13 @@ Button {
   background-color: white;
   border-radius: 50%;
 }
+
 .contactLink:hover {
   background-color: #0d39e1 !important;
   transition: 0.3s;
   color: white !important;
 }
+
 .supportDiv:hover {
   box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
   -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
@@ -435,6 +498,7 @@ Button {
   transition: 0.3s;
   cursor: pointer;
 }
+
 .supportImg {
   width: 100%;
   height: 200px;
@@ -442,6 +506,7 @@ Button {
   border-radius: 2px;
   border: 1px solid rgb(175, 190, 196);
 }
+
 .supportImg:hover {
   box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
   -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
@@ -449,13 +514,16 @@ Button {
   transition: 0.3s;
   cursor: pointer;
 }
+
 .topImg {
   width: 30%;
   margin: 0 auto !important;
 }
+
 .carouselVideo .carousel-indicators {
   display: none;
 }
+
 .whiteTitle {
   color: white;
   font-size: 18px;
@@ -472,6 +540,7 @@ Button {
 .nextBtn {
   text-align: right;
 }
+
 .nextBtn Button {
   background-color: gray !important;
   width: 80px !important;
@@ -480,6 +549,7 @@ Button {
   font-weight: 500;
   text-transform: uppercase;
 }
+
 .backBtn {
   background-color: #1b182e !important;
   width: 80px !important;
@@ -488,6 +558,7 @@ Button {
   font-weight: 600;
   text-transform: uppercase;
 }
+
 .nextBtn2 {
   position: absolute !important;
   background-color: #1b182e !important;
@@ -498,19 +569,23 @@ Button {
   text-transform: uppercase;
   right: 11px;
 }
+
 .supportImgJU {
   width: 30%;
   height: auto;
 }
+
 .cardImgStrategy {
   width: 100px;
   height: 85px;
   border-radius: 20%;
 }
+
 .strategyWidth {
   width: 100% !important;
   height: 200px !important;
 }
+
 .strategyWidth:hover {
   box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
   -webkit-box-shadow: -2px 1px 12px 1px rgba(64, 105, 135, 0.75);
@@ -518,10 +593,12 @@ Button {
   transition: 0.3s;
   cursor: pointer;
 }
+
 .strategyDescription {
   font-size: 24px;
   display: none;
 }
+
 .strategyDescriptionShow {
   font-size: 16px;
   font-family: Roboto, serif;
@@ -536,6 +613,7 @@ Button {
   border-radius: 1% !important;
   padding: 2% !important;
 }
+
 .StrategyCardsCol .card:hover {
   box-shadow: 0 0 10px skyblue !important;
   transform: scale(1.01) !important;
@@ -547,6 +625,7 @@ Button {
   font-family: Montserrat, serif;
   font-weight: 600 !important;
 }
+
 .subTitleStrategy {
   font-size: 16px;
   font-family: Roboto, serif;
@@ -562,22 +641,26 @@ Button {
   letter-spacing: 3px;
   font-style: italic;
 }
+
 .committeeTextDiv {
   background-color: #1b182e;
   text-align: center;
   padding: 7px 0 1px 0;
   margin: 0 0.67rem;
 }
+
 .vcDiv {
   display: flex;
   justify-content: center;
 }
+
 .vcDiv img {
   width: 100%;
   height: auto;
   max-width: 500px;
   max-height: 500px;
 }
+
 .dateCard {
   border-radius: 3px !important;
   border: 1px solid silver !important;
@@ -585,6 +668,7 @@ Button {
   padding: 20px 0 10px 0;
   background-color: white !important;
 }
+
 .dateCard:hover {
   background-color: rgba(215, 233, 255, 0.5) !important;
   transition: 0.3s;
@@ -601,6 +685,7 @@ Button {
   width: 100%;
   margin-top: 1rem;
 }
+
 .single_tab {
   display: flex;
   align-items: center;
@@ -614,12 +699,18 @@ Button {
 .single_tab:hover {
   background: #eee;
 }
+
 .single_tab.active {
   /* color: #fff; */
   border-bottom: 2px solid var(--bs-link-hover-color);
   color: var(--bs-link-hover-color);
   font-weight: 600;
   /* background: var(--bs-link-hover-color); */
+}
+
+
+.global_card {
+  box-shadow: 0 6px 8px rgba(0,0,0,.15);
 }
 .successBackground {
     background-size: cover;

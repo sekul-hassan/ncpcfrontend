@@ -7,7 +7,7 @@ function GlobalCard({ image ,name,post}) {
 
     return (
        <Fragment>
-           <Card className="h-100 p-3">
+           <Card className="h-100 p-3 global_card">
                <Card.Body className="mt-3">
                    <img className="cardImg" src={image} alt="af" />
                    <Card.Title className="cardTitle">{name}</Card.Title>
