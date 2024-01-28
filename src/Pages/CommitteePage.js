@@ -17,7 +17,6 @@ function CommitteePage(props) {
     return (
         <Fragment>
             <TopMenu/>
-            <CommitteeTop/>
             <Committee imageUrls={executiveCommitteeImages} executiveNameList={executiveNameList} executivePostList={executivePostList} committeeName={executiveCommittee}/>
             <Committee imageUrls={webCommitteeImages} executiveNameList={webCommitteeNameList} executivePostList={webCommitteePostList} committeeName={webCommittee}/>
             <Committee imageUrls={transportCommitteeImages} executiveNameList={transportCommitteeNameList} executivePostList={transportCommitteePostList} committeeName={transportCommittee}/>

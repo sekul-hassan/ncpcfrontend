@@ -14,8 +14,13 @@ import {faShirt} from "@fortawesome/free-solid-svg-icons";
 import {faImage} from "@fortawesome/free-solid-svg-icons";
 import items from "./Context/Universities";
 import {ReactSearchAutocomplete} from "react-search-autocomplete";
+import InfoDiv from "../MyComponents/InfoDiv";
+import FormValidationAlert from "../MyComponents/FormValidataionAlert";
 
-function FirstContestant({secondCall,inputChange}) {
+function FirstContestant({secondCall,inputChange,firstNext}) {
+
+
+
 
     const {data} = useContext(FormContext);
 
@@ -58,7 +63,6 @@ function FirstContestant({secondCall,inputChange}) {
                 </Col>
             </Row>
 
-            <hr/>
             <h4 className="title mb-4"><FontAwesomeIcon icon={faUser} /> Team Member-1</h4>
             <hr/>
             <Row className="mx-0">
@@ -119,7 +123,7 @@ function FirstContestant({secondCall,inputChange}) {
                         onChange={inputChange}
                         value={!data.firstUserTShirt===""?"":data.firstUserTShirt}
                     >
-                        <option value="0">Select</option>
+                        <option value="">Select</option>
                         <option value="s">S</option>
                         <option value="m">M</option>
                         <option value="l">L</option>
@@ -158,10 +162,19 @@ function FirstContestant({secondCall,inputChange}) {
                         )
                     }
 
-                    <div className="mb-5">
-                        <Button className="nextBtn2" onClick={secondCall}> Next</Button>
-                    </div>
+
                 </Col>
+                {
+                    firstNext && (
+                        <div className="mt-4">
+                            <FormValidationAlert info="Please fill out all the fields."/>
+                        </div>
+                    )
+                }
+                <div className="mb-5 position-relative">
+                    <Button className="nextBtn2" onClick={secondCall}> Next</Button>
+                </div>
+
             </Row>
         </Container>
     );

@@ -11,15 +11,16 @@ import {faShirt} from "@fortawesome/free-solid-svg-icons";
 import {faIdCardClip} from "@fortawesome/free-solid-svg-icons";
 import {faImage} from "@fortawesome/free-solid-svg-icons";
 import {faChalkboardUser} from "@fortawesome/free-solid-svg-icons";
-import bkash from "../Assets/Images/bkash.jpg";
-import {registrationOff} from "./Context/WebConf";
-function TeacherData({thirdCall,inputChange,postDataToBackend}) {
-
+import FormValidationAlert from "../MyComponents/FormValidataionAlert";
+import FormSuccessAlert from "../MyComponents/FormSuccessAlert";
+function TeacherData({thirdCall,inputChange,postDataToBackend,submit,valid,response}) {
     const {data} = useContext(FormContext);
+
+    console.log(" Response = " + response + " Success = " + valid);
+
     return (
-        <Container fluid="true" className="firstContestant mt-5">
-            <hr/>
-            <h4 className="title mt-5 mb-4"><FontAwesomeIcon icon={faChalkboardUser} />   Coach Info</h4>
+        <Container fluid="true" className="firstContestant mt-4">
+            <h4 className="title"><FontAwesomeIcon icon={faChalkboardUser} /> Coach Info</h4>
             <hr/>
             <Row className="mx-0">
                 <Col>
@@ -96,7 +97,7 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
                         value={!data.teacherTShirt===""?"":data.teacherTShirt}
 
                     >
-                        <option value="0">Select</option>
+                        <option value="">Select</option>
                         <option value="s">S</option>
                         <option value="m">M</option>
                         <option value="l">L</option>
@@ -135,32 +136,62 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
                         )
                     }
                     
-                    <h3 className="text-center">Payment</h3>
-                    <div className="d-flex justify-content-center">
-                        <a href="https://www.bkash.com/" target="blank"><img className="PaymentImg" src={bkash} alt=""/></a>
-                    <br/>
-                    </div>
-                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Transaction ID:</label>
-                    <input
-                        type="text"
-                        placeholder="bKash TransactionID"
-                        className="form-control"
-                        name="transaction"
-                        onChange={inputChange}
-                        value={!data.transaction===""?"":data.transaction}
-                    />
+                    {/*<h3 className="text-center">Payment</h3>*/}
+                    {/*<div className="d-flex justify-content-center">*/}
+                    {/*    <a href="https://www.bkash.com/" target="blank"><img className="PaymentImg" src={bkash} alt=""/></a>*/}
+                    {/*<br/>*/}
+                    {/*</div>*/}
+                    {/*<label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Transaction ID:</label>*/}
+                    {/*<input*/}
+                    {/*    type="text"*/}
+                    {/*    placeholder="bKash TransactionID"*/}
+                    {/*    className="form-control"*/}
+                    {/*    name="transaction"*/}
+                    {/*    onChange={inputChange}*/}
+                    {/*    value={!data.transaction===""?"":data.transaction}*/}
+                    {/*/>*/}
                 </Col>
-                
+
+                {
+                    submit && !valid && (
+                        <div className="mt-4">
+                            <FormValidationAlert info="Please fill out all the fields."/>
+                        </div>
+                    )
+                }
+
+                {
+                    valid && !response && (
+                        <FormValidationAlert info="Loading..." gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
+                    )
+                }
+
+                {
+                    valid && response==="Team already exist please change your team name" && (
+                        <div className="mt-4">
+                            <FormValidationAlert info={response}/>
+                        </div>
+                    )
+                }
+                {
+                     valid && response==="Registration Successful" && (
+                        <div className="mt-4">
+                            <FormSuccessAlert info={response}/>
+                        </div>
+                    )
+                }
                 <div className="d-flex">
                     <Button className="backBtn" onClick={thirdCall}>Back</Button>
                 </div>
 
                 <div className="text-center">
-                    <button className="submitBtn btn btn-success" onClick={postDataToBackend}
-                    style={data.transaction.length === 0? styles.disabledButton : styles.enabledButton}
-                    disabled={registrationOff}
-                    >
-                    Submit</button>
+                    <button
+                        className="submitBtn btn btn-success"
+                        onClick={postDataToBackend}
+                        // disabled={registrationOff}
+                        >
+                        Submit
+                    </button>
                 </div>
             </Row>
         </Container>
@@ -169,21 +200,3 @@ function TeacherData({thirdCall,inputChange,postDataToBackend}) {
 
 export default TeacherData;
 
-const styles = {
-   
-    
-    disabledButton: {
-        backgroundColor: 'gray',
-        border:'none',
-        color: 'white',
-        cursor: 'not-allowed',
-        boxShadow: "0px 0px 10px 0px grey",
-    },
-    enabledButton: {
-        backgroundColor: 'green',
-        color: 'white',
-        cursor: 'pointer',
-        
-    },
-    
-};

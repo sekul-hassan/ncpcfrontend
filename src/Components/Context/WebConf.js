@@ -1,15 +1,15 @@
 
 const currentEvent = {
-    "name": "Preliminary Registration ends in",
-    "date": "2024-02-06"
+    "name": "Preliminary Registration starts in",
+    "date": "2024-02-01"
 }
 
-const noticeBar = "*** Welcome, Honorable Vice Chancellor Dr. Md. Nurul Islam Sir to the National Collegiate Programming Contest 2023 ***"
+const noticeBar = "Welcome to JU NCPC 2023, Organized by Department of Computer Science and Engineering."
 
 
 const event1 = {
     "name": "Preliminary Registration Deadline",
-    "date": "6 February 2024"
+    "date": "15 February 2024"
 }
 const event2 = {
     "name": "Preliminary Contest",

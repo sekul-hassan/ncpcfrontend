@@ -14,7 +14,11 @@ import Logo from "./Components/Logo";
 import CommitteePage from "./Pages/CommitteePage";
 import GalleryPage from './Pages/GalleryPage';
 import AboutPage from "./Pages/AboutPage";
-import Rules from './Pages/Rules';
+import RegistrationProcess from './MyComponents/RegistrationProcess';
+import TransportantionSchedule from './MyComponents/TransportantSchedule';
+import Accomodation from './MyComponents/Accomodation';
+import TeamStatus from './MyComponents/TeamStatus';
+import RegiSuccess from "./MyComponents/RegiSuccess";
 
 
 function App() {
@@ -24,12 +28,18 @@ function App() {
         <Logo/>
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="registration" element={<Registration/>}/>
-            <Route path="rules" element={<Rules/>}/>
+            <Route path="registration" element={<RegistrationProcess/>}/>
+            <Route path='registration-process' element={<RegistrationProcess/>}/>
+            <Route path='transport' element={<TransportantionSchedule/>}/>
+            <Route path='accomodation' element={<Accomodation/>}/>
+            <Route path='status' element={<TeamStatus/>}/>
+            {/* <Route path="rules" element={<Rules/>}/> */}
             <Route path="committee" element={<CommitteePage/>}/>
             <Route path="gallery" element={<GalleryPage/>}/>
             <Route path="about" element={<AboutPage/>}/>
-            <Route path="/*" element={<Rules/>}/>
+            <Route path="test" element={<Registration/>}/>
+            <Route path="regi-success" element={<RegiSuccess/>}/>
+            <Route path="/*" element={<Home/>}/>
           </Routes>
         <Footer/>
     </div>

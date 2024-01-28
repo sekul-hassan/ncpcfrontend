@@ -1,9 +1,9 @@
 import React, {Fragment} from 'react';
-import {Button, Carousel, Col, Container, Row} from "react-bootstrap";
+import {Carousel, Col, Container, Row} from "react-bootstrap";
 import tLogo from "../Assets/Images/banner.png";
 import mh from "../Assets/Images/dept/mh.png";
 import Count from "../Components/Count";
-import {Link} from "react-router-dom";
+import RegistrationButton from '../MyComponents/RegistrationButton';
 
 
 function TopBanner() {
@@ -17,13 +17,13 @@ function TopBanner() {
                             <Carousel.Item>
                                 <img className="carouselImg" src={mh} alt=""/>
                                 <Carousel.Caption>
-                                    <Link to="registration"><Button className="contactBtn">Register Now</Button></Link>
+                                    <RegistrationButton buttonText="Register Now" linksTo="/registration-process"/>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img className="carouselImg" src={tLogo} alt=""/>
                                 <Carousel.Caption>
-                                    <Link to="registration"><Button className="contactBtn">Register Now </Button></Link>
+                                    <RegistrationButton buttonText="Register Now" linksTo="/registration-process"/>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>

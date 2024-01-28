@@ -7,13 +7,17 @@ import {Link} from "react-router-dom";
 
 
 function Footer(props) {
+    const containerStyle = {
+        background: 'linear-gradient(45deg, #1a237e 30%, #283593 90%)'
+    }
+
     return (
 
-        <Container fluid="true" className="footer">
+        <Container fluid="true" style={containerStyle}>
             <Row className="m-0 pt-3">
                 <Col className="contact" md={6} sm={12} lg={6}>
                     <h4>Important Links</h4>
-                    <Link to="/rules">Notice</Link><br/>
+                    <Link to="#">Notice</Link><br/>
                     <Link to="/registration">Registration</Link><br/>
                     <a href="https://juniv.edu/department/cse" target="_blank" rel="noreferrer">JU CSE</a><br/>
                 </Col>
@@ -25,9 +29,6 @@ function Footer(props) {
                     <span className="mx-3"><FontAwesomeIcon icon={faEnvelope}/> pc.cse@juniv.edu</span>
                     <div className="iconDiv">
                         <a className="contactLink mx-1" href="https://www.facebook.com/groups/1406720813273322" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook}/> </a>
-                        <a className="contactLink mx-1" href="https://www.facebook.com/groups/1406720813273322" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faTwitter}/> </a>
-                        <a className="contactLink mx-1" href="https://www.facebook.com/groups/1406720813273322" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faInstagram}/> </a>
-                        <a className="contactLink mx-1" href="https://www.facebook.com/groups/1406720813273322" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faLinkedin}/> </a>
                     </div>
                 </Col>
             </Row>
