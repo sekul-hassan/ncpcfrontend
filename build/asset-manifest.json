@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.a5061e4e.css",
-    "main.js": "/static/js/main.01fa94ba.js",
-    "reactPlayerPreview.js": "/static/js/reactPlayerPreview.54b797a1.chunk.js",
+    "main.css": "/static/css/main.c9e3e426.css",
+    "main.js": "/static/js/main.7a28a475.js",
     "static/js/787.2576cc47.chunk.js": "/static/js/787.2576cc47.chunk.js",
     "static/media/2015.jpg": "/static/media/2015.3846424296c3ce0be1a4.jpg",
     "static/media/2021.jpg": "/static/media/2021.1a4ad349bbb8f7357b06.jpg",
     "static/media/lab_201.png": "/static/media/lab_201.96455ccccecf5ed60902.png",
     "static/media/2016.jpg": "/static/media/2016.f8172654ea64729d9b04.jpg",
     "static/media/2017.jpg": "/static/media/2017.b3e6a8b68a3a15506f24.jpg",
+    "static/media/seminar.png": "/static/media/seminar.91ca44b7a0d8c0a3e776.png",
+    "static/media/ncpc_champion.png": "/static/media/ncpc_champion.4fe6d3e76c43b3eaa8f1.png",
     "static/media/code_elevate_camp.jpg": "/static/media/code_elevate_camp.f126681e4042bb82ce5b.jpg",
     "static/media/codeElevate_302.jpg": "/static/media/codeElevate_302.c663249b7c37d946d8e4.jpg",
     "static/media/juLogoBlue.png": "/static/media/juLogoBlue.03324a7de1eeddaa6261.png",
@@ -31,6 +32,7 @@
     "static/media/3_JKD.png": "/static/media/3_JKD.1355b9c4ff762dc30c6e.png",
     "static/media/6_BA.png": "/static/media/6_BA.5ec6c7e0e6489c23998a.png",
     "static/media/8_BA.png": "/static/media/8_BA.5ec6c7e0e6489c23998a.png",
+    "static/media/night.png": "/static/media/night.99355a07533224c1d4e5.png",
     "static/media/3_SS.png": "/static/media/3_SS.6bd61f6f139adfa69103.png",
     "static/media/_203_contest.jpg": "/static/media/_203_contest.33d5a23c117c82c18a93.jpg",
     "static/media/_203.jpg": "/static/media/_203.5403aaeb4ad4b2222541.jpg",
@@ -46,7 +48,6 @@
     "static/media/ncpc_logo_transparent.png": "/static/media/ncpc_logo_transparent.8e230add5def8cceb57d.png",
     "static/media/4_MB.jpg": "/static/media/4_MB.ece8b48a256237109aca.jpg",
     "static/media/digital-bangladesh.png": "/static/media/digital-bangladesh.d701f670b7c697ef8368.png",
-    "static/media/ju_cse.png": "/static/media/ju_cse.b67ce1f6059b4ba3c18d.png",
     "static/media/3_AKA.jpg": "/static/media/3_AKA.149445f45b66fe438337.jpg",
     "static/media/ICT_Division.png": "/static/media/ICT_Division.8e2a8359b88232a61d9d.png",
     "static/media/1_EI.jpg": "/static/media/1_EI.f584140367ec512791dd.jpg",
@@ -75,13 +76,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.a5061e4e.css.map": "/static/css/main.a5061e4e.css.map",
-    "main.01fa94ba.js.map": "/static/js/main.01fa94ba.js.map",
-    "reactPlayerPreview.54b797a1.chunk.js.map": "/static/js/reactPlayerPreview.54b797a1.chunk.js.map",
+    "main.c9e3e426.css.map": "/static/css/main.c9e3e426.css.map",
+    "main.7a28a475.js.map": "/static/js/main.7a28a475.js.map",
     "787.2576cc47.chunk.js.map": "/static/js/787.2576cc47.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5061e4e.css",
-    "static/js/main.01fa94ba.js"
+    "static/css/main.c9e3e426.css",
+    "static/js/main.7a28a475.js"
   ]
 }

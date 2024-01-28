@@ -62,8 +62,8 @@ function RegiForm() {
     const [firstNext,setFirstNext] = useState(false);
     const [secondNext,setSecondNext] = useState(false);
     const [thirdNext,setThirdNext] = useState(false);
-    const [submit,setSubmit] = useState(false);
-    const [success,setSuccess] = useState(false);
+    const [valid,setValid] = useState(false);
+    const [submit, setSubmit] = useState(false)
     const [response,setResponse] = useState(null);
 
 
@@ -103,13 +103,17 @@ function RegiForm() {
 
     const postDataToBackend = (e) => {
         e.preventDefault();
-        setSubmit(true)
+
+        setResponse(null)
+        setValid(true);
+        setSubmit(true);
 
         if (!validateCoachData(data)) {
-            setSuccess(false)
-            setResponse(null)
+            setValid(false)
             return false;
         }
+
+
 
         const formData = new FormData();
         Object.entries(data).forEach(([key, value]) => {
@@ -117,19 +121,12 @@ function RegiForm() {
         });
 
         axios.post('https://pc.cse.juniv.edu/api/addUser', formData)
-
             .then(response => {
-
                 setResponse(response.data);
-                setSuccess(true);
-                setSubmit(false);
                 console.log(response.data);
             })
             .catch(error => {
-                setSubmit(true);
-                setSuccess(false);
-                setResponse("Some problem occur\nPlease Contact Developer team");
-                window.alert("Some problem occur\nPlease Contact Developer team");
+                setResponse("Some problem occurred.");
             });
 
     };
@@ -169,7 +166,6 @@ function RegiForm() {
     const fourthCall = ()=>{
         setThirdNext(true);
         setResponse(null)
-        setSubmit(false);
 
         if (!validateThirdUser(data)) {
             return false;
@@ -199,7 +195,7 @@ function RegiForm() {
                         third && !first && !second && !fourth?<ThirdContestant secondCall={secondCall} fourthCall={fourthCall} inputChange={inputChange} thirdNext={thirdNext}/>:""
                     }
                     {
-                        !third && !first && !second && fourth?<TeacherData thirdCall={thirdCall} inputChange={inputChange} postDataToBackend={postDataToBackend} submit={submit} success={success} response={response}/>:""
+                        !third && !first && !second && fourth?<TeacherData thirdCall={thirdCall} inputChange={inputChange} postDataToBackend={postDataToBackend} submit={submit} valid={valid} response={response}/>:""
                     }
                 </div>
 

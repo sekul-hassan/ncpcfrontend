@@ -13,8 +13,11 @@ import {faImage} from "@fortawesome/free-solid-svg-icons";
 import {faChalkboardUser} from "@fortawesome/free-solid-svg-icons";
 import FormValidationAlert from "../MyComponents/FormValidataionAlert";
 import FormSuccessAlert from "../MyComponents/FormSuccessAlert";
-function TeacherData({thirdCall,inputChange,postDataToBackend,submit,success,response}) {
+function TeacherData({thirdCall,inputChange,postDataToBackend,submit,valid,response}) {
     const {data} = useContext(FormContext);
+
+    console.log(" Response = " + response + " Success = " + valid);
+
     return (
         <Container fluid="true" className="firstContestant mt-4">
             <h4 className="title"><FontAwesomeIcon icon={faChalkboardUser} /> Coach Info</h4>
@@ -148,27 +151,30 @@ function TeacherData({thirdCall,inputChange,postDataToBackend,submit,success,res
                     {/*    value={!data.transaction===""?"":data.transaction}*/}
                     {/*/>*/}
                 </Col>
+
                 {
-                    submit && !response && success && (
-                        <FormValidationAlert info="Loading..." gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
-                    )
-                }
-                {
-                    submit && !response && !success && (
+                    submit && !valid && (
                         <div className="mt-4">
                             <FormValidationAlert info="Please fill out all the fields."/>
                         </div>
                     )
                 }
+
                 {
-                    submit && success && response==="Team already exist please change your team name" && (
+                    valid && !response && (
+                        <FormValidationAlert info="Loading..." gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
+                    )
+                }
+
+                {
+                    valid && response==="Team already exist please change your team name" && (
                         <div className="mt-4">
                             <FormValidationAlert info={response}/>
                         </div>
                     )
                 }
                 {
-                    submit && success && response==="Registration Successful" && (
+                     valid && response==="Registration Successful" && (
                         <div className="mt-4">
                             <FormSuccessAlert info={response}/>
                         </div>
