@@ -40,7 +40,7 @@ const NoticeBoard = () => {
       <table style={{ width: '100%', borderCollapse: 'collapse', overflow: 'hidden' }}>
         <thead>
           <tr>
-            <th className='title text-white' style={headerCellStyle}>Notice</th>
+            <th className='title text-white' style={headerCellStyle}>Announcement</th>
           </tr>
         </thead>
         <tbody>

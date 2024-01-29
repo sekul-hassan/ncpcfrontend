@@ -17,7 +17,6 @@ function Footer(props) {
             <Row className="m-0 pt-3">
                 <Col className="contact" md={6} sm={12} lg={6}>
                     <h4>Important Links</h4>
-                    <Link to="#">Notice</Link><br/>
                     <Link to="/registration">Registration</Link><br/>
                     <a href="https://juniv.edu/department/cse" target="_blank" rel="noreferrer">JU CSE</a><br/>
                 </Col>
@@ -25,7 +24,7 @@ function Footer(props) {
                     <h4>Contact Us</h4>
                     <a href="https://www.juniv.edu/department/cse" target="_blank" rel="noreferrer">Department of Computer Science & Engineering<br/>
                     Jahangirnagar University, Savar, Dhaka-1342</a><br/>
-                    <span><FontAwesomeIcon icon={faPhoneVolume}/> 01941336337 , 01816100063</span>
+                    <span><FontAwesomeIcon icon={faPhoneVolume}/> 01925228874, 01941336337 </span>
                     <span className="mx-3"><FontAwesomeIcon icon={faEnvelope}/> pc.cse@juniv.edu</span>
                     <div className="iconDiv">
                         <a className="contactLink mx-1" href="https://www.facebook.com/groups/1406720813273322" target="_blank" rel="noreferrer"><FontAwesomeIcon icon={faFacebook}/> </a>

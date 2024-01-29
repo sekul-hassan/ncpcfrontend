@@ -27,9 +27,9 @@ function Home(props) {
             <StrategyCards/>
             <HostedBy/>
             <SupportedBy/>
-            <PlatinumSponsors/>
+            {/* <PlatinumSponsors/>
             <GoldSponsors/>
-            <SilverSponsors/>
+            <SilverSponsors/> */}
             <div style={{height:"20px"}}></div>
         </Fragment>
     );

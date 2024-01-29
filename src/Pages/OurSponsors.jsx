@@ -10,12 +10,19 @@ import { publicationCommitteeImages, publicationNameList, publicationPostList, p
 import { logisticCommitteeImages, logisticNameList, logisticPostList, logisticCommittee } from "../Components/Context/Logistic";
 import TopMenu from "../Components/TopMenu";
 import Sponsor from '../Components/Sponsor';
+import SponsorCard from '../MyComponents/GoldSponsorCard';
+import sponsorMockImage from "../Assets/Images/sponsor.png";
+import PlatinumSponsorCard from '../MyComponents/PlatinumSponsorCard';
+import GoldSponsorCard from '../MyComponents/GoldSponsorCard';
+import SilverSponsorCard from '../MyComponents/SilverSponsorCard';
+import OtherSponsorCard from '../MyComponents/OtherSponsorCard';
 
 function OurSponsors(props) {
     const items = [
         { id: 1, name: 'Platinum' },
         { id: 2, name: 'Gold' },
         { id: 3, name: 'Silver' },
+        { id: 4, name: 'Other' },
     ];
     const [activeItem, setActiveItem] = useState(items[0]);
     const onSelectCurrentLink = (item) => {
@@ -39,21 +46,12 @@ function OurSponsors(props) {
                 </div>
 
                 {
-                    activeItem?.id == 1 ? <Sponsor imageUrls={executiveCommitteeImages} executiveNameList={executiveNameList} executivePostList={executivePostList} committeeName={executiveCommittee} /> :
-                        activeItem?.id == 2 ? <Sponsor imageUrls={webCommitteeImages} executiveNameList={webCommitteeNameList} executivePostList={webCommitteePostList} committeeName={webCommittee} /> :
-                            activeItem?.id == 3 ? <Sponsor imageUrls={transportCommitteeImages} executiveNameList={transportCommitteeNameList} executivePostList={transportCommitteePostList} committeeName={transportCommittee} /> : ''
+                    activeItem?.id == 1 ? <PlatinumSponsorCard/> :
+                        activeItem?.id == 2 ? <GoldSponsorCard/> :
+                            activeItem?.id == 3 ? <SilverSponsorCard/> : 
+                                activeItem?.id == 4 ? <OtherSponsorCard/> : ''
 
                 }
-
-                {/*   <Committee imageUrls={executiveCommitteeImages} executiveNameList={executiveNameList} executivePostList={executivePostList} committeeName={executiveCommittee} />
-                <Committee imageUrls={webCommitteeImages} executiveNameList={webCommitteeNameList} executivePostList={webCommitteePostList} committeeName={webCommittee} />
-                <Committee imageUrls={transportCommitteeImages} executiveNameList={transportCommitteeNameList} executivePostList={transportCommitteePostList} committeeName={transportCommittee} />
-                <Committee imageUrls={invitationCommitteeImages} executiveNameList={invitationNameList} executivePostList={invitationPostList} committeeName={invitationCommittee} />
-                <Committee imageUrls={foodCommitteeImages} executiveNameList={foodNameList} executivePostList={foodPostList} committeeName={footCommittee} />
-                <Committee imageUrls={culturalCommitteeImages} executiveNameList={culturalNameList} executivePostList={culturalPostList} committeeName={culturalCommittee} />
-                <Committee imageUrls={publicationCommitteeImages} executiveNameList={publicationNameList} executivePostList={publicationPostList} committeeName={publicationCommittee} />
-                <Committee imageUrls={logisticCommitteeImages} executiveNameList={logisticNameList} executivePostList={logisticPostList} committeeName={logisticCommittee} /> */}
-
             </Fragment>
         </>
     );
