@@ -36,7 +36,10 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
 
     return (
         <Container fluid="true" className="firstContestant mt-3">
-            <Row className="m-0 p-0">
+            <div className="registrationTitleDiv">
+                <h4 className="boldTitle">Registration Form</h4>
+            </div>
+            <Row className="mx-0 mt-3 px-3">
                 <Col md={6} sm={12} lg={6}>
                     <label htmlFor="x"><FontAwesomeIcon icon={faBuildingColumns} />  Institute Name</label>
                     {Array.isArray(items) && (
@@ -63,9 +66,10 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
                 </Col>
             </Row>
 
-            <h4 className="title mb-4"><FontAwesomeIcon icon={faUser} /> Team Member-1</h4>
-            <hr/>
-            <Row className="mx-0">
+
+            <Row className="mx-0 mt-0 px-3 pb-4">
+                <h4 className="title mb-4"><FontAwesomeIcon icon={faUser} /> Team Member-1</h4>
+                <hr/>
                 <Col>
                     <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Name</label>
                     <input
@@ -166,7 +170,7 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
                 </Col>
                 {
                     firstNext && (
-                        <div className="mt-4">
+                        <div className="mt-2">
                             <FormValidationAlert info="Please fill out all the fields."/>
                         </div>
                     )

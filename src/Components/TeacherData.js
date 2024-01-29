@@ -12,17 +12,17 @@ import {faIdCardClip} from "@fortawesome/free-solid-svg-icons";
 import {faImage} from "@fortawesome/free-solid-svg-icons";
 import {faChalkboardUser} from "@fortawesome/free-solid-svg-icons";
 import FormValidationAlert from "../MyComponents/FormValidataionAlert";
-import FormSuccessAlert from "../MyComponents/FormSuccessAlert";
-function TeacherData({thirdCall,inputChange,postDataToBackend,submit,valid,response}) {
+function TeacherData({thirdCall,inputChange,paymentCall,fourthNext}) {
     const {data} = useContext(FormContext);
 
-    console.log(" Response = " + response + " Success = " + valid);
-
     return (
-        <Container fluid="true" className="firstContestant mt-4">
-            <h4 className="title"><FontAwesomeIcon icon={faChalkboardUser} /> Coach Info</h4>
-            <hr/>
-            <Row className="mx-0">
+        <Container fluid="true" className="firstContestant mt-3">
+            <div className="registrationTitleDiv">
+                <h4 className="boldTitle">Registration Form</h4>
+            </div>
+            <Row className="mx-0 px-3 pb-4">
+                <h4 className="title"><FontAwesomeIcon icon={faChalkboardUser} /> Coach Info</h4>
+                <hr/>
                 <Col>
                     <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Name</label>
                     <input
@@ -135,63 +135,23 @@ function TeacherData({thirdCall,inputChange,postDataToBackend,submit,valid,respo
                             <div className='photoSelect'>Please upload a photo(Max 1MB)</div>
                         )
                     }
-                    
-                    {/*<h3 className="text-center">Payment</h3>*/}
-                    {/*<div className="d-flex justify-content-center">*/}
-                    {/*    <a href="https://www.bkash.com/" target="blank"><img className="PaymentImg" src={bkash} alt=""/></a>*/}
-                    {/*<br/>*/}
-                    {/*</div>*/}
-                    {/*<label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Transaction ID:</label>*/}
-                    {/*<input*/}
-                    {/*    type="text"*/}
-                    {/*    placeholder="bKash TransactionID"*/}
-                    {/*    className="form-control"*/}
-                    {/*    name="transaction"*/}
-                    {/*    onChange={inputChange}*/}
-                    {/*    value={!data.transaction===""?"":data.transaction}*/}
-                    {/*/>*/}
+
                 </Col>
 
                 {
-                    submit && !valid && (
+                    fourthNext && (
                         <div className="mt-4">
                             <FormValidationAlert info="Please fill out all the fields."/>
                         </div>
                     )
                 }
-
-                {
-                    valid && !response && (
-                        <FormValidationAlert info="Loading..." gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
-                    )
-                }
-
-                {
-                    valid && response==="Team already exist please change your team name" && (
-                        <div className="mt-4">
-                            <FormValidationAlert info={response}/>
-                        </div>
-                    )
-                }
-                {
-                     valid && response==="Registration Successful" && (
-                        <div className="mt-4">
-                            <FormSuccessAlert info={response}/>
-                        </div>
-                    )
-                }
                 <div className="d-flex">
-                    <Button className="backBtn" onClick={thirdCall}>Back</Button>
+
                 </div>
 
-                <div className="text-center">
-                    <button
-                        className="submitBtn btn btn-success"
-                        onClick={postDataToBackend}
-                        // disabled={registrationOff}
-                        >
-                        Submit
-                    </button>
+                <div className="d-flex position-relative">
+                    <Button className="backBtn" onClick={thirdCall}>Back</Button>
+                    <Button className="nextBtn2" onClick={paymentCall}>Next</Button>
                 </div>
             </Row>
         </Container>

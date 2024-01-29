@@ -96,7 +96,7 @@
     }
     .registration {
         background-color: rgb(255, 255, 255);
-        padding:2px!important;
+        /*padding:2px!important;*/
         width: 100%;
         height: auto;
     }

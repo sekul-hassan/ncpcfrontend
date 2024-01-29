@@ -6,8 +6,7 @@ import ThirdContestant from "./ThirdContestant";
 import TeacherData from "./TeacherData";
 import axios from "axios";
 import FormContext from "./Context/FormContext";
-import {useNavigate} from "react-router-dom";
-
+import Payment from "./Payment";
 
 const validateFirstUser = (data) => {
     if (data.teamName === "") return false;
@@ -62,12 +61,13 @@ function RegiForm() {
     const [firstNext,setFirstNext] = useState(false);
     const [secondNext,setSecondNext] = useState(false);
     const [thirdNext,setThirdNext] = useState(false);
+    const [fourthNext,setFourthNext] = useState(false);
     const [valid,setValid] = useState(false);
     const [submit, setSubmit] = useState(false)
     const [response,setResponse] = useState(null);
 
 
-    const {data,setData,first,setFirst,second,setSecond,third,setThird,fourth,setFourth} = useContext(FormContext);
+    const {payment,setPayment,data,setData,first,setFirst,second,setSecond,third,setThird,fourth,setFourth} = useContext(FormContext);
     
     const inputChange = (e)=>{
         if (e.target === undefined) {
@@ -108,11 +108,10 @@ function RegiForm() {
         setValid(true);
         setSubmit(true);
 
-        if (!validateCoachData(data)) {
-            setValid(false)
-            return false;
+        if(data.transaction===""){
+            setValid(false);
+            return;
         }
-
 
 
         const formData = new FormData();
@@ -138,6 +137,7 @@ function RegiForm() {
         setFourth(false);
         setFirst(true);
         setThird(false);
+        setPayment(false);
     }
     const secondCall = ()=>{
         setSecondNext(false);
@@ -149,6 +149,7 @@ function RegiForm() {
         setFourth(false);
         setFirst(false);
         setThird(false);
+        setPayment(false);
         return true;
     }
     const thirdCall = ()=>{
@@ -157,7 +158,7 @@ function RegiForm() {
         if (!validateSecondUser(data)) {
             return false;
         }
-
+        setPayment(false);
         setSecond(false);
         setFourth(false);
         setFirst(false);
@@ -165,15 +166,34 @@ function RegiForm() {
     }
     const fourthCall = ()=>{
         setThirdNext(true);
-        setResponse(null)
+        setFourthNext(false);
+        setValid(false);
+        setResponse(null);
+        setSubmit(false);
 
         if (!validateThirdUser(data)) {
             return false;
         }
+        setPayment(false);
         setSecond(false);
         setFourth(true);
         setFirst(false);
         setThird(false);
+    }
+
+    const paymentCall = ()=>{
+        setResponse(null)
+        if (!validateCoachData(data)) {
+            setFourthNext(true);
+            return false;
+        }
+
+        setPayment(true);
+        setSecond(false);
+        setFourth(false);
+        setFirst(false);
+        setThird(false);
+
     }
 
 
@@ -181,21 +201,22 @@ function RegiForm() {
     return (
         <Container fluid="true" className="registration mt-3">
             <form className="formBorder" action="">
-               <div className="registrationTitleDiv">
-                   <h4 className="boldTitle">Registration Form</h4>
-               </div>
-                <div className="responsiveRegi">
+
+                <div>
                     {
-                        !second && first && !third && !fourth?<FirstContestant secondCall={secondCall} inputChange={inputChange} firstNext={firstNext}/>:""
+                        !payment && !second && first && !third && !fourth?<FirstContestant secondCall={secondCall} inputChange={inputChange} firstNext={firstNext}/>:""
                     }
                     {
-                        second && !first && !third && !fourth?<SecondContestant firstCall={firstCall} thirdCall={thirdCall} inputChange={inputChange} secondNext={secondNext}/>:""
+                        !payment && second && !first && !third && !fourth?<SecondContestant firstCall={firstCall} thirdCall={thirdCall} inputChange={inputChange} secondNext={secondNext}/>:""
                     }
                     {
-                        third && !first && !second && !fourth?<ThirdContestant secondCall={secondCall} fourthCall={fourthCall} inputChange={inputChange} thirdNext={thirdNext}/>:""
+                        !payment && third && !first && !second && !fourth?<ThirdContestant secondCall={secondCall} fourthCall={fourthCall} inputChange={inputChange} thirdNext={thirdNext}/>:""
                     }
                     {
-                        !third && !first && !second && fourth?<TeacherData thirdCall={thirdCall} inputChange={inputChange} postDataToBackend={postDataToBackend} submit={submit} valid={valid} response={response}/>:""
+                        !payment && !third && !first && !second && fourth?<TeacherData thirdCall={thirdCall} fourthNext={fourthNext} inputChange={inputChange} paymentCall={paymentCall}/>:""
+                    }
+                    {
+                        payment && !third && !first && !second && !fourth?<Payment fourthCall={fourthCall} inputChange={inputChange} postDataToBackend={postDataToBackend} submit={submit} valid={valid} response={response}/>:""
                     }
                 </div>
 
