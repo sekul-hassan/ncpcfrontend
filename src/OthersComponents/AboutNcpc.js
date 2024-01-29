@@ -26,7 +26,7 @@ function AboutNcpc() {
     }
 
     return (
-       <Container fluid="true" className="text-center mx-3 aboutNcpc p-3" style={containerStyles}>
+       <Container fluid="true" className="text-center aboutNcpc p-4" style={containerStyles}>
            <Row className="mx-0 aboutNcpcRow" style={rowStyles}>
                <h4 className="title pt-4 pb-5 text-white" style={headerStyles}>ABOUT NCPC 2023</h4>
                <Col md={12} lg={5} sm={12}>

@@ -28,7 +28,7 @@ function Alumni1(props) {
 
     return (
         <Fragment>
-            <Container fluid="true" className='text-center p-3' style={containerStyles}>
+            <Container fluid="true" className='text-center p-4' style={containerStyles}>
                 <Row className="mx-0 aboutNcpcRow" style={rowStyles}>
                     <Col md={12} lg={6} sm={12} className="m-0 px-4 pt-5 alumniColumn">
                         <h3 style={headerFontStyle}>ALUMNI STORIES</h3>
