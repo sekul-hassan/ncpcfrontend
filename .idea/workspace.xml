@@ -5,13 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbb3cb8d-f3a9-4e39-b985-10eb4d4b41fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payment/TestJs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Payment/paymentTest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.e67d819e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.e67d819e.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/787.2576cc47.chunk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/js/787.2576cc47.chunk.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.30c9def8.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.30c9def8.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.30c9def8.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.ab16d024.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.ab16d024.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.ab16d024.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/media/slick.2630a3e3eab21c607e21.svg" beforeDir="false" afterPath="$PROJECT_DIR$/build/static/media/slick.2630a3e3eab21c607e21.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Payment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +78,7 @@
       <workItem from="1706439812262" duration="9528000" />
       <workItem from="1706519928786" duration="55000" />
       <workItem from="1706519989920" duration="9650000" />
-      <workItem from="1706632440946" duration="4765000" />
+      <workItem from="1706632440946" duration="6085000" />
     </task>
     <servers />
   </component>

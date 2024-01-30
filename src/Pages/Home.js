@@ -11,25 +11,19 @@ import EventDateWithNoticeBoard from '../MyComponents/EventDateWithNoticeBoard';
 import StrategyCards from '../MyComponents/StrategyCards';
 import SupportedBy from '../MyComponents/SupportedBy';
 import HostedBy from '../MyComponents/HostedBy';
-import GoldSponsors from '../MyComponents/Gold Sponsors';
-import PlatinumSponsors from '../MyComponents/PlatinumSponsors';
-import SilverSponsors from '../MyComponents/SilverSponsors';
-import PaymentTest from "../Payment/paymentTest";
 
 function Home(props) {
     return (
         <Fragment>
             <TopMenu/>
-
-            <PaymentTest/>
-            {/*<TopBanner/>*/}
-            {/*<EventDateWithNoticeBoard/>*/}
-            {/*<AboutSection/>*/}
-            {/*<AboutNcpc/>*/}
-            {/*<Alumni1/>*/}
-            {/*<StrategyCards/>*/}
-            {/*<HostedBy/>*/}
-            {/*<SupportedBy/>*/}
+            <TopBanner/>
+            <EventDateWithNoticeBoard/>
+            <AboutSection/>
+            <AboutNcpc/>
+            <Alumni1/>
+            <StrategyCards/>
+            <HostedBy/>
+            <SupportedBy/>
             {/* <PlatinumSponsors/>
             <GoldSponsors/>
             <SilverSponsors/> */}
