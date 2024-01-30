@@ -21,7 +21,6 @@ function Registration(props) {
         firstUserPhone:"",
         firstUserGender:"",
         firstUserTShirt:"",
-        firstUserId:null,
         firstUserPhoto:null,
 
         secondUserName:"",
@@ -29,7 +28,6 @@ function Registration(props) {
         secondUserPhone:"",
         secondUserGender:"",
         secondUserTShirt:"",
-        secondUserId:null,
         secondUserPhoto:null,
 
         thirdUserName:"",
@@ -37,7 +35,6 @@ function Registration(props) {
         thirdUserPhone:"",
         thirdUserGender:"",
         thirdUserTShirt:"",
-        thirdUserId:null,
         thirdUserPhoto:null,
 
         teacherName:"",
@@ -46,7 +43,6 @@ function Registration(props) {
         teacherPhone:"",
         teacherGender:"",
         teacherTShirt:"",
-        teacherId:null,
         teacherPhoto:null,
         transaction:""
     });

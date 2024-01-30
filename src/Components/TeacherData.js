@@ -104,22 +104,6 @@ function TeacherData({thirdCall,inputChange,paymentCall,fourthNext}) {
                         <option value="xl">XL</option>
                         <option value="xxl">XXL</option>
                     </select>
-
-                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faAddressCard} /> Teacher's ID Card Photo</label><br/>
-                    <input
-                        type="file"
-                        className="form-control"
-                        name="teacherId"
-                        onChange={inputChange}
-                        accept=".jpg,.png,.jpeg"
-                    />
-                    {
-                        data.teacherId?(
-                            <div className='photoSelect'>Your Uploaded File is : {data.teacherId.name}</div>
-                        ):(
-                            <div className='photoSelect'>Please upload a photo(Max 1MB)</div>
-                        )
-                    }
                     <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faImage} />   Teacher's Photo</label><br/>
                     <input
                         type="file"

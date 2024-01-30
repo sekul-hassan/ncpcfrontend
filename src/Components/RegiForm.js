@@ -16,8 +16,7 @@ const validateFirstUser = (data) => {
     if (data.firstUserPhone === "") return false;
     if (data.firstUserGender === "") return false;
     if (data.firstUserTShirt === "") return false;
-    if (data.firstUserPhoto === null) return false;
-    return data.firstUserId !== null;
+    return data.firstUserPhoto !== null;
 
 }
 
@@ -27,8 +26,7 @@ const validateSecondUser = (data) => {
     if (data.secondUserPhone === "") return false;
     if (data.secondUserGender === "") return false;
     if (data.secondUserTShirt === "") return false;
-    if (data.secondUserPhoto === null) return false;
-    return data.secondUserId !== null;
+    return data.secondUserPhoto !== null;
 
 }
 
@@ -39,8 +37,7 @@ const validateThirdUser = (data) => {
     if (data.thirdUserPhone === "") return false;
     if (data.thirdUserGender === "") return false;
     if (data.thirdUserTShirt === "") return false;
-    if (data.thirdUserPhoto === null) return false;
-    return data.thirdUserId !== null;
+    return data.thirdUserPhoto !== null;
 
 }
 const validateCoachData = (data) => {
@@ -50,8 +47,7 @@ const validateCoachData = (data) => {
     if (data.teacherGender === "") return false;
     if (data.teacherTShirt === "") return false;
     if (data.teacherPhoto === null) return false;
-    if (data.teacherDesignation === "") return false;
-    return data.teacherId !== null;
+    return data.teacherDesignation !== "";
 
 }
 
@@ -126,6 +122,8 @@ function RegiForm() {
             })
             .catch(error => {
                 setResponse("Some problem occurred.");
+                setSubmit(false);
+                console.log(error);
             });
 
     };

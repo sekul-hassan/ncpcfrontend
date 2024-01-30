@@ -92,22 +92,6 @@ function ThirdContestant({fourthCall,secondCall,inputChange,thirdNext}) {
                         <option value="xl">XL</option>
                         <option value="xxl">XXL</option>
                     </select>
-
-                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faAddressCard} /> Student ID Card Photo</label><br/>
-                    <input
-                        type="file"
-                        className="form-control"
-                        name="thirdUserId"
-                        onChange={inputChange}
-                        accept=".jpg,.png,.jpeg"
-                    />
-                    {
-                        data.thirdUserId?(
-                            <div className='photoSelect'>Your Uploaded File is : {data.thirdUserId.name}</div>
-                        ):(
-                            <div className='photoSelect'>Please upload a photo(Max 1MB)</div>
-                        )
-                    }
                     <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faImage} />   Student Photo</label><br/>
                     <input
                         type="file"

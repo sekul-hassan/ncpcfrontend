@@ -14,7 +14,6 @@ import {faShirt} from "@fortawesome/free-solid-svg-icons";
 import {faImage} from "@fortawesome/free-solid-svg-icons";
 import items from "./Context/Universities";
 import {ReactSearchAutocomplete} from "react-search-autocomplete";
-import InfoDiv from "../MyComponents/InfoDiv";
 import FormValidationAlert from "../MyComponents/FormValidataionAlert";
 
 function FirstContestant({secondCall,inputChange,firstNext}) {
@@ -134,22 +133,6 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
                         <option value="xl">XL</option>
                         <option value="xxl">XXL</option>
                     </select>
-
-                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faAddressCard} /> Student ID Card Photo</label><br/>
-                    <input
-                        type="file"
-                        className="form-control"
-                        name="firstUserId"
-                        onChange={inputChange}
-                        accept=".jpg,.png,.jpeg"
-                    />
-                    {
-                        data.firstUserId?(
-                            <div className='photoSelect'>Your Uploaded File is : {data.firstUserId.name}</div>
-                        ):(
-                            <div className='photoSelect'>Please upload a photo(Max 1MB)</div>
-                        )
-                    }
                     <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faImage} />   Student Photo</label><br/>
                     <input
                         type="file"

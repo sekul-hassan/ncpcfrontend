@@ -61,7 +61,7 @@ function Payment({fourthCall,inputChange,valid,response,postDataToBackend,submit
                 )
             }
             {
-                valid && response==="Registration Successful" && (
+                valid && response==="Registration Successful." && (
                     <div className="mt-4">
                         <FormSuccessAlert info={response}/>
                         <Navigate to="/status"/>
