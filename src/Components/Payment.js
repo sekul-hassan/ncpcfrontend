@@ -8,9 +8,36 @@ import InfoDiv from "../MyComponents/InfoDiv";
 import FormValidationAlert from "../MyComponents/FormValidataionAlert";
 import FormSuccessAlert from "../MyComponents/FormSuccessAlert";
 import {Navigate} from "react-router-dom";
+import axios from "axios";
+
 
 function Payment({fourthCall,inputChange,valid,response,postDataToBackend,submit}) {
     const {data} = useContext(FormContext);
+    const authenticateBkash = async (event) => {
+        event.preventDefault()
+        console.log("Calling callback.")
+        try {
+            const {response} = await axios.post(process.env.bkash_grant_token_url, {
+                app_key: process.env.bkash_api_key,
+                app_secret: process.env.bkash_secret_key,
+            }, {
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json",
+                    username: process.env.bkash_username,
+                    password: process.env.bkash_password,
+                }
+            })
+
+            console.log(response)
+
+            // globals.set('id_token', data.id_token, {protected: true})
+
+            // next()
+        } catch (error) {
+            // return res.status(401).json({error: error.message})
+        }
+    }
     return (
         <Container fluid="true" className=" mt-4 mb-3 responsiveRegi pt-4">
             <InfoDiv info="Payment Now"/>

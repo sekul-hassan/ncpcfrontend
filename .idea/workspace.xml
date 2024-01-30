@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbb3cb8d-f3a9-4e39-b985-10eb4d4b41fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/FormDiv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Payment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Assets/CSS/Responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Assets/CSS/Responsive.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/FirstContestant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/FirstContestant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/RegiForm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/RegiForm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/SecondContestant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/SecondContestant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/TeacherData.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/TeacherData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/ThirdContestant.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/ThirdContestant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Registration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Payment/TestJs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Payment/paymentTest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Payment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +71,7 @@
       <workItem from="1706439812262" duration="9528000" />
       <workItem from="1706519928786" duration="55000" />
       <workItem from="1706519989920" duration="9650000" />
+      <workItem from="1706632440946" duration="4765000" />
     </task>
     <servers />
   </component>

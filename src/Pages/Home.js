@@ -14,19 +14,22 @@ import HostedBy from '../MyComponents/HostedBy';
 import GoldSponsors from '../MyComponents/Gold Sponsors';
 import PlatinumSponsors from '../MyComponents/PlatinumSponsors';
 import SilverSponsors from '../MyComponents/SilverSponsors';
+import PaymentTest from "../Payment/paymentTest";
 
 function Home(props) {
     return (
         <Fragment>
             <TopMenu/>
-            <TopBanner/>
-            <EventDateWithNoticeBoard/>
-            <AboutSection/>
-            <AboutNcpc/>
-            <Alumni1/>
-            <StrategyCards/>
-            <HostedBy/>
-            <SupportedBy/>
+
+            <PaymentTest/>
+            {/*<TopBanner/>*/}
+            {/*<EventDateWithNoticeBoard/>*/}
+            {/*<AboutSection/>*/}
+            {/*<AboutNcpc/>*/}
+            {/*<Alumni1/>*/}
+            {/*<StrategyCards/>*/}
+            {/*<HostedBy/>*/}
+            {/*<SupportedBy/>*/}
             {/* <PlatinumSponsors/>
             <GoldSponsors/>
             <SilverSponsors/> */}
