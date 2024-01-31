@@ -17,15 +17,14 @@ function Home(props) {
     return (
         <Fragment>
             <TopMenu/>
-            <PaymentTest/>
-            {/*<TopBanner/>*/}
-            {/*<EventDateWithNoticeBoard/>*/}
-            {/*<AboutSection/>*/}
-            {/*<AboutNcpc/>*/}
-            {/*<Alumni1/>*/}
-            {/*<StrategyCards/>*/}
-            {/*<HostedBy/>*/}
-            {/*<SupportedBy/>*/}
+            <TopBanner/>
+            <EventDateWithNoticeBoard/>
+            <AboutSection/>
+            <AboutNcpc/>
+            <Alumni1/>
+            <StrategyCards/>
+            <HostedBy/>
+            <SupportedBy/>
 
             {/* <PlatinumSponsors/>
             <GoldSponsors/>
