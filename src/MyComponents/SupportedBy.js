@@ -2,6 +2,8 @@ import React from 'react';
 import supportedByDigitalBangladesh from "../Assets/Images/digital-bangladesh.png";
 import supportedByICTDivision from "../Assets/Images/ICT_Division.png";
 import supportedByBCC from "../Assets/Images/bcc_logo.png";
+import alumni_logo from "../Assets/Images/Alumni_Logo.jpg";
+
 import { Row, Col } from 'react-bootstrap';
 const styles = {
   card: {
@@ -26,7 +28,7 @@ const styles = {
     color: '#fff',
   },
   image: {
-    height: '50%',
+    height: '55%',
     width: '50%', // Adjust the width of the image
   },
   container: {
@@ -41,6 +43,7 @@ const imageList = [
   supportedByDigitalBangladesh, // Replace with actual image URL
   supportedByICTDivision, // Replace with actual image URL
   supportedByBCC, // Replace with actual image URL
+  alumni_logo,
 ];
 
 const headerStyle = {
