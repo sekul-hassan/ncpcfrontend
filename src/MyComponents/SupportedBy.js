@@ -7,8 +7,8 @@ import alumni_logo from "../Assets/Images/Alumni_Logo.jpg";
 import { Row, Col } from 'react-bootstrap';
 const styles = {
   card: {
-    width: '350px',
-    height: '200px',
+    width: '300px',
+    height: '225px',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
     overflow: 'hidden',
@@ -28,7 +28,7 @@ const styles = {
     color: '#fff',
   },
   image: {
-    height: '55%',
+    height: '50%',
     width: '50%', // Adjust the width of the image
   },
   container: {
