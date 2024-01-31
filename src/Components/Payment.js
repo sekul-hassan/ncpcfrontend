@@ -46,15 +46,16 @@ function Payment({fourthCall,valid,response,postDataToBackend,submit}) {
 
     return (
         <Container fluid="true" className=" mt-4 mb-3 responsiveRegi pt-4">
-            <InfoDiv info="Payment Now"/>
+            <InfoDiv info="Payment Now" gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
             <h4 className="title mt-3 text-dark">To make your payment with bKash, follow the steps below:</h4>
-            <h5 className="description mt-3">1. Go to your bKash Mobile Menu by dialing *247#</h5>
-            <h5 className="description">2. Choose "Payment</h5>
-            <h5 className="description">3. Enter the Merchant bKash Account Number <strong>(01941336337)</strong> you want to pay to</h5>
-            <h4 className="description">4. Enter your amount you want to pay</h4>
-            <h5 className="description">5. Enter your team name as a reference</h5>
-            <h5 className="description">6. Now Enter your bKash Mobile Menu PIN to confirm.</h5>
-            <h5 className="title mt-3"> Done! A confirmation will be provided once your payment is verified</h5>
+            <h4 className="description text-dark">1. <b>Check the information. Make sure emails are valid.</b> </h4>
+            <h5 className="description mt-3  text-dark">2. Click the BKash image button.</h5>
+            <h5 className="description text-dark">3. Complete payment. Please do not close the current tab.</h5>
+            <h5 className="description text-dark">4. Come back to this tab once your payment is successful. </h5>
+
+            <h5 className="description text-dark">6. Do not refresh the browser. </h5>
+            <h5 className="description text-dark">7. Press submit once everything is done. </h5>
+            <h5 className="title mt-3 text-dark"> When registration is successful, you will get an email confirmation.</h5>
             <div className="m-5 text-center">
                 {
                    !payTeamExist && loading && clicked ?<div>loading...</div>: <img onClick={authenticate} className="PaymentImg" src={bkash} alt=""/>
