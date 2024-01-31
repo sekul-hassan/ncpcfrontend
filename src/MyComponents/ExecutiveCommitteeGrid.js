@@ -31,16 +31,6 @@ function ExecutiveCommitteeGrid({ imageUrls, executiveNameList, executivePostLis
                 </Col>
             </Row>
 
-            <Row className="justify-content-center">
-                <Col className="mt-3" lg={3} md={4} sm={6}>
-                    <GlobalCard image={imageUrls[4]} name={executiveNameList[4]} post={executivePostList[4]} />
-                </Col>
-                <Col className="mt-3" lg={3} md={4} sm={6}>
-                    <GlobalCard image={imageUrls[5]} name={executiveNameList[5]} post={executivePostList[5]} />
-                </Col>
-
-            </Row>
-
             {/* Deans */}
             {/* <div className='mt-3'>
                 <InfoDiv info="Faculty Deans" gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
@@ -69,7 +59,13 @@ function ExecutiveCommitteeGrid({ imageUrls, executiveNameList, executivePostLis
                 </Col>
             </Row>
 
-            <Row className="justify-content-center">    
+            <Row className="justify-content-center">
+                <Col className="mt-3" lg={3} md={4} sm={6}>
+                    <GlobalCard image={imageUrls[4]} name={executiveNameList[4]} post={executivePostList[4]} />
+                </Col>
+                <Col className="mt-3" lg={3} md={4} sm={6}>
+                    <GlobalCard image={imageUrls[5]} name={executiveNameList[5]} post={executivePostList[5]} />
+                </Col>
                 <Col className="mt-3" lg={3} md={4} sm={6}>
                     <GlobalCard image={imageUrls[6]} name={executiveNameList[6]} post={executivePostList[6]} />
                 </Col>
