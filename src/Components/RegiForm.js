@@ -104,11 +104,6 @@ function RegiForm() {
         setValid(true);
         setSubmit(true);
 
-        if(data.transaction===""){
-            setValid(false);
-            return;
-        }
-
 
         const formData = new FormData();
         Object.entries(data).forEach(([key, value]) => {

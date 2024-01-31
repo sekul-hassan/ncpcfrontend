@@ -1,43 +1,49 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {Button, Container} from "react-bootstrap";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faFileSignature} from "@fortawesome/free-solid-svg-icons";
+
 import bkash from "../Assets/Images/bkash.jpg";
-import FormContext from "./Context/FormContext";
 import InfoDiv from "../MyComponents/InfoDiv";
 import FormValidationAlert from "../MyComponents/FormValidataionAlert";
 import FormSuccessAlert from "../MyComponents/FormSuccessAlert";
 import {Navigate} from "react-router-dom";
+import FormContext from "./Context/FormContext";
 import axios from "axios";
 
 
-function Payment({fourthCall,inputChange,valid,response,postDataToBackend,submit}) {
+function Payment({fourthCall,valid,response,postDataToBackend,submit}) {
+    const [url, setUrl] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [clicked, setClicked] = useState(false);
+    const [payTeamExist, setPayTeamExist] = useState(false);
+
     const {data} = useContext(FormContext);
-    const authenticateBkash = async (event) => {
-        event.preventDefault()
-        console.log("Calling callback.")
+    const teamName = data.teamName;
+
+    const authenticate = async (e) => {
+        e.preventDefault();
+        setClicked(true)
+
         try {
-            const {response} = await axios.post(process.env.bkash_grant_token_url, {
-                app_key: process.env.bkash_api_key,
-                app_secret: process.env.bkash_secret_key,
-            }, {
-                headers: {
-                    "Content-Type": "application/json",
-                    "Accept": "application/json",
-                    username: process.env.bkash_username,
-                    password: process.env.bkash_password,
-                }
-            })
-
-            console.log(response)
-
-            // globals.set('id_token', data.id_token, {protected: true})
-
-            // next()
+            const response = await axios.get(`https://pc.cse.juniv.edu/api/bkash/payment/create/${teamName}` );
+            console.log(response.data);
+            if(response.data==="Team already exist please change your team name"){
+                setPayTeamExist(true);
+                return;
+            }
+            setUrl(response.data);
+            setClicked(false);
         } catch (error) {
-            // return res.status(401).json({error: error.message})
+            console.error("Error during authentication:", error);
         }
-    }
+    };
+
+    useEffect(() => {
+        if (url) {
+            setLoading(false);
+            window.open(url, '_blank');
+        }
+    }, [url]);
+
     return (
         <Container fluid="true" className=" mt-4 mb-3 responsiveRegi pt-4">
             <InfoDiv info="Payment Now"/>
@@ -49,31 +55,21 @@ function Payment({fourthCall,inputChange,valid,response,postDataToBackend,submit
             <h5 className="description">5. Enter your team name as a reference</h5>
             <h5 className="description">6. Now Enter your bKash Mobile Menu PIN to confirm.</h5>
             <h5 className="title mt-3"> Done! A confirmation will be provided once your payment is verified</h5>
-
-            <div className="d-flex justify-content-center">
-                <img className="PaymentImg" src={bkash} alt=""/>
-            <br/>
+            <div className="m-5 text-center">
+                {
+                   !payTeamExist && loading && clicked ?<div>loading...</div>: <img onClick={authenticate} className="PaymentImg" src={bkash} alt=""/>
+                }
+                {
+                    payTeamExist && clicked && (
+                        <div className="mt-4">
+                            <FormValidationAlert info="Team already exist please change your team name."/>
+                        </div>
+                    )
+                }
             </div>
-            <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Transaction ID:</label>
-            <input
-                type="text"
-                placeholder="bKash TransactionID"
-                className="form-control"
-                name="transaction"
-                onChange={inputChange}
-                value={!data.transaction===""?"":data.transaction}
-            />
 
             {
-                submit && !valid && (
-                    <div className="mt-4">
-                        <FormValidationAlert info="Please fill out all the fields."/>
-                    </div>
-                )
-            }
-
-            {
-                valid && !response && (
+                 !response && submit && (
                     <div className="mt-3">
                         <FormValidationAlert info="Loading..." gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
                     </div>
@@ -81,17 +77,23 @@ function Payment({fourthCall,inputChange,valid,response,postDataToBackend,submit
             }
 
             {
-                valid && response==="Team already exist please change your team name" && (
+                 response==="Team already exist please change your team name" && (
                     <div className="mt-4">
                         <FormValidationAlert info={response}/>
                     </div>
                 )
             }
             {
-                valid && response==="Registration Successful." && (
+                response==="Payment not completed." && (
                     <div className="mt-4">
-                        <FormSuccessAlert info={response}/>
-                        <Navigate to="/status"/>
+                        <FormValidationAlert info={response}/>
+                    </div>
+                )
+            }
+            {
+                 response==="Registration Successful." && (
+                    <div className="mt-4">
+                        <FormSuccessAlert info="Registration Successful. Please check your E-mail"/>
                     </div>
                 )
             }

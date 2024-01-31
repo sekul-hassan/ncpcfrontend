@@ -44,7 +44,6 @@ function Registration(props) {
         teacherGender:"",
         teacherTShirt:"",
         teacherPhoto:null,
-        transaction:""
     });
 
 
