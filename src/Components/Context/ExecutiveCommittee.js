@@ -77,8 +77,8 @@ const executivePostList = [
     "Pro Vice Chancellor (Academic)|Advisor, NCPC 2023",
     "Pro Vice Chancellor (Administration)|Advisor, NCPC 2023",
     "Treasurer|Advisor, NCPC 2023",
-    "Director ICT Cell|Advisor, NCPC 2023",
-    "Director TSC|Advisor, NCPC 2023",
+    "Director, ICT Cell|Advisor, NCPC 2023",
+    "Director, TSC|Advisor, NCPC 2023",
     "Proctor|Advisor, NCPC 2023",
 
     "Dean, Faculty of Mathematical and Physical Sciences|Advisor, NCPC 2023",
