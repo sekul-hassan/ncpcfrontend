@@ -46,7 +46,7 @@ function Payment({fourthCall,valid,response,postDataToBackend,submit}) {
 
     return (
         <Container fluid="true" className=" mt-4 mb-3 responsiveRegi pt-4">
-            <InfoDiv info="Payment Now" gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
+            <InfoDiv info="Payment" gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
             <h4 className="title mt-3 text-dark">To make your payment with bKash, follow the steps below:</h4>
             <h4 className="description text-dark">1. <b>Check the information. Make sure emails are valid.</b> </h4>
             <h5 className="description mt-3  text-dark">2. Click the BKash image button.</h5>

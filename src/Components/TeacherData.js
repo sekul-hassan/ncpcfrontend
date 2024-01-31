@@ -14,10 +14,12 @@ import {faChalkboardUser} from "@fortawesome/free-solid-svg-icons";
 import FormValidationAlert from "../MyComponents/FormValidataionAlert";
 function TeacherData({thirdCall,inputChange,paymentCall,fourthNext}) {
     const {data} = useContext(FormContext);
-
+    const backgroundStyle = {
+        background: 'linear-gradient(45deg, #1a237e 30%, #283593 90%)'
+    }
     return (
         <Container fluid="true" className="firstContestant mt-3">
-            <div className="registrationTitleDiv">
+            <div className="registrationTitleDiv" style={backgroundStyle}>
                 <h4 className="boldTitle">Registration Form</h4>
             </div>
             <Row className="mx-0 px-3 pb-4">

@@ -33,9 +33,12 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
 
     console.log(data.instituteName);
 
+    const backgroundStyle = {
+        background: 'linear-gradient(45deg, #1a237e 30%, #283593 90%)'
+    }
     return (
         <Container fluid="true" className="firstContestant mt-3">
-            <div className="registrationTitleDiv">
+            <div className="registrationTitleDiv" style={backgroundStyle}>
                 <h4 className="boldTitle">Registration Form</h4>
             </div>
             <Row className="mx-0 mt-3 px-3">
