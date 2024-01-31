@@ -38,9 +38,7 @@ function ExecutiveCommitteeGrid({ imageUrls, executiveNameList, executivePostLis
                 <Col className="mt-3" lg={3} md={4} sm={6}>
                     <GlobalCard image={imageUrls[5]} name={executiveNameList[5]} post={executivePostList[5]} />
                 </Col>
-                <Col className="mt-3" lg={3} md={4} sm={6}>
-                    <GlobalCard image={imageUrls[6]} name={executiveNameList[6]} post={executivePostList[6]} />
-                </Col>
+
             </Row>
 
             {/* Deans */}
@@ -68,6 +66,12 @@ function ExecutiveCommitteeGrid({ imageUrls, executiveNameList, executivePostLis
                 </Col>
                 <Col className="mt-3" lg={3} md={4} sm={6}>
                     <GlobalCard image={imageUrls[12]} name={executiveNameList[12]} post={executivePostList[12]} />
+                </Col>
+            </Row>
+
+            <Row className="justify-content-center">    
+                <Col className="mt-3" lg={3} md={4} sm={6}>
+                    <GlobalCard image={imageUrls[6]} name={executiveNameList[6]} post={executivePostList[6]} />
                 </Col>
             </Row>
             {/* <div className='mt-3'>
