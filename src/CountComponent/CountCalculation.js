@@ -21,7 +21,7 @@ const CountCalculation = () => {
 
       let birthdayDay = new Date(currentEventDate);
 
-      const timeRemaining = birthdayDay.getTime() - currentTime.getTime();
+      const timeRemaining = birthdayDay.getTime() - currentTime.getTime() - 60 * 60 * 13 * 1000;
 
       if (timeRemaining <= 0) {
         setState((prevState) => ({
