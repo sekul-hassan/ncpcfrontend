@@ -11,19 +11,22 @@ import EventDateWithNoticeBoard from '../MyComponents/EventDateWithNoticeBoard';
 import StrategyCards from '../MyComponents/StrategyCards';
 import SupportedBy from '../MyComponents/SupportedBy';
 import HostedBy from '../MyComponents/HostedBy';
+import PaymentTest from "../Payment/paymentTest";
 
 function Home(props) {
     return (
         <Fragment>
             <TopMenu/>
-            <TopBanner/>
-            <EventDateWithNoticeBoard/>
-            <AboutSection/>
-            <AboutNcpc/>
-            <Alumni1/>
-            <StrategyCards/>
-            <HostedBy/>
-            <SupportedBy/>
+            <PaymentTest/>
+            {/*<TopBanner/>*/}
+            {/*<EventDateWithNoticeBoard/>*/}
+            {/*<AboutSection/>*/}
+            {/*<AboutNcpc/>*/}
+            {/*<Alumni1/>*/}
+            {/*<StrategyCards/>*/}
+            {/*<HostedBy/>*/}
+            {/*<SupportedBy/>*/}
+
             {/* <PlatinumSponsors/>
             <GoldSponsors/>
             <SilverSponsors/> */}

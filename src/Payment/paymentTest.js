@@ -1,40 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function PaymentTest(props) {
-    const url = 'https://tokenized.sandbox.bka.sh/v1.2.0-beta/tokenized/checkout/token/grant';
+    const [url, setUrl] = useState(null);
+    const [loading, setLoading] = useState(true);
+    const [clicked, setClicked] = useState(false);
 
-    const body = {
-        app_key: '4f6o0cjiki2rfm34kfdadl1eqq',
-        app_secret: '2is7hdktrekvrbljjh44ll3d9l1dtjo4pasmjvs5vl5qr3fug4b',
-    };
+    const authenticate = async (e) => {
+        e.preventDefault();
+        setClicked(true)
 
-    const headers = {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json',
-        'username': 'sandboxTokenizedUser02',
-        'password': 'sandboxTokenizedUser02@12345',
-    };
-
-    const authenticate = async () => {
         try {
-            const response = await axios.post(url, body.stringify, {
-                headers: headers,
-            });
-
+            const response = await axios.get("http://localhost:8080/api/test/auth");
             console.log(response.data);
-
-            // Continue with the handling of the response data
-
+            setUrl(response.data);
+            setClicked(false);
         } catch (error) {
-            console.error(error);
+            console.error("Error during authentication:", error);
         }
     };
 
+    useEffect(() => {
+        if (url) {
+            setLoading(false);
+            window.location.href = url;
+        }
+    }, [url]);
 
     return (
         <div className="m-5 text-center">
-            <button onClick={authenticate}>Pay bKash</button>
+            {
+                loading && clicked ?<div>loading...</div>: <button onClick={authenticate}>Pay bKash</button>
+            }
         </div>
     );
 }
