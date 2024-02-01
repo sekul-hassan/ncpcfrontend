@@ -8,7 +8,7 @@ import axios from "axios";
 function TeamListPage(props) {
     const items = [
         { id: 1, name: 'Registration Process' },
-        { id: 2, name: 'Team List' },
+        // { id: 2, name: 'Team List' },
     ];
     const [activeItem, setActiveItem] = useState(items[0]);
 
@@ -38,11 +38,11 @@ function TeamListPage(props) {
                     </div>
                 ))}
             </div>
-            {activeItem?.id === 1 ? (
-               <Proces/>
-            ) : activeItem?.id === 2 ? (
-               <List teamList={teamList}/>
-            ) : null}
+            {
+                activeItem?.id === 1 ? (<Proces/>) :
+                    // activeItem?.id === 2 ? (<List teamList={teamList}/>) :
+                        null
+            }
         </Fragment>
     );
 }
