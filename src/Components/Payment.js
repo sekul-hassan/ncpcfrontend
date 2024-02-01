@@ -8,6 +8,7 @@ import FormSuccessAlert from "../MyComponents/FormSuccessAlert";
 import {Navigate} from "react-router-dom";
 import FormContext from "./Context/FormContext";
 import axios from "axios";
+import PaymentView from "../Payment/PaymentView";
 
 
 function Payment({fourthCall,valid,response,postDataToBackend,submit}) {
@@ -57,8 +58,11 @@ function Payment({fourthCall,valid,response,postDataToBackend,submit}) {
             <h5 className="description text-dark">7. Press submit once everything is done. </h5>
             <h5 className="title mt-3 text-dark"> When registration is successful, you will get an email confirmation.</h5>
             <div className="m-5 text-center">
+                {/*{*/}
+                {/*   !payTeamExist && loading && clicked ?<div>loading...</div>: <img onClick={authenticate} className="PaymentImg" src={bkash} alt=""/>*/}
+                {/*}*/}
                 {
-                   !payTeamExist && loading && clicked ?<div>loading...</div>: <img onClick={authenticate} className="PaymentImg" src={bkash} alt=""/>
+                   !payTeamExist && loading && clicked ?<div>loading...</div>:<PaymentView authenTicate={authenticate}/>
                 }
                 {
                     payTeamExist && clicked && (
@@ -95,6 +99,12 @@ function Payment({fourthCall,valid,response,postDataToBackend,submit}) {
                  response==="Registration Successful." && (
                     <div className="mt-4">
                         <FormSuccessAlert info="Registration Successful. Please check your E-mail"/>
+                        {
+                            setTimeout(function (){
+                                window.location.href="https://pc.cse.juniv.edu"
+                            },3000)
+                        }
+
                     </div>
                 )
             }
