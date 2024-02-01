@@ -30,7 +30,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange,thirdNext}) {
                 <h4 className="title mb-4"><FontAwesomeIcon icon={faUser} /> Team Member-3</h4>
                 <hr/>
                 <Col>
-                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Name</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Name <span className="danger">*</span></label>
                     <input
                         type="text"
                         placeholder="Name "
@@ -40,7 +40,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange,thirdNext}) {
                         value={!data.thirdUserName===""?"":data.thirdUserName}
 
                     />
-                    <label htmlFor="x"><FontAwesomeIcon icon={faAt} />   E-mail</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faAt} />   E-mail <span className="danger">*</span></label>
                     <input
                         type="email"
                         placeholder="E-mail"
@@ -50,7 +50,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange,thirdNext}) {
                         value={!data.thirdUserEmail===""?"":data.thirdUserEmail}
 
                     />
-                    <label htmlFor="x"><FontAwesomeIcon icon={faPhone} />    Contact Number</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faPhone} />    Contact Number <span className="danger">*</span></label>
                     <input
                         type="number"
                         placeholder="Phone number"
@@ -60,7 +60,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange,thirdNext}) {
                         value={!data.thirdUserPhone===""?"":data.thirdUserPhone}
 
                     />
-                    <label><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
+                    <label><FontAwesomeIcon icon={faVenusMars} />    Gender <span className="danger">*</span></label><br/>
                     <input
                         className="form-check-input"
                         type="radio"
@@ -80,7 +80,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange,thirdNext}) {
                         checked={data.thirdUserGender==="female"}
                     /> <label className="gender" htmlFor="female"> Female</label><br/>
 
-                    <label htmlFor="available"><FontAwesomeIcon icon={faShirt} />    T-shirt Size</label><br/>
+                    <label htmlFor="available"><FontAwesomeIcon icon={faShirt} />    T-shirt Size <span className="danger">*</span></label><br/>
                     <select
                         id="available"
                         className="form-control w-25"
@@ -96,7 +96,7 @@ function ThirdContestant({fourthCall,secondCall,inputChange,thirdNext}) {
                         <option value="xl">XL</option>
                         <option value="xxl">XXL</option>
                     </select>
-                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faImage} />   Student Photo</label><br/>
+                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faImage} />   Student Photo <span className="danger">*</span></label><br/>
                     <input
                         type="file"
                         className="form-control"

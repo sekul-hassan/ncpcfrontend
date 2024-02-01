@@ -26,7 +26,7 @@ function TeacherData({thirdCall,inputChange,paymentCall,fourthNext}) {
                 <h4 className="title"><FontAwesomeIcon icon={faChalkboardUser} /> Coach Info</h4>
                 <hr/>
                 <Col>
-                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Name</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Name <span className="danger">*</span></label>
                     <input
                         type="text"
                         placeholder="Name"
@@ -36,7 +36,7 @@ function TeacherData({thirdCall,inputChange,paymentCall,fourthNext}) {
                         value={"" === !data.teacherName?"":data.teacherName}
 
                     />
-                    <label htmlFor="x"><FontAwesomeIcon icon={faIdCardClip} />   Designation</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faIdCardClip} />   Designation <span className="danger">*</span></label>
                     <select
                         className="form-control w-25"
                         name="teacherDesignation"
@@ -50,7 +50,7 @@ function TeacherData({thirdCall,inputChange,paymentCall,fourthNext}) {
                         <option value="A.S.Professor">Associate Professor</option>
                         <option value="Professor">Professor</option>
                     </select>
-                    <label htmlFor="x"><FontAwesomeIcon icon={faAt} />   E-mail</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faAt} />   E-mail <span className="danger">*</span></label>
                     <input
                         type="email"
                         placeholder="E-mail"
@@ -60,7 +60,7 @@ function TeacherData({thirdCall,inputChange,paymentCall,fourthNext}) {
                         value={!data.teacherEmail===""?"":data.teacherEmail}
 
                     />
-                    <label htmlFor="x"><FontAwesomeIcon icon={faPhone} />    Contact Number</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faPhone} />    Contact Number <span className="danger">*</span></label>
                     <input
                         type="number"
                         placeholder="Phone number"
@@ -70,7 +70,7 @@ function TeacherData({thirdCall,inputChange,paymentCall,fourthNext}) {
                         value={!data.teacherPhone===""?"":data.teacherPhone}
 
                     />
-                    <label className='dateofbirthcss'><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
+                    <label className='dateofbirthcss'><FontAwesomeIcon icon={faVenusMars} />    Gender <span className="danger">*</span></label><br/>
                     <input
                         className="form-check-input"
                         type="radio"
@@ -90,7 +90,7 @@ function TeacherData({thirdCall,inputChange,paymentCall,fourthNext}) {
                         checked={data.teacherGender==="female"}
                     /> <label className="gender" htmlFor="female"> Female</label><br/>
 
-                    <label htmlFor="available"><FontAwesomeIcon icon={faShirt} />    T-shirt Size</label><br/>
+                    <label htmlFor="available"><FontAwesomeIcon icon={faShirt} />    T-shirt Size <span className="danger">*</span></label><br/>
                     <select
                         id="available"
                         className="form-control w-25"
@@ -106,7 +106,7 @@ function TeacherData({thirdCall,inputChange,paymentCall,fourthNext}) {
                         <option value="xl">XL</option>
                         <option value="xxl">XXL</option>
                     </select>
-                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faImage} />   Teacher's Photo</label><br/>
+                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faImage} />   Teacher's Photo <span className="danger">*</span></label><br/>
                     <input
                         type="file"
                         className="form-control"
