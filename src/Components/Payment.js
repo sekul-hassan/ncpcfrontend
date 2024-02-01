@@ -48,15 +48,17 @@ function Payment({fourthCall,valid,response,postDataToBackend,submit}) {
     return (
         <Container fluid="true" className=" mt-4 mb-3 responsiveRegi pt-4">
             <InfoDiv info="Payment" gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
-            <h4 className="title mt-3 text-dark">To make your payment with bKash, follow the steps below:</h4>
-            <h4 className="description text-dark">1. <b>Check the information. Make sure emails are valid.</b> </h4>
-            <h5 className="description mt-3  text-dark">2. Click the BKash image button.</h5>
-            <h5 className="description text-dark">3. Complete payment. Please do not close the current tab.</h5>
-            <h5 className="description text-dark">4. Come back to this tab once your payment is successful. </h5>
+            <h4 className="title mx-3 mt-5 text-dark">Payment Instructions </h4>
+            <h5 className="description mx-5 mt-3 text-dark">1. Payment will start soon. </h5>
+            <h5 className="description mx-5 text-dark">2. Please submit your registration. </h5>
+            {/*<h4 className="description text-dark">1. <b>Check the information. Make sure emails are valid.</b> </h4>*/}
+            {/*<h5 className="description mt-3  text-dark">2. Click the BKash image button.</h5>*/}
+            {/*<h5 className="description text-dark">3. Complete payment. Please do not close the current tab.</h5>*/}
+            {/*<h5 className="description text-dark">4. Come back to this tab once your payment is successful. </h5>*/}
 
-            <h5 className="description text-dark">6. Do not refresh the browser. </h5>
-            <h5 className="description text-dark">7. Press submit once everything is done. </h5>
-            <h5 className="title mt-3 text-dark"> When registration is successful, you will get an email confirmation.</h5>
+            {/*<h5 className="description text-dark">6. Do not refresh the browser. </h5>*/}
+            {/*<h5 className="description text-dark">7. Press submit once everything is done. </h5>*/}
+            {/*<h5 className="title mt-3 text-dark"> When registration is successful, you will get an email confirmation.</h5>*/}
             <div className="m-5 text-center">
                 {/*{*/}
                 {/*   !payTeamExist && loading && clicked ?<div>loading...</div>: <img onClick={authenticate} className="PaymentImg" src={bkash} alt=""/>*/}

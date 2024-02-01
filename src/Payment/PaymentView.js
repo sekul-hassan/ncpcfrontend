@@ -7,7 +7,7 @@ function PaymentView({authenTicate}) {
         <Container fluid="true" className="text-center">
             <img className="bkashLogo" src={bks} alt=""/>
             <div className="pauUpDiv mb-3">
-                <button className="payBtn" onClick={authenTicate}>Pay Now</button>
+                {/*<button className="payBtn" onClick={authenTicate}>Pay Now</button>*/}
             </div>
         </Container>
     );

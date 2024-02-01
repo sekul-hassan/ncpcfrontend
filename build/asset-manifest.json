@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d4b2e35e.css",
-    "main.js": "/static/js/main.32eba847.js",
+    "main.css": "/static/css/main.b23e1df7.css",
+    "main.js": "/static/js/main.11307b21.js",
     "static/js/787.2576cc47.chunk.js": "/static/js/787.2576cc47.chunk.js",
     "static/media/2015.jpg": "/static/media/2015.3846424296c3ce0be1a4.jpg",
     "static/media/2021.jpg": "/static/media/2021.1a4ad349bbb8f7357b06.jpg",
@@ -78,6 +78,7 @@
     "static/media/2_MA.jpg": "/static/media/2_MA.746cf42da1a82ac26636.jpg",
     "static/media/2_AM.jpg": "/static/media/2_AM.aa4335a4b43b42ef7424.jpg",
     "static/media/5_HK.jpg": "/static/media/5_HK.b27bd126dda210e29f06.jpg",
+    "static/media/bkashLogo.png": "/static/media/bkashLogo.0b7e8c6d0972ba3dff15.png",
     "static/media/sponsor.png": "/static/media/sponsor.91b761341c28b15730c4.png",
     "static/media/19.png": "/static/media/19.fd764e8eb49b83a88f74.png",
     "static/media/1_ZR.jpg": "/static/media/1_ZR.fd764e8eb49b83a88f74.jpg",
@@ -87,12 +88,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.d4b2e35e.css.map": "/static/css/main.d4b2e35e.css.map",
-    "main.32eba847.js.map": "/static/js/main.32eba847.js.map",
+    "main.b23e1df7.css.map": "/static/css/main.b23e1df7.css.map",
+    "main.11307b21.js.map": "/static/js/main.11307b21.js.map",
     "787.2576cc47.chunk.js.map": "/static/js/787.2576cc47.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d4b2e35e.css",
-    "static/js/main.32eba847.js"
+    "static/css/main.b23e1df7.css",
+    "static/js/main.11307b21.js"
   ]
 }

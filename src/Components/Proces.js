@@ -2,6 +2,7 @@ import React from 'react';
 import {Container, Row} from "react-bootstrap";
 import CustomButton from "../MyComponents/CustomButton";
 import InfoDiv from "../MyComponents/InfoDiv";
+import RegistrationButton from "../MyComponents/RegistrationButton";
 const containerStyle = {
     width: '80%',
     margin: '0 auto',
@@ -44,7 +45,8 @@ function Proces(props) {
                     </ul>
                 </ul>
             </div>
-            <InfoDiv className="title" info="Preliminary Registration Starts Soon!"/>
+            {/*<InfoDiv className="title" info="Preliminary Registration Starts Soon!"/>*/}
+            <div className='text-center'><RegistrationButton buttonText="Register Now" linksTo="/registernow"/></div>
         </Container>
     );
 }

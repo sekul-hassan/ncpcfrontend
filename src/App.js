@@ -40,7 +40,7 @@ function App() {
             <Route path="sponsors" element={<OurSponsors/>}/>
             <Route path="gallery" element={<GalleryPage/>}/>
             <Route path="about" element={<AboutPage/>}/>
-            <Route path="test" element={<Registration/>}/>
+            <Route path="registernow" element={<Registration/>}/>
             {/*<Route path="payment" element={<PaymentPage/>}/>*/}
             <Route path="/*" element={<Home/>}/>
           </Routes>

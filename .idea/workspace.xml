@@ -5,7 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cbb3cb8d-f3a9-4e39-b985-10eb4d4b41fd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.d4b2e35e.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.d4b2e35e.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.32eba847.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.32eba847.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.32eba847.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Payment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Payment.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Proces.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Proces.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Payment/PaymentView.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Payment/PaymentView.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +80,7 @@
       <workItem from="1706519989920" duration="9650000" />
       <workItem from="1706632440946" duration="6335000" />
       <workItem from="1706687376443" duration="14164000" />
-      <workItem from="1706763413679" duration="11528000" />
+      <workItem from="1706763413679" duration="15093000" />
     </task>
     <servers />
   </component>
