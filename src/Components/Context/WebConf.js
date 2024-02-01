@@ -1,7 +1,7 @@
 
 const currentEvent = {
-    "name": "Preliminary Registration starts in",
-    "date": "2024-02-02"
+    "name": "Preliminary Registration ends in",
+    "date": "2024-02-15"
 }
 
 const noticeBar = "Welcome to JU NCPC 2023, Organized by Department of Computer Science and Engineering."
