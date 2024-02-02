@@ -99,7 +99,7 @@ function Payment({fourthCall,valid,response,postDataToBackend,submit}) {
             }
             {
                  response==="Registration Successful." && (
-                    <div className="mt-4">
+                    <div className="mt-4 text-white">
                         <FormSuccessAlert info="Registration Successful. Please check your E-mail"/>
                         {
                             setTimeout(function (){
