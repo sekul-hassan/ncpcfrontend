@@ -142,7 +142,7 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
                         className="form-control"
                         name="firstUserPhoto"
                         onChange={inputChange}
-                        accept=".jpg,.png,.jpeg"
+                        accept=".jpg, .jpeg, .png"
                     />
                     {
                         data.firstUserPhoto ? (
