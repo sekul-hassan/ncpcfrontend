@@ -252,21 +252,71 @@ function Payment({ fourthCall, valid, response, postDataToBackend, submit }) {
                     )
                 }
 
+                
+            {
+                !response && submit && (
+                    <div className="mt-3">
+                        <FormValidationAlert info="Loading..." gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)' />
+                    </div>
+                )
+            }
+
+            {
+                response === "Team already exist please change your team name" && (
+                    <div className="mt-4">
+                        <FormValidationAlert info={response} />
+                    </div>
+                )
+            }
+            {
+                response === "Payment not completed." && (
+                    <div className="mt-4">
+                        <FormValidationAlert info={response} />
+                    </div>
+                )
+            }
+            {
+                response === "Registration Successful." && (
+                    <div className="mt-4 text-white">
+                        <FormSuccessAlert info="Registration Successful. Please check your E-mail" />
+                        {
+                            setTimeout(function () {
+                                window.location.href = "https://pc.cse.juniv.edu"
+                            }, 3000)
+                        }
+
+                    </div>
+                )
+            }
+
+            <div className="d-flex position-relative">
+                <Button className="backBtn" onClick={fourthCall} >Back</Button>
+            </div>
+            <div className="text-center">
+                <button
+                    className="submitBtn btn btn-success"
+                    onClick={postDataToBackend}
+                // disabled={registrationOff}
+                >
+                    Submit
+                </button>
+            </div>
+
             </Container> */}
             <div className='action_wrapper'>
                 <div className="d-flex position-relative">
                     <Button className="backBtn" onClick={fourthCall} >Back</Button>
                 </div>
-                    <button
-                        className="submitBtn btn btn-success"
-                        onClick={postDataToBackend}
-                    >
-                        Submit
-                    </button>
-               
-            </div>
-        </Fragment>
+                <button
+                    className="submitBtn btn btn-success"
+                    onClick={postDataToBackend}
+                >
+                    Submit
+                </button>
 
+            </div>
+
+        </Fragment>
     );
 }
 
