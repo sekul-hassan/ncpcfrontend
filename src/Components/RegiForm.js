@@ -50,7 +50,7 @@ const ValidateThirdUser = (data) => {
 const ValidateCoachData = (data) => {
     const specialCharacterPattern = /[!@#$%^&*()_+{}\[\]:;<>,?~\\/-]/;
     const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    
+
     if (specialCharacterPattern.test(data.teacherName)) return (alert('Special character not allowed in Name'));
     if (!emailPattern.test(data.teacherEmail)) return (alert('invalid email'));
     if (data.teacherPhone === "") return false;
@@ -86,12 +86,12 @@ function RegiForm() {
             });
         }
 
-        
-        
+
+
         else if (e.target.type === 'file') {
             const file = e.target.files[0];
             const extension = file.name.split('.').pop().toLowerCase();
-            
+
             if (allowedExtensions.includes(extension)) {
                 setSelectedFile(file);
             } else {
@@ -114,7 +114,7 @@ function RegiForm() {
                 [e.target.name]: e.target.value,
             });
         }
-        
+
     };
 
 
