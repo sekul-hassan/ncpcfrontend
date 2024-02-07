@@ -85,7 +85,7 @@ function PaymentView() {
 
 
     const inputChange = (e) => {
-        /* if (e.key === 'Enter') {
+        if (e.key === 'Enter') {
             setKeyword(e.target.value)
             const data = { "keyword": keyword }
             axios.post('https://pc.cse.juniv.edu/api/findByTeams', data, { header })
@@ -96,7 +96,7 @@ function PaymentView() {
                 .catch(error => {
                     console.log(error);
                 });
-        } */
+        }
 
     }
 
@@ -107,44 +107,6 @@ function PaymentView() {
             </>
         )
     }
-
-
-
-    const firstUser = {
-        teamName: selectedTeam?.teamName,
-        instituteName: selectedTeam?.instituteName,
-        userName: selectedTeam?.firstUserName,
-        userTShirt: selectedTeam?.firstUserTShirt,
-        userDesignation: null,
-
-    }
-    const secondUser = {
-        teamName: selectedTeam?.teamName,
-        instituteName: selectedTeam?.instituteName,
-        userName: selectedTeam?.secondUserName,
-        userTShirt: selectedTeam?.secondUserTShirt,
-        userDesignation: null,
-
-
-
-    }
-    const thirdUser = {
-        teamName: selectedTeam?.teamName,
-        instituteName: selectedTeam?.instituteName,
-        userName: selectedTeam?.thirdUserName,
-        userTShirt: selectedTeam?.thirdUserTShirt,
-        userDesignation: null,
-
-
-    }
-    const teacherUser = {
-        teamName: selectedTeam?.teamName,
-        instituteName: selectedTeam?.instituteName,
-        userDesignation: selectedTeam?.coachDesignation,
-        userName: selectedTeam?.coachName,
-        userTShirt: selectedTeam?.coachTShirt,
-    }
-
 
 
     const backgroundStyle = {
