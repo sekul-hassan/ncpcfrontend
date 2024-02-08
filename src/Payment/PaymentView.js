@@ -135,20 +135,20 @@ function PaymentView() {
                         <>
                             <div className="team_card member">
                                 <span className="team_title">{selectedTeam?.firstUserName}</span>
-                                <span className='paid'>{selectedTeam?.firstUserTShirt.toUpperCase()}</span>
+                                <span className='paid'>T-Shirt: {selectedTeam?.firstUserTShirt.toUpperCase()}</span>
                             </div>
                             <div className="team_card member">
                                 <span className="team_title">{selectedTeam?.secondUserName}</span>
-                                <span className='paid'>{selectedTeam?.secondUserTShirt.toUpperCase()}</span>
+                                <span className='paid'>T-Shirt: {selectedTeam?.secondUserTShirt.toUpperCase()}</span>
                             </div>
                             <div className="team_card member">
                                 <span className="team_title">{selectedTeam?.thirdUserName}</span>
-                                <span className='paid'>{selectedTeam?.thirdUserTShirt.toUpperCase()}</span>
+                                <span className='paid'>T-Shirt: {selectedTeam?.thirdUserTShirt.toUpperCase()}</span>
                             </div>
                             <div className="team_card member">
                                 <span className="team_title">{selectedTeam?.coachName}</span>
                                 <span className="paid">{selectedTeam?.coachDesignation}</span>
-                                <span className='paid'>{selectedTeam?.coachTShirt.toUpperCase()}</span>
+                                <span className='paid'>T-Shirt: {selectedTeam?.coachTShirt.toUpperCase()}</span>
                             </div>
                         </>
                     ) : (
