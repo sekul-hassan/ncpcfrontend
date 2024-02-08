@@ -21,6 +21,8 @@ import TeamStatus from './MyComponents/TeamStatus';
 import OurSponsors from './Pages/OurSponsors';
 import TeamListPage from "./Pages/TeamListPage";
 import PaymentPage from "./Pages/PaymentPage";
+import PaymentStatus from "./Pages/PaymentStatus";
+
 
 
 function App() {
@@ -37,6 +39,7 @@ function App() {
             <Route path='status' element={<TeamStatus/>}/>
             {/* <Route path="rules" element={<Rules/>}/> */}
             <Route path="payment" element={<PaymentPage/>}/>
+            <Route path="/paymentstatus/:message/:status" element={<PaymentStatus/>}/>
             <Route path="committee" element={<CommitteePage/>}/>
             <Route path="sponsors" element={<OurSponsors/>}/>
             <Route path="gallery" element={<GalleryPage/>}/>

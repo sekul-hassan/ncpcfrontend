@@ -15,38 +15,7 @@ function PaymentView() {
     }
 
     const [keyword, setKeyword] = useState(null)
-    const [teams, setTeams] = useState([
-        {
-            "id": 38,
-            "teamName": "IUBAT_Potato_Mind",
-            "instituteName": "International University of Business Agriculture & Technology",
-            "firstUserName": "Efat Sikder",
-            "firstUserTShirt": "xl",
-            "secondUserName": "Emrul Hasan Emon",
-            "secondUserTShirt": "xl",
-            "thirdUserName": "Abu Bakor Siddik",
-            "thirdUserTShirt": "xl",
-            "coachName": "Suhala Lamia",
-            "coachDesignation": "Lecturer",
-            "coachTShirt": "xl",
-            "transaction": "PENDING"
-        },
-        {
-            "id": 38,
-            "teamName": "hoxro",
-            "instituteName": "International University of Business Agriculture & Technology",
-            "firstUserName": "Efat Sikder",
-            "firstUserTShirt": "xl",
-            "secondUserName": "Emrul Hasan Emon",
-            "secondUserTShirt": "xl",
-            "thirdUserName": "Abu Bakor Siddik",
-            "thirdUserTShirt": "xl",
-            "coachName": "Suhala Lamia",
-            "coachDesignation": "Lecturer",
-            "coachTShirt": "xl",
-            "transaction": "DONE"
-        }
-    ])
+    const [teams, setTeams] = useState([])
     const [members, setMembers] = useState([])
 
     const [selectedTeam, setSelectedTeam] = useState(null)
@@ -166,20 +135,20 @@ function PaymentView() {
                         <>
                             <div className="team_card member">
                                 <span className="team_title">{selectedTeam?.firstUserName}</span>
-                                <span className='paid'>{selectedTeam?.firstUserTShirt.toUpperCase()}</span>
+                                <span className='paid'>T-Shirt: {selectedTeam?.firstUserTShirt.toUpperCase()}</span>
                             </div>
                             <div className="team_card member">
                                 <span className="team_title">{selectedTeam?.secondUserName}</span>
-                                <span className='paid'>{selectedTeam?.secondUserTShirt.toUpperCase()}</span>
+                                <span className='paid'>T-Shirt: {selectedTeam?.secondUserTShirt.toUpperCase()}</span>
                             </div>
                             <div className="team_card member">
                                 <span className="team_title">{selectedTeam?.thirdUserName}</span>
-                                <span className='paid'>{selectedTeam?.thirdUserTShirt.toUpperCase()}</span>
+                                <span className='paid'>T-Shirt: {selectedTeam?.thirdUserTShirt.toUpperCase()}</span>
                             </div>
                             <div className="team_card member">
                                 <span className="team_title">{selectedTeam?.coachName}</span>
                                 <span className="paid">{selectedTeam?.coachDesignation}</span>
-                                <span className='paid'>{selectedTeam?.coachTShirt.toUpperCase()}</span>
+                                <span className='paid'>T-Shirt: {selectedTeam?.coachTShirt.toUpperCase()}</span>
                             </div>
                         </>
                     ) : (
