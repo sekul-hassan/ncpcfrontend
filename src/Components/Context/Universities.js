@@ -173,6 +173,9 @@ const items = [
     {"id": 172, "name": "City Collage"},
     {"id": 173, "name": "Eden Collage"},
     {"id": 174, "name": "IOI"},
+    {"id": 175, "name": "Sylhet Engineering College"},
+    {"id": 176, "name": "Institute of Science Trade & Technology (ISTT)"},
+    {"id": 177, "name": "Rangpur Engineering College"},
 
 ]
 

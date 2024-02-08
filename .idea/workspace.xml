@@ -8,11 +8,12 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.11307b21.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.11307b21.js.LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/static/js/main.11307b21.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Context/WebConf.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Context/WebConf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CountComponent/CountCalculation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/CountComponent/CountCalculation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.b23e1df7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.b23e1df7.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.7547ba9d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.7547ba9d.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.7547ba9d.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Context/Universities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Context/Universities.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +78,9 @@
       <workItem from="1706632440946" duration="6335000" />
       <workItem from="1706687376443" duration="14164000" />
       <workItem from="1706763413679" duration="15384000" />
-      <workItem from="1706785325098" duration="66000" />
+      <workItem from="1706785325098" duration="2025000" />
+      <workItem from="1707376295185" duration="433000" />
+      <workItem from="1707388390601" duration="339000" />
     </task>
     <servers />
   </component>
