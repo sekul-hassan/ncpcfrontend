@@ -7,17 +7,14 @@ import axios from 'axios';
 
 
 function PaymentView() {
-    const header2 = { "Access-Control-Allow-Origin": "*" }
-    const header =
+    // const header2 = { "Access-Control-Allow-Origin": "*" }
+    const headers =
     {
         "Client-Id": "1",
         "Client-Secret": "SECJUNCPCCOM2023000001",
-        "Accept": '*/*',
-        "Accept-Encoding": 'gzip, deflate, br',
-        "Accept-Language": 'en-US,en;q=0.9,bn;q=0.8'
     }
 
-    const [keyword, setKeyword] = useState({})
+    const [keyword, setKeyword] = useState(null)
     const [teams, setTeams] = useState([
         {
             "id": 38,
@@ -67,38 +64,51 @@ function PaymentView() {
 
     const authenticate = async (e) => {
         e.preventDefault();
-        setClicked(true)
 
         try {
-            const response = await axios.get(`https://pc.cse.juniv.edu/api/bkash/payment/create/${selectedTeam?.teamName}`);
+            const response = await axios.get(`https://pc.cse.juniv.edu/api/bkash/payment/create?id=${selectedTeam?.id}&teamName=${selectedTeam?.teamName}`, { headers: headers });
             console.log(response.data);
             if (response.data === "Team already exist please change your team name") {
                 setPayTeamExist(true);
                 return;
             }
             setUrl(response.data);
-            setClicked(false);
         } catch (error) {
             console.error("Error during authentication:", error);
         }
     };
 
+    useEffect(() => {
+        console.log(keyword);
+        if (url) {
+            setLoading(false);
+            window.open(url, '_blank');
+        }
+    }, [url]);
+
 
     const inputChange = (e) => {
-        if (e.key === 'Enter') {
+        if (e.target.value !== '') {
             setKeyword(e.target.value)
-            const data = { "keyword": keyword }
-            axios.post('https://pc.cse.juniv.edu/api/findByTeams', data, { header })
-                .then(response => {
-                    setTeams(response.data);
-                    console.log(response.data);
-                })
-                .catch(error => {
-                    console.log(error);
-                });
+            console.log('e.target.value', keyword)
+            // const data = { "keyword": keyword }
+
         }
 
     }
+
+    const handleOnSearch = () => {
+        axios.post('https://pc.cse.juniv.edu/api/findByTeams', { keyword: keyword }, { headers: headers })
+            .then(response => {
+                setTeams(response.data);
+                console.log(response.data);
+            })
+            .catch(error => {
+                console.log(error);
+            });
+    }
+
+
 
     const formatResult = (item) => {
         return (
@@ -133,10 +143,13 @@ function PaymentView() {
             <div className="payment_content">
                 <img className="bks_main_logo" src={bks} alt="" />
                 {selectedTeam ? ('') : <><div className='search_box'>
+                    <div className='input_wrapper'>
                     <input
                         placeholder={'Search by Institute/Team Name'}
-                        onKeyDown={inputChange}
+                        onKeyUp={inputChange}
                     />
+                    <button className='btn_common' onClick={handleOnSearch}>Search</button>
+                    </div>
                 </div></>}
 
 
