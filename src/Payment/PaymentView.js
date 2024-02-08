@@ -15,38 +15,7 @@ function PaymentView() {
     }
 
     const [keyword, setKeyword] = useState(null)
-    const [teams, setTeams] = useState([
-        {
-            "id": 38,
-            "teamName": "IUBAT_Potato_Mind",
-            "instituteName": "International University of Business Agriculture & Technology",
-            "firstUserName": "Efat Sikder",
-            "firstUserTShirt": "xl",
-            "secondUserName": "Emrul Hasan Emon",
-            "secondUserTShirt": "xl",
-            "thirdUserName": "Abu Bakor Siddik",
-            "thirdUserTShirt": "xl",
-            "coachName": "Suhala Lamia",
-            "coachDesignation": "Lecturer",
-            "coachTShirt": "xl",
-            "transaction": "PENDING"
-        },
-        {
-            "id": 38,
-            "teamName": "hoxro",
-            "instituteName": "International University of Business Agriculture & Technology",
-            "firstUserName": "Efat Sikder",
-            "firstUserTShirt": "xl",
-            "secondUserName": "Emrul Hasan Emon",
-            "secondUserTShirt": "xl",
-            "thirdUserName": "Abu Bakor Siddik",
-            "thirdUserTShirt": "xl",
-            "coachName": "Suhala Lamia",
-            "coachDesignation": "Lecturer",
-            "coachTShirt": "xl",
-            "transaction": "DONE"
-        }
-    ])
+    const [teams, setTeams] = useState([])
     const [members, setMembers] = useState([])
 
     const [selectedTeam, setSelectedTeam] = useState(null)
