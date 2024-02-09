@@ -113,14 +113,15 @@ function PaymentView() {
                 <img className="bks_main_logo" src={bks} alt="" />
                 {selectedTeam ? ('') : <><div className='search_box'>
                     <div className='input_wrapper'>
-                    <input
-                        placeholder={'Search by Institute/Team Name'}
-                        onKeyUp={inputChange}
-                    />
-                    <button className='btn_common' onClick={handleOnSearch}>Search</button>
+                        <input
+                            placeholder={'Search by Institute/Team Name'}
+                            onKeyUp={inputChange}
+                        />
+                        <button className='btn_common' onClick={handleOnSearch}>Search</button>
                     </div>
                 </div></>}
-
+                
+                <h3 className='mt-3 mb-3'>{selectedTeam?.teamName}</h3>
 
                 <div className="team_payment_wrapper">
                     {/*    <div className="team_card">
