@@ -1,0 +1,26 @@
+.pauUpDiv {
+    text-align: center;
+}
+.payBtn{
+    background: linear-gradient(45deg, #1a237e 30%, #283593 90%);
+    width: 200px;
+    padding: 10px 0 10px 0;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: poppin, serif;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.payBtn:hover{
+    background: linear-gradient(45deg, #602ab0 30%, #6c2893 90%);
+}
+.bkashLogo{
+    width: 200px;
+    height: auto;
+}
+.danger{
+    color: red;
+}

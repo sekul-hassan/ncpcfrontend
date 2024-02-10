@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="cbb3cb8d-f3a9-4e39-b985-10eb4d4b41fd" name="Changes" comment="" />
+=======
+    <list default="true" id="cbb3cb8d-f3a9-4e39-b985-10eb4d4b41fd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/asset-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/asset-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.b23e1df7.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/css/main.b23e1df7.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.7547ba9d.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.7547ba9d.js.LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/static/js/main.7547ba9d.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Context/Universities.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Context/Universities.js" afterDir="false" />
+    </list>
+>>>>>>> b92200f2477ed7d4a9574edbc44a4a7167ab4afe
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,6 +57,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\SEKUL\ncpcfrontend\public" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\SEKUL\ncpcfrontend\src\Assets\Images" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -65,7 +82,16 @@
       <workItem from="1706439812262" duration="9528000" />
       <workItem from="1706519928786" duration="55000" />
       <workItem from="1706519989920" duration="9650000" />
+<<<<<<< HEAD
       <workItem from="1707579814938" duration="418000" />
+=======
+      <workItem from="1706632440946" duration="6335000" />
+      <workItem from="1706687376443" duration="14164000" />
+      <workItem from="1706763413679" duration="15384000" />
+      <workItem from="1706785325098" duration="2025000" />
+      <workItem from="1707376295185" duration="433000" />
+      <workItem from="1707388390601" duration="339000" />
+>>>>>>> b92200f2477ed7d4a9574edbc44a4a7167ab4afe
     </task>
     <servers />
   </component>

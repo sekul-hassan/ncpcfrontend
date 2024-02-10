@@ -19,6 +19,7 @@ import ExecutiveImage18 from "../../Assets/Images/Executive/18.png"
 import ExecutiveImage19 from "../../Assets/Images/Executive/19.png"
 import ExecutiveImage20 from "../../Assets/Images/Executive/20.png"
 import ExecutiveImage21 from "../../Assets/Images/Executive/21.png"
+import ExecutiveImage22 from "../../Assets/Images/Executive/22.png"
 
 const executiveCommitteeImages = [
     ExecutiveImage1,
@@ -42,6 +43,7 @@ const executiveCommitteeImages = [
     ExecutiveImage19,
     ExecutiveImage20,
     ExecutiveImage21,
+    ExecutiveImage22,
 ]
 
 
@@ -71,14 +73,15 @@ const executiveNameList = [
 
     "Dr. Md. Golam Moazzam", // 20
     "Mohammad Ashraful Islam", // 21
+    "Dr. Md. Awlad Hossain", // 22
 ]
 const executivePostList = [
     "Vice Chancellor, JU|Chief Patron, NCPC 2023",
     "Pro Vice Chancellor (Academic)|Advisor, NCPC 2023",
     "Pro Vice Chancellor (Administration)|Advisor, NCPC 2023",
     "Treasurer|Advisor, NCPC 2023",
-    "Director ICT Cell|Advisor, NCPC 2023",
-    "Director TSC|Advisor, NCPC 2023",
+    "Director, ICT Cell|Advisor, NCPC 2023",
+    "Director, TSC|Advisor, NCPC 2023",
     "Proctor|Advisor, NCPC 2023",
 
     "Dean, Faculty of Mathematical and Physical Sciences|Advisor, NCPC 2023",
@@ -98,6 +101,8 @@ const executivePostList = [
 
     "Convener, NCPC 2023",
     "Organizing Secretary, NCPC 2023",
+
+    "Director, Transport|Advisor, NCPC 2023"
 ];
 
 const executiveCommittee = "Executive Committee";

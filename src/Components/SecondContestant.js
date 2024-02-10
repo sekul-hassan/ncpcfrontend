@@ -15,10 +15,12 @@ import FormValidationAlert from "../MyComponents/FormValidataionAlert";
 function SecondContestant({thirdCall,firstCall,inputChange,secondNext}) {
 
     const {data} = useContext(FormContext);
-
+    const backgroundStyle = {
+        background: 'linear-gradient(45deg, #1a237e 30%, #283593 90%)'
+    }
     return (
         <Container fluid="true" className="firstContestant mt-3">
-            <div className="registrationTitleDiv">
+            <div className="registrationTitleDiv" style={backgroundStyle}>
                 <h4 className="boldTitle">Registration Form</h4>
             </div>
 
@@ -26,7 +28,7 @@ function SecondContestant({thirdCall,firstCall,inputChange,secondNext}) {
                 <h4 className="title mb-4"><FontAwesomeIcon icon={faUser} />    Team Member-2</h4>
                 <hr/>
                 <Col>
-                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} />  Name</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} />  Name <span className="danger">*</span></label>
                     <input
                         type="text"
                         placeholder="Name"
@@ -36,7 +38,7 @@ function SecondContestant({thirdCall,firstCall,inputChange,secondNext}) {
                         value={!data.secondUserName===""?"":data.secondUserName}
 
                     />
-                    <label htmlFor="x"><FontAwesomeIcon icon={faAt} />   E-mail</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faAt} />   E-mail <span className="danger">*</span></label>
                     <input
                         type="email"
                         placeholder="E-mail"
@@ -46,7 +48,7 @@ function SecondContestant({thirdCall,firstCall,inputChange,secondNext}) {
                         value={!data.secondUserEmail===""?"":data.secondUserEmail}
 
                     />
-                    <label htmlFor="x"><FontAwesomeIcon icon={faPhone} />    Contact Number</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faPhone} />    Contact Number <span className="danger">*</span></label>
                     <input
                         type="number"
                         placeholder="Phone number"
@@ -56,7 +58,7 @@ function SecondContestant({thirdCall,firstCall,inputChange,secondNext}) {
                         value={!data.secondUserPhone===""?"":data.secondUserPhone}
 
                     />
-                    <label><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
+                    <label><FontAwesomeIcon icon={faVenusMars} />    Gender <span className="danger">*</span></label><br/>
                     <input
                         className="form-check-input"
                         type="radio"
@@ -75,7 +77,7 @@ function SecondContestant({thirdCall,firstCall,inputChange,secondNext}) {
                         onChange={inputChange}
                         checked={data.secondUserGender==="female"}
                     /> <label className="gender" htmlFor="female"> Female</label><br/>
-                    <label htmlFor="available"><FontAwesomeIcon icon={faShirt} />    T-shirt Size</label><br/>
+                    <label htmlFor="available"><FontAwesomeIcon icon={faShirt} />    T-shirt Size <span className="danger">*</span></label><br/>
                     <select
                         id="available"
                         className="form-control w-25"
@@ -91,7 +93,7 @@ function SecondContestant({thirdCall,firstCall,inputChange,secondNext}) {
                         <option value="xl">XL</option>
                         <option value="xxl">XXL</option>
                     </select>
-                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faImage} />   Student Photo</label><br/>
+                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faImage} />   Student Photo <span className="danger">*</span></label><br/>
                     <input
                         type="file"
                         className="form-control"

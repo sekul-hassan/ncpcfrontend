@@ -33,14 +33,17 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
 
     console.log(data.instituteName);
 
+    const backgroundStyle = {
+        background: 'linear-gradient(45deg, #1a237e 30%, #283593 90%)'
+    }
     return (
         <Container fluid="true" className="firstContestant mt-3">
-            <div className="registrationTitleDiv">
+            <div className="registrationTitleDiv" style={backgroundStyle}>
                 <h4 className="boldTitle">Registration Form</h4>
             </div>
             <Row className="mx-0 mt-3 px-3">
                 <Col md={6} sm={12} lg={6}>
-                    <label htmlFor="x"><FontAwesomeIcon icon={faBuildingColumns} />  Institute Name</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faBuildingColumns} />  Institute Name <span className="danger">*</span></label>
                     {Array.isArray(items) && (
                         <ReactSearchAutocomplete
                             items={items}
@@ -53,7 +56,7 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
 
                 </Col>
                 <Col md={6} sm={12} lg={6}>
-                    <label htmlFor="x"><FontAwesomeIcon icon={faPeopleGroup} />  Team Name</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faPeopleGroup} />  Team Name <span className="danger">*</span></label>
                     <input
                         type="text"
                         placeholder="Team Name"
@@ -70,7 +73,7 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
                 <h4 className="title mb-4"><FontAwesomeIcon icon={faUser} /> Team Member-1</h4>
                 <hr/>
                 <Col>
-                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Name</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faFileSignature} /> Name <span className="danger">*</span></label>
                     <input
                         type="text"
                         placeholder="Name"
@@ -79,7 +82,7 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
                         onChange={inputChange}
                         value={!data.firstUserName===""?"":data.firstUserName}
                     />
-                    <label htmlFor="x"><FontAwesomeIcon icon={faAt} />   E-mail</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faAt} />   E-mail <span className="danger">*</span></label>
                     <input
                         type="email"
                         placeholder="E-mail"
@@ -89,7 +92,7 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
                         value={!data.firstUserEmail===""?"":data.firstUserEmail}
 
                     />
-                    <label htmlFor="x"><FontAwesomeIcon icon={faPhone} />    Contact Number</label>
+                    <label htmlFor="x"><FontAwesomeIcon icon={faPhone} />    Contact Number <span className="danger">*</span></label>
                     <input
                         type="number"
                         placeholder="Phone number"
@@ -98,7 +101,7 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
                         onChange={inputChange}
                         value={!data.firstUserPhone===""?"":data.firstUserPhone}
                     />
-                    <label htmlFor="gender"><FontAwesomeIcon icon={faVenusMars} />    Gender</label><br/>
+                    <label htmlFor="gender"><FontAwesomeIcon icon={faVenusMars} />    Gender <span className="danger">*</span></label><br/>
                     <input
                         className="form-check-input mx-1"
                         type="radio"
@@ -118,7 +121,7 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
                         onChange={inputChange}
                         checked={data.firstUserGender==="female"}
                     /> <label className="gender" htmlFor="female"> Female</label><br/>
-                    <label htmlFor="available"><FontAwesomeIcon icon={faShirt} />    T-shirt size</label><br/>
+                    <label htmlFor="available"><FontAwesomeIcon icon={faShirt} />    T-shirt size <span className="danger">*</span></label><br/>
                     <select
                         id="available"
                         className="form-control w-25"
@@ -133,13 +136,13 @@ function FirstContestant({secondCall,inputChange,firstNext}) {
                         <option value="xl">XL</option>
                         <option value="xxl">XXL</option>
                     </select>
-                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faImage} />   Student Photo</label><br/>
+                    <label htmlFor="cc" className='dateofbirthcss'><FontAwesomeIcon icon={faImage} />   Student Photo <span className="danger">*</span></label><br/>
                     <input
                         type="file"
                         className="form-control"
                         name="firstUserPhoto"
                         onChange={inputChange}
-                        accept=".jpg,.png,.jpeg"
+                        accept=".jpg, .jpeg, .png"
                     />
                     {
                         data.firstUserPhoto ? (

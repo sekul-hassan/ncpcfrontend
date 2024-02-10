@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
 const FormValidationAlert = ({ info, gradient }) => {
     const infoStyle = {
@@ -14,9 +14,12 @@ const FormValidationAlert = ({ info, gradient }) => {
     };
 
     return (
+        <Fragment>
+
         <div className='text-white' style={infoStyle}>
             {info}
         </div>
+        </Fragment>
     );
 };
 

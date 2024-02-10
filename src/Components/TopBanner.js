@@ -17,13 +17,13 @@ function TopBanner() {
                             <Carousel.Item>
                                 <img className="carouselImg" src={mh} alt=""/>
                                 <Carousel.Caption>
-                                    <RegistrationButton buttonText="Register Now" linksTo="/registration-process"/>
+                                    <RegistrationButton buttonText="Register Now" linksTo="/registration"/>
                                 </Carousel.Caption>
                             </Carousel.Item>
                             <Carousel.Item>
                                 <img className="carouselImg" src={tLogo} alt=""/>
                                 <Carousel.Caption>
-                                    <RegistrationButton buttonText="Register Now" linksTo="/registration-process"/>
+                                    <RegistrationButton buttonText="Register Now" linksTo="/registration"/>
                                 </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>

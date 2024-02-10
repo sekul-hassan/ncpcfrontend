@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.e67d819e.css",
-    "main.js": "/static/js/main.ab16d024.js",
+    "main.css": "/static/css/main.e040b06e.css",
+    "main.js": "/static/js/main.7140caeb.js",
     "static/js/787.2576cc47.chunk.js": "/static/js/787.2576cc47.chunk.js",
     "static/media/2015.jpg": "/static/media/2015.3846424296c3ce0be1a4.jpg",
     "static/media/2021.jpg": "/static/media/2021.1a4ad349bbb8f7357b06.jpg",
+    "static/media/Alumni_Logo.jpg": "/static/media/Alumni_Logo.24c704c85c5b37a2a744.jpg",
     "static/media/lab_201.png": "/static/media/lab_201.96455ccccecf5ed60902.png",
     "static/media/2016.jpg": "/static/media/2016.f8172654ea64729d9b04.jpg",
     "static/media/2017.jpg": "/static/media/2017.b3e6a8b68a3a15506f24.jpg",
@@ -24,6 +25,7 @@
     "static/media/6.png": "/static/media/6.a082590bab92fccc61b9.png",
     "static/media/1.png": "/static/media/1.6ac91ded02d95ff96e31.png",
     "static/media/2.png": "/static/media/2.41d9e53cc91f2da1d11d.png",
+    "static/media/22.png": "/static/media/22.f502dba0f41165715bb7.png",
     "static/media/brain.png": "/static/media/brain.29663cb5388c71bf52c4.png",
     "static/media/15.png": "/static/media/15.fa15d76e046d39dbbab5.png",
     "static/media/1_AKA.png": "/static/media/1_AKA.fa15d76e046d39dbbab5.png",
@@ -77,6 +79,7 @@
     "static/media/2_MA.jpg": "/static/media/2_MA.746cf42da1a82ac26636.jpg",
     "static/media/2_AM.jpg": "/static/media/2_AM.aa4335a4b43b42ef7424.jpg",
     "static/media/5_HK.jpg": "/static/media/5_HK.b27bd126dda210e29f06.jpg",
+    "static/media/bkashLogo.png": "/static/media/bkashLogo.0b7e8c6d0972ba3dff15.png",
     "static/media/sponsor.png": "/static/media/sponsor.91b761341c28b15730c4.png",
     "static/media/19.png": "/static/media/19.fd764e8eb49b83a88f74.png",
     "static/media/1_ZR.jpg": "/static/media/1_ZR.fd764e8eb49b83a88f74.jpg",
@@ -86,12 +89,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.e67d819e.css.map": "/static/css/main.e67d819e.css.map",
-    "main.ab16d024.js.map": "/static/js/main.ab16d024.js.map",
+    "main.e040b06e.css.map": "/static/css/main.e040b06e.css.map",
+    "main.7140caeb.js.map": "/static/js/main.7140caeb.js.map",
     "787.2576cc47.chunk.js.map": "/static/js/787.2576cc47.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e67d819e.css",
-    "static/js/main.ab16d024.js"
+    "static/css/main.e040b06e.css",
+    "static/js/main.7140caeb.js"
   ]
 }

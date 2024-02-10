@@ -7,15 +7,17 @@ function ExecutiveCommitteeGrid({ imageUrls, executiveNameList, executivePostLis
 
     return (
         <Container fluid="true" className="mt-3 p-3">
+            
              <div className='mt-3'>
                 <InfoDiv info="Executive Committee" gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
             </div>
+            {/* VC */}
             <Row className="justify-content-center">
                 <Col className="mt-3" lg={3} md={4} sm={6}>
                     <GlobalCard image={imageUrls[0]} name={executiveNameList[0]} post={executivePostList[0]} />
                 </Col>
             </Row>
-            
+            {/* PRO VC */}
             <Row className="justify-content-center">
                 <Col className="mt-3" lg={3} md={4} sm={6}>
                     <GlobalCard image={imageUrls[1]} name={executiveNameList[1]} post={executivePostList[1]} />
@@ -24,26 +26,15 @@ function ExecutiveCommitteeGrid({ imageUrls, executiveNameList, executivePostLis
                     <GlobalCard image={imageUrls[2]} name={executiveNameList[2]} post={executivePostList[2]} />
                 </Col>
             </Row>
-                
+
+             {/* TREASURER */}   
             <Row className="justify-content-center">    
                 <Col className="mt-3" lg={3} md={4} sm={6}>
                     <GlobalCard image={imageUrls[3]} name={executiveNameList[3]} post={executivePostList[3]} />
                 </Col>
             </Row>
 
-            <Row className="justify-content-center">
-                <Col className="mt-3" lg={3} md={4} sm={6}>
-                    <GlobalCard image={imageUrls[4]} name={executiveNameList[4]} post={executivePostList[4]} />
-                </Col>
-                <Col className="mt-3" lg={3} md={4} sm={6}>
-                    <GlobalCard image={imageUrls[5]} name={executiveNameList[5]} post={executivePostList[5]} />
-                </Col>
-                <Col className="mt-3" lg={3} md={4} sm={6}>
-                    <GlobalCard image={imageUrls[6]} name={executiveNameList[6]} post={executivePostList[6]} />
-                </Col>
-            </Row>
-
-            {/* Deans */}
+            {/* DEANS */}
             {/* <div className='mt-3'>
                 <InfoDiv info="Faculty Deans" gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
             </div> */}
@@ -70,6 +61,28 @@ function ExecutiveCommitteeGrid({ imageUrls, executiveNameList, executivePostLis
                     <GlobalCard image={imageUrls[12]} name={executiveNameList[12]} post={executivePostList[12]} />
                 </Col>
             </Row>
+
+            {/* DIRECTOR ICT, TSC, TRANSPORT */}  
+            <Row className="justify-content-center">
+                <Col className="mt-3" lg={3} md={4} sm={6}>
+                    <GlobalCard image={imageUrls[4]} name={executiveNameList[4]} post={executivePostList[4]} />
+                </Col>
+                <Col className="mt-3" lg={3} md={4} sm={6}>
+                    <GlobalCard image={imageUrls[5]} name={executiveNameList[5]} post={executivePostList[5]} />
+                </Col>
+                <Col className="mt-3" lg={3} md={4} sm={6}>
+                    <GlobalCard image={imageUrls[21]} name={executiveNameList[21]} post={executivePostList[21]} />
+                </Col>
+            </Row>
+            
+            {/* PROCTOR */}
+            <Row className="justify-content-center">
+                <Col className="mt-3" lg={3} md={4} sm={6}>
+                    <GlobalCard image={imageUrls[6]} name={executiveNameList[6]} post={executivePostList[6]} />
+                </Col>
+            </Row>
+
+            {/* ADVISORS */}
             {/* <div className='mt-3'>
                 <InfoDiv info="Advisors" gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
             </div> */}
@@ -84,7 +97,8 @@ function ExecutiveCommitteeGrid({ imageUrls, executiveNameList, executivePostLis
                     <GlobalCard image={imageUrls[18]} name={executiveNameList[18]} post={executivePostList[18]} />
                 </Col>
             </Row>
-
+            
+            {/* MEMBERS */}
             {/* <div className='mt-3'>
                 <InfoDiv info="Executive Members" gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
             </div> */}
@@ -101,7 +115,7 @@ function ExecutiveCommitteeGrid({ imageUrls, executiveNameList, executivePostLis
             </Row>
 
 
-
+            {/* CONVENOR, ORGANIZING SECRETARY */}
             {/* <div className='mt-3'>
                 <InfoDiv info="Convenor" gradient='linear-gradient(45deg, #1a237e 30%, #283593 90%)'/>
             </div> */}

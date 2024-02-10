@@ -1,5 +1,5 @@
-import React, {useContext, useState} from 'react';
-import {Container} from "react-bootstrap";
+import React, { useContext, useState } from 'react';
+import { Container } from "react-bootstrap";
 import FirstContestant from "./FirstContestant";
 import SecondContestant from "./SecondContestant";
 import ThirdContestant from "./ThirdContestant";
@@ -8,11 +8,14 @@ import axios from "axios";
 import FormContext from "./Context/FormContext";
 import Payment from "./Payment";
 
-const validateFirstUser = (data) => {
+const ValidateFirstUser = (data) => {
+    const specialCharacterPattern = /[!@#$%^&*()_+{}\[\]:;<>,?~\\/-]/;
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
     if (data.teamName === "") return false;
-    if (data.instituteName === "") return false;
-    if (data.firstUserName === "") return false;
-    if (data.firstUserEmail === "") return false;
+    if (data.instituteName === "") return;
+    if (specialCharacterPattern.test(data.firstUserName)) return (alert('Special character not allowed in Name'));
+    if (!emailPattern.test(data.firstUserEmail)) return (alert('invalid email'));
     if (data.firstUserPhone === "") return false;
     if (data.firstUserGender === "") return false;
     if (data.firstUserTShirt === "") return false;
@@ -20,9 +23,11 @@ const validateFirstUser = (data) => {
 
 }
 
-const validateSecondUser = (data) => {
-    if (data.secondUserName === "") return false;
-    if (data.secondUserEmail === "") return false;
+const ValidateSecondUser = (data) => {
+    const specialCharacterPattern = /[!@#$%^&*()_+{}\[\]:;<>,?~\\/-]/;
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    if (specialCharacterPattern.test(data.secondUserName)) return (alert('Special character not allowed in Name'));
+    if (!emailPattern.test(data.secondUserEmail)) return (alert('invalid email'));
     if (data.secondUserPhone === "") return false;
     if (data.secondUserGender === "") return false;
     if (data.secondUserTShirt === "") return false;
@@ -30,19 +35,24 @@ const validateSecondUser = (data) => {
 
 }
 
-const validateThirdUser = (data) => {
+const ValidateThirdUser = (data) => {
+    const specialCharacterPattern = /[!@#$%^&*()_+{}\[\]:;<>,?~\\/-]/;
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
 
-    if (data.thirdUserName === "") return false;
-    if (data.thirdUserEmail === "") return false;
+    if (specialCharacterPattern.test(data.thirdUserName)) return (alert('Special character not allowed in Name'));
+    if (!emailPattern.test(data.thirdUserEmail)) return (alert('invalid email'));
     if (data.thirdUserPhone === "") return false;
     if (data.thirdUserGender === "") return false;
     if (data.thirdUserTShirt === "") return false;
     return data.thirdUserPhoto !== null;
 
 }
-const validateCoachData = (data) => {
-    if (data.teacherName === "") return false;
-    if (data.teacherEmail === "") return false;
+const ValidateCoachData = (data) => {
+    const specialCharacterPattern = /[!@#$%^&*()_+{}\[\]:;<>,?~\\/-]/;
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+
+    if (specialCharacterPattern.test(data.teacherName)) return (alert('Special character not allowed in Name'));
+    if (!emailPattern.test(data.teacherEmail)) return (alert('invalid email'));
     if (data.teacherPhone === "") return false;
     if (data.teacherGender === "") return false;
     if (data.teacherTShirt === "") return false;
@@ -52,20 +62,21 @@ const validateCoachData = (data) => {
 }
 
 function RegiForm() {
+    const [selectedFile, setSelectedFile] = useState(null);
+    const allowedExtensions = ['jpg', 'jpeg', 'png'];
 
-
-    const [firstNext,setFirstNext] = useState(false);
-    const [secondNext,setSecondNext] = useState(false);
-    const [thirdNext,setThirdNext] = useState(false);
-    const [fourthNext,setFourthNext] = useState(false);
-    const [valid,setValid] = useState(false);
+    const [firstNext, setFirstNext] = useState(false);
+    const [secondNext, setSecondNext] = useState(false);
+    const [thirdNext, setThirdNext] = useState(false);
+    const [fourthNext, setFourthNext] = useState(false);
+    const [valid, setValid] = useState(false);
     const [submit, setSubmit] = useState(false)
-    const [response,setResponse] = useState(null);
+    const [response, setResponse] = useState(null);
 
 
-    const {payment,setPayment,data,setData,first,setFirst,second,setSecond,third,setThird,fourth,setFourth} = useContext(FormContext);
-    
-    const inputChange = (e)=>{
+    const { payment, setPayment, data, setData, first, setFirst, second, setSecond, third, setThird, fourth, setFourth } = useContext(FormContext);
+
+    const inputChange = (e) => {
         if (e.target === undefined) {
             setData((prevData) => {
                 return {
@@ -75,24 +86,35 @@ function RegiForm() {
             });
         }
 
-        else if(e.target.type==='file'){
+
+
+        else if (e.target.type === 'file') {
             const file = e.target.files[0];
-            if(file.size > 1024 * 1024){
+            const extension = file.name.split('.').pop().toLowerCase();
+
+            if (allowedExtensions.includes(extension)) {
+                setSelectedFile(file);
+            } else {
+                alert('Please select a valid image file (jpg, jpeg, or png)');
+                e.target.value = null;
+            }
+            if (file.size > 1024 * 1024) {
                 alert('File size exceeds 1MB. Please choose a smaller file.');
                 e.target.value = null;
                 return;
             }
             setData({
                 ...data,
-                [e.target.name]:e.target.files[0],
+                [e.target.name]: e.target.files[0],
             });
         }
-        else{
+        else {
             setData({
                 ...data,
-                [e.target.name]:e.target.value,
+                [e.target.name]: e.target.value,
             });
         }
+
     };
 
 
@@ -103,11 +125,6 @@ function RegiForm() {
         setResponse(null)
         setValid(true);
         setSubmit(true);
-
-        if(data.transaction===""){
-            setValid(false);
-            return;
-        }
 
 
         const formData = new FormData();
@@ -129,7 +146,7 @@ function RegiForm() {
     };
 
 
-    const firstCall =()=>{
+    const firstCall = () => {
         setFirstNext(false);
         setSecond(false);
         setFourth(false);
@@ -137,10 +154,10 @@ function RegiForm() {
         setThird(false);
         setPayment(false);
     }
-    const secondCall = ()=>{
+    const secondCall = () => {
         setSecondNext(false);
         setFirstNext(true);
-        if (!validateFirstUser(data)) {
+        if (!ValidateFirstUser(data)) {
             return false;
         }
         setSecond(true);
@@ -150,10 +167,10 @@ function RegiForm() {
         setPayment(false);
         return true;
     }
-    const thirdCall = ()=>{
+    const thirdCall = () => {
         setThirdNext(false)
         setSecondNext(true);
-        if (!validateSecondUser(data)) {
+        if (!ValidateSecondUser(data)) {
             return false;
         }
         setPayment(false);
@@ -162,14 +179,14 @@ function RegiForm() {
         setFirst(false);
         setThird(true);
     }
-    const fourthCall = ()=>{
+    const fourthCall = () => {
         setThirdNext(true);
         setFourthNext(false);
         setValid(false);
         setResponse(null);
         setSubmit(false);
 
-        if (!validateThirdUser(data)) {
+        if (!ValidateThirdUser(data)) {
             return false;
         }
         setPayment(false);
@@ -179,9 +196,9 @@ function RegiForm() {
         setThird(false);
     }
 
-    const paymentCall = ()=>{
+    const paymentCall = () => {
         setResponse(null)
-        if (!validateCoachData(data)) {
+        if (!ValidateCoachData(data)) {
             setFourthNext(true);
             return false;
         }
@@ -202,19 +219,19 @@ function RegiForm() {
 
                 <div>
                     {
-                        !payment && !second && first && !third && !fourth?<FirstContestant secondCall={secondCall} inputChange={inputChange} firstNext={firstNext}/>:""
+                        !payment && !second && first && !third && !fourth ? <FirstContestant secondCall={secondCall} inputChange={inputChange} firstNext={firstNext} /> : ""
                     }
                     {
-                        !payment && second && !first && !third && !fourth?<SecondContestant firstCall={firstCall} thirdCall={thirdCall} inputChange={inputChange} secondNext={secondNext}/>:""
+                        !payment && second && !first && !third && !fourth ? <SecondContestant firstCall={firstCall} thirdCall={thirdCall} inputChange={inputChange} secondNext={secondNext} /> : ""
                     }
                     {
-                        !payment && third && !first && !second && !fourth?<ThirdContestant secondCall={secondCall} fourthCall={fourthCall} inputChange={inputChange} thirdNext={thirdNext}/>:""
+                        !payment && third && !first && !second && !fourth ? <ThirdContestant secondCall={secondCall} fourthCall={fourthCall} inputChange={inputChange} thirdNext={thirdNext} /> : ""
                     }
                     {
-                        !payment && !third && !first && !second && fourth?<TeacherData thirdCall={thirdCall} fourthNext={fourthNext} inputChange={inputChange} paymentCall={paymentCall}/>:""
+                        !payment && !third && !first && !second && fourth ? <TeacherData thirdCall={thirdCall} fourthNext={fourthNext} inputChange={inputChange} paymentCall={paymentCall} /> : ""
                     }
                     {
-                        payment && !third && !first && !second && !fourth?<Payment fourthCall={fourthCall} inputChange={inputChange} postDataToBackend={postDataToBackend} submit={submit} valid={valid} response={response}/>:""
+                        payment && !third && !first && !second && !fourth ? <Payment fourthCall={fourthCall} inputChange={inputChange} postDataToBackend={postDataToBackend} submit={submit} valid={valid} response={response} /> : ""
                     }
                 </div>
 

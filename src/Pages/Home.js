@@ -11,9 +11,6 @@ import EventDateWithNoticeBoard from '../MyComponents/EventDateWithNoticeBoard';
 import StrategyCards from '../MyComponents/StrategyCards';
 import SupportedBy from '../MyComponents/SupportedBy';
 import HostedBy from '../MyComponents/HostedBy';
-import GoldSponsors from '../MyComponents/Gold Sponsors';
-import PlatinumSponsors from '../MyComponents/PlatinumSponsors';
-import SilverSponsors from '../MyComponents/SilverSponsors';
 
 function Home(props) {
     return (
@@ -27,6 +24,7 @@ function Home(props) {
             <StrategyCards/>
             <HostedBy/>
             <SupportedBy/>
+
             {/* <PlatinumSponsors/>
             <GoldSponsors/>
             <SilverSponsors/> */}
