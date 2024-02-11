@@ -1004,3 +1004,9 @@ Button {
   border: 1px solid #ccc;
   box-shadow: 0 3px 8px rgba(0, 0, 0, .15)
 }
+
+.isDisabled {
+  opacity: .5;
+  pointer-events: none;
+  user-select: none;
+}
