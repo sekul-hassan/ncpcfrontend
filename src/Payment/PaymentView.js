@@ -32,6 +32,7 @@ function PaymentView() {
     }; */
 
     const authenticate = async (e) => {
+        setLoading(true);
         e.preventDefault();
 
         try {
@@ -42,6 +43,7 @@ function PaymentView() {
                 return;
             }
             setUrl(response.data);
+            setLoading(false);
         } catch (error) {
             console.error("Error during authentication:", error);
         }
@@ -51,7 +53,7 @@ function PaymentView() {
         console.log(keyword);
         if (url) {
             setLoading(false);
-            window.open(url, '_blank');
+            window.open(url, '_self');
         }
     }, [url]);
 
@@ -120,7 +122,7 @@ function PaymentView() {
                         <button className='btn_common' onClick={handleOnSearch}>Search</button>
                     </div>
                 </div></>}
-                
+
                 <h3 className='mt-3 mb-3'>{selectedTeam?.teamName}</h3>
 
                 <div className="team_payment_wrapper">
@@ -154,18 +156,28 @@ function PaymentView() {
                         </>
                     ) : (
                         <>
-                            {teams?.map((team, index) => (
-                                <div className="team_card" key={index}>
-                                    <span className="team_title">{team.teamName}</span>
-                                    <span className='status'>Payment Status</span>
-                                    <span className='paid'>{team.transaction}</span>
-                                    {team.transaction == 'PENDING' ? (
-                                        <button className='btn_payment' onClick={() => handleSelectTeam(team)}>
-                                            <img className="bkashLogo" src={bks} alt="" />
-                                            Proceed to pay</button>
-                                    ) : ''}
-                                </div>
-                            ))}</>
+                            {teams.length === 0 ? (
+                                <h4>Result Not Found</h4>
+                            ) : (
+                                <>
+                                    {teams?.map((team, index) => (
+                                        <div className="team_card" key={index}>
+                                            <span className="team_title">{team.teamName}</span>
+                                            <span className='status'>Payment Status</span>
+                                            <span className='paid'>{team.transaction}</span>
+                                            {team.transaction == 'PENDING' ? (
+                                                <button className='btn_payment' onClick={() => handleSelectTeam(team)}>
+                                                    <img className="bkashLogo" src={bks} alt="" />
+                                                    Proceed to pay</button>
+                                            ) : ''}
+                                        </div>
+                                    ))}</>
+                            )}
+
+
+
+                        </>
+
                     )}
                 </div>
                 <div className='response_result'>
@@ -178,7 +190,7 @@ function PaymentView() {
                     }
                 </div>
                 <div className='action_wrapper'>
-                    {selectedTeam ? (<><button className='btn_common gray' onClick={backToTeam}>Back</button> <button className='btn_common' onClick={authenticate}>Confirm to Pay</button> </>) : ''}
+                    {selectedTeam ? (<><button className='btn_common gray' onClick={backToTeam}>Back</button> <button className={loading ? 'isDisabled' : 'btn_common'} onClick={authenticate}>{loading ? 'Loading...' : 'Confirm to Pay'}</button> </>) : ''}
 
                 </div>
             </div>

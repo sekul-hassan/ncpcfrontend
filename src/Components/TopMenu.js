@@ -44,7 +44,7 @@ function TopMenu() {
                             <Nav.Link><Link to="/" className={css.navLink}>Home</Link></Nav.Link>
                             <Nav.Link><Link to="/about" className={css.navLink}>About</Link></Nav.Link>
                             <Nav.Link><Link to="/registration" className={css.navLink}>Registration</Link></Nav.Link>
-                            {/* <Nav.Link><Link to="/payment" className={css.navLink}>Payment</Link></Nav.Link> */}
+                            <Nav.Link><Link to="/payment" className={css.navLink}>Payment</Link></Nav.Link>
                             <Nav.Link><Link to="/committee" className={css.navLink}>Committee</Link></Nav.Link> 
                             <Nav.Link><Link to="/gallery" className={css.navLink}>Gallery</Link></Nav.Link>
                             <Nav.Link><Link to="/sponsors" className={css.navLink}>Our Sponsors</Link></Nav.Link>
