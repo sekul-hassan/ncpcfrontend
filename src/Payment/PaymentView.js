@@ -61,15 +61,12 @@ function PaymentView() {
         }
     }, [url]);
 
-
     const inputChange = (e) => {
         if (e.target.value !== '') {
+            setKeyword(e.target.value.trim())
+        } else {
             setKeyword(e.target.value)
-            console.log('e.target.value', keyword)
-            // const data = { "keyword": keyword }
-
         }
-
     }
 
     const handleOnSearch = () => {
@@ -82,8 +79,6 @@ function PaymentView() {
                 console.log(error);
             });
     }
-
-
 
     const formatResult = (item) => {
         return (
