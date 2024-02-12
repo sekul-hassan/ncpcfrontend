@@ -22,6 +22,7 @@ import OurSponsors from './Pages/OurSponsors';
 import TeamListPage from "./Pages/TeamListPage";
 import PaymentPage from "./Pages/PaymentPage";
 import PaymentStatus from "./Pages/PaymentStatus";
+import { Refund } from './Pages/Refund';
 
 
 
@@ -39,6 +40,7 @@ function App() {
             <Route path='status' element={<TeamStatus/>}/>
             {/* <Route path="rules" element={<Rules/>}/> */}
             <Route path="payment" element={<PaymentPage/>}/>
+            <Route path="refund" element={<Refund/>}/>
             <Route path="/paymentstatus/:message/:status" element={<PaymentStatus/>}/>
             <Route path="committee" element={<CommitteePage/>}/>
             <Route path="sponsors" element={<OurSponsors/>}/>
