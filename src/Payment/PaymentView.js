@@ -21,7 +21,7 @@ function PaymentView() {
     const [selectedTeam, setSelectedTeam] = useState(null)
 
     const [url, setUrl] = useState(null);
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
     const [clicked, setClicked] = useState(false);
     const [payTeamExist, setPayTeamExist] = useState(false);
 
@@ -40,12 +40,16 @@ function PaymentView() {
             console.log(response.data);
             if (response.data === "Team already exist please change your team name") {
                 setPayTeamExist(true);
+                setLoading(false);
                 return;
             }
             setUrl(response.data);
             setLoading(false);
         } catch (error) {
-            console.error("Error during authentication:", error);
+            setLoading(false);
+            <div className="mt-4">
+                <FormValidationAlert info={error} />
+            </div>
         }
     };
 
@@ -190,7 +194,7 @@ function PaymentView() {
                     }
                 </div>
                 <div className='action_wrapper'>
-                    {selectedTeam ? (<><button className='btn_common gray' onClick={backToTeam}>Back</button> <button className={loading ? 'isDisabled' : 'btn_common'} onClick={authenticate}>{loading ? 'Loading...' : 'Confirm to Pay'}</button> </>) : ''}
+                    {selectedTeam ? (<><button className='btn_common gray' onClick={backToTeam}>Back</button> <button className={loading ? 'isDisabled btn_common' : 'btn_common'} onClick={authenticate}>{loading ? 'Loading...' : 'Confirm to Pay'}</button> </>) : ''}
 
                 </div>
             </div>
