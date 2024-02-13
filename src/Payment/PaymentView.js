@@ -14,7 +14,7 @@ function PaymentView() {
         "Client-Secret": "SECJUNCPCCOM2023000001",
     }
 
-    const [keyword, setKeyword] = useState(null)
+    const [keyword, setKeyword] = useState('')
     const [teams, setTeams] = useState([])
     const [members, setMembers] = useState([])
 
@@ -64,20 +64,26 @@ function PaymentView() {
     const inputChange = (e) => {
         if (e.target.value !== '') {
             setKeyword(e.target.value.trim())
-        } else {
-            setKeyword(e.target.value)
+        }
+        else {
+            setKeyword(e.target.value.trim())
+
         }
     }
 
     const handleOnSearch = () => {
-        axios.post('https://pc.cse.juniv.edu/api/findByTeams', { keyword: keyword }, { headers: headers })
-            .then(response => {
-                setTeams(response.data);
-                console.log(response.data);
-            })
-            .catch(error => {
-                console.log(error);
-            });
+        if (keyword !== '') {
+            axios.post('https://pc.cse.juniv.edu/api/findByTeams', { keyword: keyword }, { headers: headers })
+                .then(response => {
+                    setTeams(response.data);
+                    console.log(response.data);
+                })
+                .catch(error => {
+                    console.log(error);
+                });
+        } else {
+            return
+        }
     }
 
     const formatResult = (item) => {
