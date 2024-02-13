@@ -77,7 +77,7 @@ const items = [
     {"id": 76, "name": "University of Development Alternative"},
     {"id": 77, "name": "Premier University"},
     {"id": 78, "name": "Southeast University"},
-    {"id": 79, "name": "Daffodil International University"},
+    {"id": 79, "name": "Daffodil Institute of IT (DIIT)"},
     {"id": 80, "name": "Stamford University Bangladesh"},
     {"id": 81, "name": "State University of Bangladesh (SUB)"},
     {"id": 82, "name": "City University"},
@@ -238,8 +238,9 @@ const items = [
     {"id": 237, "name": "BS polytechnic institute kaptai"},
     {"id": 238, "name": "Feni computer institute"},
     {"id": 239, "name": "Sylhet Engineering College"},
-    {"id": 240, "name": "Institute of Science Trade & Technology (ISTT)"},
+    {"id": 240, "name": "Institute Technology (IST)"},
     {"id": 241, "name": "Rangpur Engineering College"},
+    {"id": 242, "name": "Tejgaon College"},
 ]
 
-        export default items;
+export default items;
