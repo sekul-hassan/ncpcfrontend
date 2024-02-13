@@ -16,9 +16,9 @@ const columns = [
   { field: 'transaction', headerName: 'Payment Status', width: 300 },
 ];
 
-// const rows = [
-//   { id: 1, teamName: 'Gub_Legen_wait_for_it', instituteName: 'Green University of Bangladesh', transaction: 'COMPLETED' },
-// ];;
+/* const rows = [
+  { id: 1, teamName: 'Gub_Legen_wait_for_it', instituteName: 'Green University of Bangladesh', transaction: 'COMPLETED' },
+];; */
 
 export const TeamPaymentStatus = () => {
   const headers =
