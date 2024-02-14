@@ -4,6 +4,12 @@ import NoticeBoard from './NoticeBoard';
 
 
 const styles = {
+  previousEventDate: {
+    fontSize: '14px',
+    textAlign: 'center',
+    textDecoration: 'line-through'
+
+  },
   card: {
     width: '350px',
     height: '268px',
@@ -53,9 +59,9 @@ const styles = {
 };
 
 const eventList = [
-    { eventName: 'Registration Ends', eventDate: 'February 17, 2024' },
-    { eventName: 'Preliminary Contest (Online)', eventDate: 'February 20, 2024' },
-    { eventName: 'Onsite Contest', eventDate: 'March 7-9, 2024' },
+  { eventName: 'Registration Ends', eventDate: 'February 17, 2024', previousEventDate: 'February 15, 2024' },
+  { eventName: 'Preliminary Contest (Online)', eventDate: 'February 20, 2024', previousEventDate: '' },
+  { eventName: 'Onsite Contest', eventDate: 'March 7-9, 2024', previousEventDate: '' },
 ];
 
 const EventDateWithNoticeBoard = () => {
@@ -65,6 +71,7 @@ const EventDateWithNoticeBoard = () => {
             <div style={styles.card}>
             <div style={styles.content}>
                 <div style={styles.eventName}>{event.eventName}</div>
+                <div style={styles.previousEventDate}>{event.previousEventDate}</div>
                 <div style={styles.eventDate}>{event.eventDate}</div>
             </div>
             </div>
