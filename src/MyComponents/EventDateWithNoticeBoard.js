@@ -53,8 +53,8 @@ const styles = {
 };
 
 const eventList = [
-    { eventName: 'Preliminary Registration Ends', eventDate: 'February 15, 2024' },
-    { eventName: 'Preliminary Contest', eventDate: 'February 20, 2024' },
+    { eventName: 'Registration Ends', eventDate: 'February 17, 2024' },
+    { eventName: 'Preliminary Contest (Online)', eventDate: 'February 20, 2024' },
     { eventName: 'Onsite Contest', eventDate: 'March 7-9, 2024' },
 ];
 
