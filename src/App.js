@@ -42,7 +42,7 @@ function App() {
             {/* <Route path="rules" element={<Rules/>}/> */}
             <Route path="payment" element={<PaymentPage/>}/>
             <Route path="team-payment-status" element={<TeamPaymentStatus/>}/>
-            <Route path="refund" element={<Refund/>}/>
+            {/* <Route path="refund" element={<Refund/>}/> */}
             <Route path="/paymentstatus/:message/:status" element={<PaymentStatus/>}/>
             <Route path="committee" element={<CommitteePage/>}/>
             <Route path="sponsors" element={<OurSponsors/>}/>
