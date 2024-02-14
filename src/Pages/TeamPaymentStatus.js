@@ -71,7 +71,7 @@ export const TeamPaymentStatus = () => {
     <>
       <TopMenu />
       <div className="payment_status_grid">
-        <h3 className="my-5 text-center">Team Payment Status</h3>
+        <h3 className="my-3 text-center">Team Payment Status</h3>
         <Box sx={{ minWidth: 200 }}>
           <FormControl fullWidth>
             <InputLabel id="demo-simple-select-label">Filter by</InputLabel>
@@ -100,3 +100,4 @@ export const TeamPaymentStatus = () => {
     </>
   )
 }
+

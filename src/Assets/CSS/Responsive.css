@@ -221,3 +221,24 @@
 
 }
 
+
+@media (max-width: 575px) {
+    .payment_status_grid{
+        h3{
+            margin: 1rem 0 !important;
+        }
+        .p_grid{
+            margin: 1rem 0 !important;
+            width: 100%;
+        }
+        .MuiDataGrid-columnHeader[aria-colindex="1"]{
+            display: none !important;
+        }
+        .MuiDataGrid-columnHeader[aria-colindex="2"],
+        .MuiDataGrid-columnHeader[aria-colindex="3"]{
+            width: 30% !important;   
+            min-width: 1% !important;   
+            max-width: 30% !important;   
+        }
+    }
+}
