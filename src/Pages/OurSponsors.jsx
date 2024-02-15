@@ -22,7 +22,7 @@ function OurSponsors(props) {
         { id: 1, name: 'Platinum' },
         { id: 2, name: 'Gold' },
         { id: 3, name: 'Silver' },
-        { id: 4, name: 'Other' },
+        // { id: 4, name: 'Other' },
     ];
     const [activeItem, setActiveItem] = useState(items[0]);
     const onSelectCurrentLink = (item) => {
