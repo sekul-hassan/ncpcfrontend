@@ -8,7 +8,10 @@ const styles = {
     fontSize: '14px',
     textAlign: 'center',
     textDecoration: 'line-through'
-
+  },
+  previousEventDate2: {
+    fontSize: '14px',
+    textAlign: 'center',
   },
   card: {
     width: '350px',
@@ -60,7 +63,7 @@ const styles = {
 
 const eventList = [
   { eventName: 'Registration Ends', eventDate: 'February 17, 2024', previousEventDate: 'February 15, 2024' },
-  { eventName: 'Preliminary Contest (Online)', eventDate: 'February 20, 2024', previousEventDate: '' },
+  { eventName: 'Preliminary Contest (Online)', eventDate: 'February 20, 2024', previousEventDate: '05:00 PM - 09:00 PM' },
   { eventName: 'Onsite Contest', eventDate: 'March 7-9, 2024', previousEventDate: '' },
 ];
 
@@ -71,7 +74,7 @@ const EventDateWithNoticeBoard = () => {
             <div style={styles.card}>
             <div style={styles.content}>
                 <div style={styles.eventName}>{event.eventName}</div>
-                <div style={styles.previousEventDate}>{event.previousEventDate}</div>
+                <div style={event.eventName=='Preliminary Contest (Online)'?styles.previousEventDate2:styles.previousEventDate}>{event.previousEventDate}</div>
                 <div style={styles.eventDate}>{event.eventDate}</div>
             </div>
             </div>
