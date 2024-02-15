@@ -169,9 +169,9 @@ const items = [
     {"id": 168, "name": "Islamic University of Technology, Gazipur"},
     {"id": 169, "name": "Asian University for Women"},
     {"id": 170, "name": "South Asian University"},
-    {"id": 171, "name": "Dhaka Collage"},
-    {"id": 172, "name": "City Collage"},
-    {"id": 173, "name": "Eden Collage"},
+    {"id": 171, "name": "Dhaka College"},
+    {"id": 172, "name": "City College"},
+    {"id": 173, "name": "Eden College"},
     {"id": 174, "name": "IOI"},
     {"id": 175, "name": "Hobigonj polytechnic institute"},
     {"id": 176, "name": "Chandpur polytechnic institute"},
@@ -244,6 +244,7 @@ const items = [
     {"id": 243, "name": "Military Institute of Science and Technology (MIST)"},
     {"id": 244, "name": "Institute of Science and Technology"},
     {"id": 245, "name": "Daffodil International University"},
+    {"id": 246, "name": "Dhaka City College"},
 ]
 
 export default items;
