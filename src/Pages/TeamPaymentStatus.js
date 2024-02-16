@@ -16,10 +16,6 @@ const columns = [
   { field: 'transaction', headerName: 'Payment Status', width: 300 },
 ];
 
-/* const rows = [
-  { id: 1, teamName: 'Gub_Legen_wait_for_it', instituteName: 'Green University of Bangladesh', transaction: 'COMPLETED' },
-];; */
-
 export const TeamPaymentStatus = () => {
   const headers =
   {
@@ -29,17 +25,6 @@ export const TeamPaymentStatus = () => {
 
   const [selectedStatus, setSelectedStatus] = useState('Completed')
   const [teams, setTeams] = useState([])
-
-  // const handleOnFilter = () => {
-  //   axios.post('https://pc.cse.juniv.edu/api/findTeamsByPaymentStatus', { keyword: selectedStatus }, { headers: headers })
-  //     .then(response => {
-  //       setTeams(response.data);
-  //       console.log(response.data);
-  //     })
-  //     .catch(error => {
-  //       console.log(error);
-  //     });
-  // }
 
   useEffect(() => {
     axios.post('https://pc.cse.juniv.edu/api/findTeamsByPaymentStatus', { keyword: selectedStatus }, { headers: headers })
@@ -56,14 +41,6 @@ export const TeamPaymentStatus = () => {
     if(event.target.value && event.target.value.trim() !==''){
       setSelectedStatus(event.target.value);
     }
-    // axios.post('https://pc.cse.juniv.edu/api/findTeamsByPaymentStatus', { keyword: selectedStatus }, { headers: headers })
-    // .then(response => {
-    //   setTeams(response.data);
-    //   console.log(response.data);
-    // })
-    // .catch(error => {
-    //   console.log(error);
-    // });
   };
 
 
