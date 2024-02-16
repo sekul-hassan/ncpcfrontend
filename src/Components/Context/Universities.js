@@ -245,6 +245,7 @@ const items = [
     {"id": 244, "name": "Institute of Science and Technology"},
     {"id": 245, "name": "Daffodil International University"},
     {"id": 246, "name": "Dhaka City College"},
+    {"id": 247, "name": "Faridpur Engineering College"},
 ]
 
 export default items;
