@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.549ff368.css",
-    "main.js": "/static/js/main.9fc2ff8c.js",
+    "main.css": "/static/css/main.bdb6e5ee.css",
+    "main.js": "/static/js/main.d56ec61b.js",
     "static/js/787.2576cc47.chunk.js": "/static/js/787.2576cc47.chunk.js",
     "static/media/2015.jpg": "/static/media/2015.3846424296c3ce0be1a4.jpg",
     "static/media/2021.jpg": "/static/media/2021.1a4ad349bbb8f7357b06.jpg",
@@ -46,6 +46,7 @@
     "static/media/_203.jpg": "/static/media/_203.5403aaeb4ad4b2222541.jpg",
     "static/media/2016.png": "/static/media/2016.4467e9d4df8e81ae9596.png",
     "static/media/8.png": "/static/media/8.46ff2e2bd80d027529d3.png",
+    "static/media/DSI-Logo.png": "/static/media/DSI-Logo.19693f3d027bcf8d6de1.png",
     "static/media/11.png": "/static/media/11.4251a3f8a87a7dd464c9.png",
     "static/media/14.png": "/static/media/14.274493b82c353ebaa221.png",
     "static/media/1_II.png": "/static/media/1_II.274493b82c353ebaa221.png",
@@ -58,6 +59,7 @@
     "static/media/4_MB.jpg": "/static/media/4_MB.ece8b48a256237109aca.jpg",
     "static/media/7.png": "/static/media/7.743138957c501ea973a7.png",
     "static/media/digital-bangladesh.png": "/static/media/digital-bangladesh.d701f670b7c697ef8368.png",
+    "static/media/juLogo.jpg": "/static/media/juLogo.0a22cd58b62b7cd7daf9.jpg",
     "static/media/3_AKA.jpg": "/static/media/3_AKA.149445f45b66fe438337.jpg",
     "static/media/ICT_Division.png": "/static/media/ICT_Division.8e2a8359b88232a61d9d.png",
     "static/media/1_EI.jpg": "/static/media/1_EI.f584140367ec512791dd.jpg",
@@ -89,12 +91,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.549ff368.css.map": "/static/css/main.549ff368.css.map",
-    "main.9fc2ff8c.js.map": "/static/js/main.9fc2ff8c.js.map",
+    "main.bdb6e5ee.css.map": "/static/css/main.bdb6e5ee.css.map",
+    "main.d56ec61b.js.map": "/static/js/main.d56ec61b.js.map",
     "787.2576cc47.chunk.js.map": "/static/js/787.2576cc47.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.549ff368.css",
-    "static/js/main.9fc2ff8c.js"
+    "static/css/main.bdb6e5ee.css",
+    "static/js/main.d56ec61b.js"
   ]
 }
