@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bdb6e5ee.css",
-    "main.js": "/static/js/main.54cb7793.js",
+    "main.js": "/static/js/main.73eae0d3.js",
     "static/js/787.2576cc47.chunk.js": "/static/js/787.2576cc47.chunk.js",
     "static/media/2015.jpg": "/static/media/2015.3846424296c3ce0be1a4.jpg",
     "static/media/2021.jpg": "/static/media/2021.1a4ad349bbb8f7357b06.jpg",
@@ -58,6 +58,7 @@
     "static/media/ncpc_logo_transparent.png": "/static/media/ncpc_logo_transparent.8e230add5def8cceb57d.png",
     "static/media/4_MB.jpg": "/static/media/4_MB.ece8b48a256237109aca.jpg",
     "static/media/7.png": "/static/media/7.743138957c501ea973a7.png",
+    "static/media/Logo_BS23.png": "/static/media/Logo_BS23.6667cfeaf50bdd61a951.png",
     "static/media/digital-bangladesh.png": "/static/media/digital-bangladesh.d701f670b7c697ef8368.png",
     "static/media/juLogo.jpg": "/static/media/juLogo.0a22cd58b62b7cd7daf9.jpg",
     "static/media/3_AKA.jpg": "/static/media/3_AKA.149445f45b66fe438337.jpg",
@@ -92,11 +93,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.bdb6e5ee.css.map": "/static/css/main.bdb6e5ee.css.map",
-    "main.54cb7793.js.map": "/static/js/main.54cb7793.js.map",
+    "main.73eae0d3.js.map": "/static/js/main.73eae0d3.js.map",
     "787.2576cc47.chunk.js.map": "/static/js/787.2576cc47.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bdb6e5ee.css",
-    "static/js/main.54cb7793.js"
+    "static/js/main.73eae0d3.js"
   ]
 }
