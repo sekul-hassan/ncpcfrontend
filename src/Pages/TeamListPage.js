@@ -3,15 +3,16 @@ import TopMenu from "../Components/TopMenu";
 import Proces from "../Components/Proces";
 import List from "../Components/List";
 import axios from "axios";
-
+import { useParams } from 'react-router-dom';
 
 function TeamListPage(props) {
+    const { isShowResisterdTeam } = useParams();
     const items = [
         { id: 1, name: 'Registration Process' },
         { id: 2, name: 'Registered List' },
         // { id: 2, name: 'Team List' },
     ];
-    const [activeItem, setActiveItem] = useState(items[0]);
+    const [activeItem, setActiveItem] = useState(isShowResisterdTeam ? items[1] : items[0]);
 
     const onSelectCurrentLink = (item) => {
         setActiveItem(item);

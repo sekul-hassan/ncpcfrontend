@@ -19,9 +19,9 @@ const CountCalculation = () => {
     const countdown = () => {
       const currentTime = new Date();
 
-      let birthdayDay = new Date(currentEventDate);
+      let birthdayDay = new Date(2024, 1, 20, 17, 0, 0, 0);
 
-      const timeRemaining = birthdayDay.getTime() - currentTime.getTime() + 18 * 60 * 60 * 1000;
+      const timeRemaining = birthdayDay.getTime() - currentTime.getTime()
 
       if (timeRemaining <= 0) {
         setState((prevState) => ({

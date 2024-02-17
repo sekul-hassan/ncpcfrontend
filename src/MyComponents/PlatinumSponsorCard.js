@@ -1,10 +1,12 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import sponsorMockImage from "../Assets/Images/sponsor.png";
+import logo_BS23 from "../Assets/Images/Logo_BS23.png";
 
 const styles = {
   card: {
     width: '350px',
+    maxWidth: '350px',
     height: '200px',
     borderRadius: '8px',
     boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
@@ -23,32 +25,36 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     height: '100%',
-    color: '#fff',
+    color: '#444',
   },
   
   image: {
-    height: '50%',
-    width: '50%', // Adjust the width of the image
+    height: 'auto',
+    width: '100%', // Adjust the width of the image
+    objectFit:'cover'
   },
 
   container: {
     display: 'flex',
+    justifyContent: 'center',
     flexDirection: 'row', // Updated to make the cards flex in a row
     gap: '20px',
     marginTop: '40px',
   },
 };
 
-const PlatinumSponsorCard = (imageUrls) => {
+const PlatinumSponsorCard = (imageUrls ) => {
   return (
     <div>
-    {/* <Row className='title m-5' style={styles.container}>
+      <h1 className='text-center my-2'>Platinum</h1>
+
+    <Row className='title m-5' style={styles.container}>
       <Col style={styles.card}>
         <div style={styles.content}>
-          <img src={sponsorMockImage} style={styles.image} />
+          <img src={logo_BS23} style={styles.image} />
         </div>
       </Col>
-      <Col style={styles.card}>
+     {/*  <Col style={styles.card}>
         <div style={styles.content}>
           <img src={sponsorMockImage} style={styles.image} />
         </div>
@@ -74,8 +80,8 @@ const PlatinumSponsorCard = (imageUrls) => {
         <div style={styles.content}>
           <img src={sponsorMockImage} style={styles.image} />
         </div>
-      </Col>
-    </Row> */}
+      </Col> */}
+    </Row>
     </div>
   );
 };
