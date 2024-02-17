@@ -1,6 +1,7 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import dSILogo from "../Assets/Images/DSI-Logo.png";
+import logo_BS23 from "../Assets/Images/Logo_BS23.png";
 import sponsorMockImage from "../Assets/Images/sponsor.png";
 
 const styles = {
@@ -17,21 +18,21 @@ const styles = {
       transform: 'scale(1.05)',
     },
   },
-  
+
   content: {
     boxSizing: 'border-box',
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'center',
+    justifyContent: 'space-around',
     alignItems: 'center',
     height: '100%',
-    color: '#fff',
+    color: '#444',
   },
-  
+
   image: {
     height: 'auto',
     width: '100%', // Adjust the width of the image
-    objectFit:'cover'
+    objectFit: 'cover'
   },
 
   container: {
@@ -52,18 +53,21 @@ const OtherSponsorCard = (imageUrls) => {
 
   return (
     <div>
+      <h1 className='text-center my-2'>All</h1>
       <Row className='title m-5' style={styles.container}>
         <Col style={styles.card}>
           <div style={styles.content}>
+            <h3>Gold</h3>
             <img src={dSILogo} style={styles.image} />
           </div>
         </Col>
+        <Col style={styles.card}>
+          <div style={styles.content}>
+            <h3>Platinum</h3>
+            <img src={logo_BS23} style={styles.image} />
+          </div>
+        </Col>
         {/* <Col style={styles.card}>
-        <div style={styles.content}>
-          <img src={sponsorMockImage} style={styles.image} />
-        </div>
-      </Col>
-      <Col style={styles.card}>
         <div style={styles.content}>
           <img src={sponsorMockImage} style={styles.image} />
         </div>

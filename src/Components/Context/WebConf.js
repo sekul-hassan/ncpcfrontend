@@ -1,10 +1,10 @@
 
 const currentEvent = {
-    "name": "Registration ends in",
-    "date": "2024-02-17"
+    "name": "Premilinary Contest Start In",
+    "date": "February 20, 2024"
 }
 
-const noticeBar = "Welcome to JU NCPC 2023, Organized by Department of Computer Science and Engineering."
+const noticeBar = "Welcome to JU NCPC 2023 Premilinary Contest Start at 5:00 PM on February 20, 2024, Organized by Department of Computer Science and Engineering."
 
 
 const event1 = {

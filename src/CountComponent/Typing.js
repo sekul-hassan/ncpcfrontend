@@ -7,7 +7,7 @@ const Typing = () => {
 
   useEffect(() => {
     const typewriter = new Typewriter("#typewriter", {
-      strings: ["Think | Strategize | Code", currentEventName, "Register fast"],
+      strings: ["Think | Strategize | Code", currentEventName, "Get Prepared"],
       autoStart: true,
       delay: 75,
       typeSpeed: 100,

@@ -17,7 +17,7 @@ const styles = {
       transform: 'scale(1.05)',
     },
   },
-  
+
   content: {
     boxSizing: 'border-box',
     display: 'flex',
@@ -25,13 +25,13 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     height: '100%',
-    color: '#fff',
+    color: '#444',
   },
-  
+
   image: {
     height: 'auto',
     width: '100%', // Adjust the width of the image
-    objectFit:'cover'
+    objectFit: 'cover'
   },
 
   container: {
@@ -54,13 +54,14 @@ const GoldSponsorCard = (imageUrls) => {
 
   return (
     <div>
-    <Row className='title m-5' style={styles.container}>
-      <Col style={styles.card}>
-        <div style={styles.content}>
-          <img src={dSILogo} style={styles.image} />
-        </div>
-      </Col>
-      {/* <Col style={styles.card}>
+      <h1 className='text-center my-2'>Gold</h1>
+      <Row className='title m-5' style={styles.container}>
+        <Col style={styles.card}>
+          <div style={styles.content}>
+            <img src={dSILogo} style={styles.image} />
+          </div>
+        </Col>
+        {/* <Col style={styles.card}>
         <div style={styles.content}>
           <img src={sponsorMockImage} style={styles.image} />
         </div>
@@ -70,8 +71,8 @@ const GoldSponsorCard = (imageUrls) => {
           <img src={sponsorMockImage} style={styles.image} />
         </div>
       </Col> */}
-    </Row>
-   {/*  <Row className='title m-5' style={styles.container}>
+      </Row>
+      {/*  <Row className='title m-5' style={styles.container}>
       <Col style={styles.card}>
         <div style={styles.content}>
           <img src={sponsorMockImage} style={styles.image} />
