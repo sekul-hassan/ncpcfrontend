@@ -889,8 +889,8 @@ Button {
 }
 
 
-.payment_content .bks_main_logo {
-  width: 200px;
+.payment_content .juLogoBlue {
+  width: 300px;
   height: auto;
   margin: 0 auto;
 }
@@ -1046,7 +1046,12 @@ Button {
 }
 
 .p_grid{
-  height: calc(100vh - 30rem) !important;
+  height: 50rem !important;
+  max-height: 100%;
+  width: 90%;
+}
+.p_grid{
+  height: 50rem !important;
   max-height: 100%;
   width: 90%;
 }

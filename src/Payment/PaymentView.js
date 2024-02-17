@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import bks from "../Assets/Images/bkashLogo.png"
+import juLogoBlue from "../Assets/Images/juLogo.jpg"
 import FormValidationAlert from "../MyComponents/FormValidataionAlert";
 // import items from "./Components/Context/Universities";
 import { Button, Col, Container, Row } from "react-bootstrap";
@@ -117,7 +118,9 @@ function PaymentView() {
         <Container fluid="true" className="payment_container">
             <span className='container_header_title'>Payment</span>
             <div className="payment_content">
-                <img className="bks_main_logo" src={bks} alt="" />
+
+                {/* <img className="bks_main_logo" src={bks} alt="" /> */}
+                <img className="juLogoBlue" src={juLogoBlue} alt="" />
                 {selectedTeam ? ('') : <><div className='search_box'>
                     <div className='input_wrapper'>
                         <input

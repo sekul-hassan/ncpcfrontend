@@ -19,10 +19,10 @@ import OtherSponsorCard from '../MyComponents/OtherSponsorCard';
 
 function OurSponsors(props) {
     const items = [
-        { id: 1, name: 'Platinum' },
-        { id: 2, name: 'Gold' },
-        { id: 3, name: 'Silver' },
-        // { id: 4, name: 'Other' },
+        { id: 1, name: 'All' },
+        { id: 2, name: 'Platinum' },
+        { id: 3, name: 'Gold' },
+        { id: 4, name: 'Silver' },
     ];
     const [activeItem, setActiveItem] = useState(items[0]);
     const onSelectCurrentLink = (item) => {
@@ -46,10 +46,10 @@ function OurSponsors(props) {
                 </div>
 
                 {
-                    activeItem?.id == 1 ? <PlatinumSponsorCard/> :
-                        activeItem?.id == 2 ? <GoldSponsorCard/> :
-                            activeItem?.id == 3 ? <SilverSponsorCard/> : 
-                                activeItem?.id == 4 ? <OtherSponsorCard/> : ''
+                    activeItem?.id == 1 ? <OtherSponsorCard /> :
+                        activeItem?.id == 2 ? <PlatinumSponsorCard /> :
+                            activeItem?.id == 3 ? <GoldSponsorCard /> :
+                                activeItem?.id == 4 ? <SilverSponsorCard /> : ''
 
                 }
             </Fragment>
