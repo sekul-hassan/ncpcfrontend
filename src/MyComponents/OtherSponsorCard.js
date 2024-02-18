@@ -57,14 +57,14 @@ const OtherSponsorCard = (imageUrls) => {
       <Row className='title m-5' style={styles.container}>
         <Col style={styles.card}>
           <div style={styles.content}>
-            <h3>Gold</h3>
-            <img src={dSILogo} style={styles.image} />
+            <h3>Platinum</h3>
+            <img src={logo_BS23} style={styles.image} />
           </div>
         </Col>
         <Col style={styles.card}>
           <div style={styles.content}>
-            <h3>Platinum</h3>
-            <img src={logo_BS23} style={styles.image} />
+            <h3>Gold</h3>
+            <img src={dSILogo} style={styles.image} />
           </div>
         </Col>
         {/* <Col style={styles.card}>
