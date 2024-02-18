@@ -46,7 +46,7 @@ function Proces(props) {
                 </ul>
             </div>
             {/*<InfoDiv className="title" info="Preliminary Registration Starts Soon!"/>*/}
-            <div className='text-center'><RegistrationButton buttonText="Register Now" linksTo="/registernow"/></div>
+            {/* <div className='text-center'><RegistrationButton buttonText="Register Now" linksTo="/registernow"/></div> */}
         </Container>
     );
 }
