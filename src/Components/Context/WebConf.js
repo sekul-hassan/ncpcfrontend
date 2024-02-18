@@ -1,6 +1,6 @@
 
 const currentEvent = {
-    "name": "Premilinary Contest Start In",
+    "name": "Preliminary Contest (Online)",
     "date": "February 20, 2024"
 }
 
