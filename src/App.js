@@ -22,6 +22,7 @@ import OurSponsors from './Pages/OurSponsors';
 import TeamListPage from "./Pages/TeamListPage";
 import PaymentPage from "./Pages/PaymentPage";
 import PaymentStatus from "./Pages/PaymentStatus";
+import ContestPage from "./Pages/ContestPage";
 import { Refund } from './Pages/Refund';
 import { TeamPaymentStatus } from './Pages/TeamPaymentStatus';
 
@@ -51,6 +52,7 @@ function App() {
             <Route path="about" element={<AboutPage/>}/>
             {/* <Route path="registernow" element={<Registration/>}/> */}
             {/*<Route path="payment" element={<PaymentPage/>}/>*/}
+            <Route path="contest" element={<ContestPage/>}/>
             <Route path="/*" element={<Home/>}/>
           </Routes>
         <Footer/>
