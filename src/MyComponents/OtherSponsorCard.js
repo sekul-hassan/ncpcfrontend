@@ -54,7 +54,7 @@ const OtherSponsorCard = (imageUrls) => {
   return (
     <div>
       <h1 className='text-center my-2'>All</h1>
-      <Row className='title m-5' style={styles.container}>
+      <Col className='title m-5' style={styles.container}>
         <Col style={styles.card}>
           <div style={styles.content}>
             <h3>Platinum</h3>
@@ -89,7 +89,7 @@ const OtherSponsorCard = (imageUrls) => {
           <img src={sponsorMockImage} style={styles.image} />
         </div>
       </Col> */}
-      </Row>
+      </Col>
     </div>
 
   );
