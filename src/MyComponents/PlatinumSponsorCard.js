@@ -1,7 +1,8 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import sponsorMockImage from "../Assets/Images/sponsor.png";
-import logo_BS23 from "../Assets/Images/Logo_BS23.png";
+import logo_BS23 from "../Assets/Images/rsz_brain_station_23.jpg";
+import ncc_logo from "../Assets/Images/ncc.PNG"
 
 const styles = {
   card: {
@@ -30,7 +31,7 @@ const styles = {
   
   image: {
     height: 'auto',
-    width: '100%', // Adjust the width of the image
+    width: '75%', // Adjust the width of the image
     objectFit:'cover'
   },
 
@@ -46,7 +47,7 @@ const styles = {
 const PlatinumSponsorCard = (imageUrls ) => {
   return (
     <div>
-      <h1 className='text-center my-2'>Platinum</h1>
+      {/* <h1 className='text-center my-2'>Platinum</h1> */}
 
     <Row className='title m-5' style={styles.container}>
       <Col style={styles.card}>
@@ -54,33 +55,11 @@ const PlatinumSponsorCard = (imageUrls ) => {
           <img src={logo_BS23} style={styles.image} />
         </div>
       </Col>
-     {/*  <Col style={styles.card}>
-        <div style={styles.content}>
-          <img src={sponsorMockImage} style={styles.image} />
-        </div>
-      </Col>
       <Col style={styles.card}>
-        <div style={styles.content}>
-          <img src={sponsorMockImage} style={styles.image} />
-        </div>
-      </Col>
-    </Row>
-    <Row className='title m-5' style={styles.container}>
-      <Col style={styles.card}>
-        <div style={styles.content}>
-          <img src={sponsorMockImage} style={styles.image} />
-        </div>
-      </Col>
-      <Col style={styles.card}>
-        <div style={styles.content}>
-          <img src={sponsorMockImage} style={styles.image} />
-        </div>
-      </Col>
-      <Col style={styles.card}>
-        <div style={styles.content}>
-          <img src={sponsorMockImage} style={styles.image} />
-        </div>
-      </Col> */}
+          <div style={styles.content}>
+            <img src={ncc_logo} style={styles.image} />
+          </div>
+        </Col>
     </Row>
     </div>
   );

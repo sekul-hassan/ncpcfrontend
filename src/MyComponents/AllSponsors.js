@@ -1,8 +1,9 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import dSILogo from "../Assets/Images/DSI-Logo.png";
-import logo_BS23 from "../Assets/Images/Logo_BS23.png";
-
+import logo_BS23 from "../Assets/Images/rsz_brain_station_23.jpg";
+import ncc_logo from "../Assets/Images/ncc.PNG"
+import therap from "../Assets/Images/therap.png"
 
 const styles = {
   card: {
@@ -31,7 +32,7 @@ const styles = {
 
   image: {
     height: 'auto',
-    width: '100%', // Adjust the width of the image
+    width: '75%', // Adjust the width of the image
     objectFit: 'cover'
   },
 
@@ -59,7 +60,6 @@ const AllSponsors = () => {
       <Col className='title mt-5'>
         <Row><h2 className="boldTitle" style={styles.headerStyle}>Sponsors</h2></Row>
         <Row  style={styles.container}>
-         
           <Col style={styles.card}>
             <div style={styles.content}>
               <h3>Platinum</h3>
@@ -68,8 +68,23 @@ const AllSponsors = () => {
           </Col>
           <Col style={styles.card}>
             <div style={styles.content}>
+              <h3>Platinum</h3>
+              <img src={ncc_logo} style={styles.image} />
+            </div>
+          </Col>
+        </Row>
+        <Row  style={styles.container}>
+          <Col style={styles.card}>
+            <div style={styles.content}>
               <h3>Gold</h3>
               <img src={dSILogo} style={styles.image} />
+            </div>
+          </Col>
+          
+          <Col style={styles.card}>
+            <div style={styles.content}>
+              <h3>Others</h3>
+              <img src={therap} style={styles.image} />
             </div>
           </Col>
         </Row>

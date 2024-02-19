@@ -62,8 +62,8 @@ const styles = {
 };
 
 const eventList = [
-  { eventName: 'Registration Ends', eventDate: 'February 17, 2024', previousEventDate: 'February 15, 2024' },
   { eventName: 'Preliminary Contest (Online)', eventDate: 'February 20, 2024', previousEventDate: '05:00 PM - 09:00 PM' },
+  { eventName: 'Contest Platform', eventDate: 'https://bapsoj.org/', previousEventDate: '' },
   { eventName: 'Onsite Contest', eventDate: 'March 7-9, 2024', previousEventDate: '' },
 ];
 

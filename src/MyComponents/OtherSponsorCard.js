@@ -1,8 +1,10 @@
 import React from 'react';
 import { Row, Col } from 'react-bootstrap';
 import dSILogo from "../Assets/Images/DSI-Logo.png";
-import logo_BS23 from "../Assets/Images/Logo_BS23.png";
-import sponsorMockImage from "../Assets/Images/sponsor.png";
+import logo_BS23 from "../Assets/Images/rsz_brain_station_23.jpg";
+import ncc_logo from "../Assets/Images/ncc.PNG"
+import therap from "../Assets/Images/therap.png"
+
 
 const styles = {
   card: {
@@ -31,7 +33,7 @@ const styles = {
 
   image: {
     height: 'auto',
-    width: '100%', // Adjust the width of the image
+    width: '75%', // Adjust the width of the image
     objectFit: 'cover'
   },
 
@@ -53,8 +55,8 @@ const OtherSponsorCard = (imageUrls) => {
 
   return (
     <div>
-      <h1 className='text-center my-2'>All</h1>
-      <Col className='title m-5' style={styles.container}>
+      {/* <h1 className='text-center my-2'>All</h1> */}
+      <Row className='title m-5' style={styles.container}>
         <Col style={styles.card}>
           <div style={styles.content}>
             <h3>Platinum</h3>
@@ -63,33 +65,27 @@ const OtherSponsorCard = (imageUrls) => {
         </Col>
         <Col style={styles.card}>
           <div style={styles.content}>
-            <h3>Gold</h3>
-            <img src={dSILogo} style={styles.image} />
+            <h3>Platinum</h3>
+            <img src={ncc_logo} style={styles.image} />
           </div>
         </Col>
-        {/* <Col style={styles.card}>
-        <div style={styles.content}>
-          <img src={sponsorMockImage} style={styles.image} />
-        </div>
-      </Col>
-    </Row>
-    <Row className='title m-5' style={styles.container}>
-      <Col style={styles.card}>
-        <div style={styles.content}>
-          <img src={sponsorMockImage} style={styles.image} />
-        </div>
-      </Col>
-      <Col style={styles.card}>
-        <div style={styles.content}>
-          <img src={sponsorMockImage} style={styles.image} />
-        </div>
-      </Col>
-      <Col style={styles.card}>
-        <div style={styles.content}>
-          <img src={sponsorMockImage} style={styles.image} />
-        </div>
-      </Col> */}
-      </Col>
+      </Row>
+      <Row  style={styles.container}>
+          <Col style={styles.card}>
+            <div style={styles.content}>
+              <h3>Gold</h3>
+              <img src={dSILogo} style={styles.image} />
+            </div>
+          </Col>
+          
+          <Col style={styles.card}>
+            <div style={styles.content}>
+              <h3>Others</h3>
+              <img src={therap} style={styles.image} />
+            </div>
+          </Col>
+      </Row>
+      <div className="mb-5"></div>
     </div>
 
   );

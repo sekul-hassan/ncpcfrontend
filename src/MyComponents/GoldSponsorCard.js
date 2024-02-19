@@ -54,7 +54,7 @@ const GoldSponsorCard = (imageUrls) => {
 
   return (
     <div>
-      <h1 className='text-center my-2'>Gold</h1>
+      {/* <h1 className='text-center my-2'>Gold</h1> */}
       <Row className='title m-5' style={styles.container}>
         <Col style={styles.card}>
           <div style={styles.content}>
