@@ -72,7 +72,7 @@ const EventDateWithNoticeBoard = () => {
         {/* event 1 */}
         <div style={styles.card}>
             <div style={styles.content}>
-                <div style={styles.eventName}>Registraion (Onsite)</div>
+                <div style={styles.eventName}>Registration (Onsite)</div>
                 <div style={styles.eventDate}>Starts soon</div>
             </div>
           </div>
