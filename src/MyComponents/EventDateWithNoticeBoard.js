@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Container } from 'react-bootstrap';
 import NoticeBoard from './NoticeBoard';
-
+import RegistrationButton from './RegistrationButton';
 
 const styles = {
   previousEventDate: {
@@ -62,23 +62,36 @@ const styles = {
 };
 
 const eventList = [
-  { eventName: 'Preliminary Contest (Online)', eventDate: 'February 20, 2024', previousEventDate: '05:00 PM - 09:00 PM' },
-  { eventName: 'Contest Platform', eventDate: 'https://bapsoj.org/', previousEventDate: '' },
+  { eventName: 'Registration (Onsite)', eventDate: 'Starts in few days', previousEventDate: '' },
   { eventName: 'Onsite Contest', eventDate: 'March 7-9, 2024', previousEventDate: '' },
 ];
 
 const EventDateWithNoticeBoard = () => {
   return (
     <div className='title' style={styles.container}>
-        {eventList.map((event, index) => (
-            <div style={styles.card}>
+        {/* event 1 */}
+        <div style={styles.card}>
             <div style={styles.content}>
-                <div style={styles.eventName}>{event.eventName}</div>
-                <div style={event.eventName=='Preliminary Contest (Online)'?styles.previousEventDate2:styles.previousEventDate}>{event.previousEventDate}</div>
-                <div style={styles.eventDate}>{event.eventDate}</div>
+                <div style={styles.eventName}>Registraion (Onsite)</div>
+                <div style={styles.eventDate}>Starts soon</div>
             </div>
+          </div>
+
+          {/* event 2 */}
+          <div style={styles.card}>
+            <div style={styles.content}>
+                <div style={styles.eventName}>Preliminary Standings</div>
+                <RegistrationButton buttonText="Standings" linksTo="https://bapsoj.org/contests/ncpc-preliminary-ju-2023/standings"/>
             </div>
-        ))}
+          </div>
+
+          {/* event 3 */}
+          <div style={styles.card}>
+            <div style={styles.content}>
+                <div style={styles.eventName}>Onsite Contest</div>
+                <div style={styles.eventDate}>March 7-9, 2024</div>
+            </div>
+          </div>
         <div style={styles.notice}><NoticeBoard/></div>
     </div>
   );

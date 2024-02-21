@@ -6,7 +6,7 @@ const preliminaryContest = {
   date: '20 February 2024',
   time: '5:00 PM',
   platform: 'Baps Online Judge',
-  link: 'https://bapsoj.org/contests/ncpc-preliminary-ju-2023'
+  link: 'https://bapsoj.org/contests/ncpc-preliminary-ju-2023/standings'
   // Add more preliminary contests as needed
 };
 
@@ -48,7 +48,7 @@ const PreliminaryPage = () => {
           </tr>
         </tbody>
       </Table>
-      <RegistrationButton buttonText="Go to Contest" linksTo={preliminaryContest.link} />
+      <RegistrationButton buttonText="Standings" linksTo={preliminaryContest.link} />
     </div>
   );
 };

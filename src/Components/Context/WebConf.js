@@ -1,10 +1,10 @@
 
 const currentEvent = {
-    "name": "Preliminary Contest (Online)",
-    "date": "February 20, 2024"
+    "name": "Registration (Onsite) Starts in",
+    "date": "2024-02-22"
 }
 
-const noticeBar = "Welcome to NCPC 2023, hosted by the Department of Computer Science and Engineering, Jahangirnagar University! Preliminary Contest (Online) on February 20, 2024, from 05:00 PM to 09:00 PM."
+const noticeBar = "Welcome to NCPC 2023, hosted by the Department of Computer Science and Engineering, Jahangirnagar University | Registration for the onsite contest starts soon."
 
 
 
