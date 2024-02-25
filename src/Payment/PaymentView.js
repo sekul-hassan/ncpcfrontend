@@ -80,6 +80,7 @@ function PaymentView() {
                     console.log(response.data);
                 })
                 .catch(error => {
+                    setTeams([]);
                     console.log(error);
                 });
         } else {
