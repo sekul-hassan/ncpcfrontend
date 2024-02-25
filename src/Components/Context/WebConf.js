@@ -1,6 +1,6 @@
 
 const currentEvent = {
-    "name": "Registration (Onsite) Starts in",
+    "name": "NCPC Onsite Contest Starts in", 
     "date": "2024-02-22"
 }
 
