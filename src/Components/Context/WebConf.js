@@ -4,7 +4,7 @@ const currentEvent = {
     "date": "2024-02-22"
 }
 
-const noticeBar = "Welcome to NCPC 2023, hosted by the Department of Computer Science and Engineering, Jahangirnagar University | Registration for the onsite contest starts soon."
+const noticeBar = "Welcome to NCPC 2023, hosted by the Department of Computer Science and Engineering, Jahangirnagar University | Onsite Registration Payment (25 Feb, 2024 - 01 Mar, 2024)."
 
 
 

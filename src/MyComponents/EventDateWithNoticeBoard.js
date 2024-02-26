@@ -72,8 +72,8 @@ const EventDateWithNoticeBoard = () => {
         {/* event 1 */}
         <div style={styles.card}>
             <div style={styles.content}>
-                <div style={styles.eventName}>Registration (Onsite)</div>
-                <div style={styles.eventDate}>Starts soon</div>
+                <div style={styles.eventName}>Onsite Registration Payment</div>
+                <div style={styles.eventDate}>25 February, 2024 - 01 March, 2024</div>
             </div>
           </div>
 

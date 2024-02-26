@@ -2,11 +2,13 @@ import React, { Fragment, useState } from 'react';
 import TopMenu from "../Components/TopMenu";
 import PreliminaryPage from "../Pages/PreliminaryPage";
 import OnsitePage from "../Pages/OnsitePage";
+import OnsiteTeamList from "../Pages/OnsiteTeamList";
 
 function ContestPage(props) {
     const items = [
-        { id: 1, name: 'Preliminary Contest' },
-        { id: 2, name: 'Onsite Contest' },
+        { id: 1, name: 'Onsite Contest' },
+        { id: 2, name: 'Onsite Team List' },
+        { id: 3, name: 'Preliminary Contest' },
     ];
     const [activeItem, setActiveItem] = useState(items[0]);
     const onSelectCurrentLink = (item) => {
@@ -30,8 +32,9 @@ function ContestPage(props) {
                 </div>
 
                 {
-                    activeItem?.id == 1 ? <PreliminaryPage /> :
-                        activeItem?.id == 2 ? <OnsitePage  /> : ''
+                    activeItem?.id == 1 ? <OnsitePage  /> :
+                        activeItem?.id == 2 ? <OnsiteTeamList  /> :
+                        activeItem?.id == 3 ? <PreliminaryPage  /> : ''
 
                 }
             </Fragment>

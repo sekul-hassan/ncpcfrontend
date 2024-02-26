@@ -117,7 +117,9 @@ function PaymentView() {
 
     return (
         <Container fluid="true" className="payment_container">
-            <span className='container_header_title'>Payment</span>
+            <span className='container_header_title'>Onsite Registration Payment</span>
+            <span className='container_header_sub_title'>Only selected teams from preliminary contest are eligible for onsite Contest.</span>
+            <span className='container_header_sub_title'>Search by Your University/Team Name to make Onsite Regiration Payment.</span>          
             <div className="payment_content">
 
                 {/* <img className="bks_main_logo" src={bks} alt="" /> */}
