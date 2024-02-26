@@ -44,9 +44,17 @@ const styles = {
     gap: '20px',
     marginTop: '40px',
   },
+  hed: {   
+    textAlign: 'center',
+    fontSize: '35px',
+    fontWeight: 'bold',
+    marginBottom: '30px',
+    color: "#1a237e",
+    marginTop: '20px',
+  }
 };
 
-const OtherSponsorCard = (imageUrls) => {
+const AllSponsorCard = (imageUrls) => {
   imageUrls = [
     // sponsorMockImage,
     // sponsorMockImage,
@@ -55,13 +63,35 @@ const OtherSponsorCard = (imageUrls) => {
 
   return (
     <div>
-     
+      {/* <h1 className='text-center my-2'>All</h1> */}
       <Row className='title m-5' style={styles.container}>
+        <h3 style={styles.hed}>Platinum</h3>
+        <Col style={styles.card}>
+          <div style={styles.content}>
+            <img src={logo_BS23} style={styles.image} />
+          </div>
+        </Col>
+        <Col style={styles.card}>
+          <div style={styles.content}>
+            <img src={ncc_logo} style={styles.image} />
+          </div>
+        </Col>
+      </Row>
+      <Row className='title m-5' style={styles.container}>
+        <h3 style={styles.hed}>Gold</h3>
+        <Col style={styles.card}>
+          <div style={styles.content}>
+            <img src={dSILogo} style={styles.image} />
+          </div>
+        </Col>        
+      </Row>
+      <Row className='title m-5' style={styles.container}>
+        <h3 style={styles.hed}>Others</h3>
         <Col style={styles.card}>
           <div style={styles.content}>
             <img src={therap} style={styles.image} />
           </div>
-        </Col>       
+        </Col>
       </Row>
       <div className="mb-5"></div>
     </div>
@@ -69,4 +99,4 @@ const OtherSponsorCard = (imageUrls) => {
   );
 };
 
-export default OtherSponsorCard;
+export default AllSponsorCard;

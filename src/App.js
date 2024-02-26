@@ -35,8 +35,8 @@ function App() {
         <Logo/>
           <Routes>
             <Route path="/" element={<Home/>}/>
-            <Route path="registration" element={<TeamListPage/>}/>
-            <Route path="/registration/:isShowResisterdTeam" element={<TeamListPage/>}/>
+            {/* <Route path="registration" element={<TeamListPage/>}/>
+            <Route path="/registration/:isShowResisterdTeam" element={<TeamListPage/>}/> */}
             {/* <Route path='registration-process' element={<RegistrationProcess/>}/> */}
             <Route path='transport' element={<TransportantionSchedule/>}/>
             <Route path='accomodation' element={<Accomodation/>}/>

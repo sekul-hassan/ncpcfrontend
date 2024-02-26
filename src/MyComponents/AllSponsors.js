@@ -40,15 +40,23 @@ const styles = {
     display: 'flex',
     justifyContent: 'center',
     gap: '20px', // Adjust the gap between cards
-    marginTop: '40px', // Add some top margin for spacing
+    marginTop: '10px', // Add some top margin for spacing
   },
 
   headerStyle: {
     textAlign: 'center',
-    fontSize: '48px',
+    fontSize: '18px',
+    fontWeight: 'bold',
+    marginBottom: '20px',
+    color: "#1a237e"
+  },
+  headerStyleSpon: {
+    textAlign: 'center',
+    fontSize: '35px',
     fontWeight: 'bold',
     marginBottom: '30px',
-    color: "#1a237e"
+    color: "#1a237e",
+    marginTop: '20px',
   }
 };
 
@@ -58,32 +66,31 @@ const AllSponsors = () => {
   return (
     <>
       <Col className='title mt-5'>
-        <Row><h2 className="boldTitle" style={styles.headerStyle}>Sponsors</h2></Row>
+        <Row><h2 className="boldTitle" style={styles.headerStyleSpon}>Platinum Sponsors</h2></Row>
         <Row  style={styles.container}>
           <Col style={styles.card}>
             <div style={styles.content}>
-              <h3>Platinum</h3>
               <img src={logo_BS23} style={styles.image} />
             </div>
           </Col>
           <Col style={styles.card}>
             <div style={styles.content}>
-              <h3>Platinum</h3>
               <img src={ncc_logo} style={styles.image} />
             </div>
           </Col>
         </Row>
+        <Row><h2 className="boldTitle" style={styles.headerStyleSpon}>Gold Sponsors</h2></Row>
         <Row  style={styles.container}>
           <Col style={styles.card}>
             <div style={styles.content}>
-              <h3>Gold</h3>
               <img src={dSILogo} style={styles.image} />
             </div>
-          </Col>
-          
+          </Col>          
+        </Row>
+        <Row><h2 className="boldTitle" style={styles.headerStyleSpon}>Others Sponsors</h2></Row>
+        <Row  style={styles.container}>          
           <Col style={styles.card}>
             <div style={styles.content}>
-              <h3>Others</h3>
               <img src={therap} style={styles.image} />
             </div>
           </Col>

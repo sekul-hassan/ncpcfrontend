@@ -4,6 +4,7 @@ import GoldSponsorCard from '../MyComponents/GoldSponsorCard';
 import OtherSponsorCard from '../MyComponents/OtherSponsorCard';
 import PlatinumSponsorCard from '../MyComponents/PlatinumSponsorCard';
 import SilverSponsorCard from '../MyComponents/SilverSponsorCard';
+import AllSponsorCard from '../MyComponents/AllSponsorCard';
 
 function OurSponsors(props) {
     const items = [
@@ -11,6 +12,7 @@ function OurSponsors(props) {
         { id: 2, name: 'Platinum' },
         { id: 3, name: 'Gold' },
         // { id: 4, name: 'Silver' },
+        { id: 5, name: 'Others' },
     ];
     const [activeItem, setActiveItem] = useState(items[0]);
     const onSelectCurrentLink = (item) => {
@@ -34,10 +36,11 @@ function OurSponsors(props) {
                 </div>
 
                 {
-                    activeItem?.id == 1 ? <OtherSponsorCard /> :
+                    activeItem?.id == 1 ? <AllSponsorCard /> :
                         activeItem?.id == 2 ? <PlatinumSponsorCard  /> :
                             activeItem?.id == 3 ? <GoldSponsorCard /> :
-                                activeItem?.id == 4 ? <SilverSponsorCard /> : ''
+                                activeItem?.id == 4 ? <SilverSponsorCard /> :
+                                activeItem?.id == 5 ? <OtherSponsorCard /> : ''
 
                 }
             </Fragment>
