@@ -87,6 +87,7 @@ const Rules = () => {
             <RuleItem number="20" text="Any member of a team, if late, may not be allowed to enter the contest arena AFTER THE START OF THE CONTEST."/>
             <RuleItem number="21" text="The decision of the judges is final."/>
             <RuleItem number="22" text="Available Languages (in Bapsoj): C, C++, Java, and Python3."/>
+            <RuleItem number="22" text="The contest environment such as operating systems, compilers will be followed as standard."/>
         </div>
         </Fragment>
     );
