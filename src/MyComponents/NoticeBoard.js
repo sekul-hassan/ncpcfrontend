@@ -28,10 +28,10 @@ const NoticeBoard = () => {
 
   // Replace this array with your list of notices
   const notices = [
-    { id: 1, title: 'Registration Process', link: '/registration-process' },
+    { id: 1, title: 'Onsite Contest Rules', link: '/rules' },
     { id: 2, title: 'Transportation Schedule', link: '/transport' },
     { id: 3, title: 'Accommodation', link: '/accomodation' },
-    { id: 4, title: 'Team Status', link: '/registration/true' },
+    // { id: 4, title: 'Team Status', link: '/registration/true' },
     // { id: 4, title: 'Team Status', link: '/status' },
   ];
 
