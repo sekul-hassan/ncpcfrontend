@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bdb6e5ee.css",
-    "main.js": "/static/js/main.ce934168.js",
+    "main.css": "/static/css/main.941b66b8.css",
+    "main.js": "/static/js/main.0fceb247.js",
     "static/js/787.2576cc47.chunk.js": "/static/js/787.2576cc47.chunk.js",
     "static/media/2015.jpg": "/static/media/2015.3846424296c3ce0be1a4.jpg",
     "static/media/2021.jpg": "/static/media/2021.1a4ad349bbb8f7357b06.jpg",
@@ -11,6 +11,7 @@
     "static/media/2017.jpg": "/static/media/2017.b3e6a8b68a3a15506f24.jpg",
     "static/media/seminar.png": "/static/media/seminar.91ca44b7a0d8c0a3e776.png",
     "static/media/ncpc_champion.png": "/static/media/ncpc_champion.4fe6d3e76c43b3eaa8f1.png",
+    "static/media/onsite_bg.png": "/static/media/onsite_bg.2492f50d56757207e11b.png",
     "static/media/code_elevate_camp.jpg": "/static/media/code_elevate_camp.f126681e4042bb82ce5b.jpg",
     "static/media/codeElevate_302.jpg": "/static/media/codeElevate_302.c663249b7c37d946d8e4.jpg",
     "static/media/juLogoBlue.png": "/static/media/juLogoBlue.03324a7de1eeddaa6261.png",
@@ -93,12 +94,12 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.bdb6e5ee.css.map": "/static/css/main.bdb6e5ee.css.map",
-    "main.ce934168.js.map": "/static/js/main.ce934168.js.map",
+    "main.941b66b8.css.map": "/static/css/main.941b66b8.css.map",
+    "main.0fceb247.js.map": "/static/js/main.0fceb247.js.map",
     "787.2576cc47.chunk.js.map": "/static/js/787.2576cc47.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bdb6e5ee.css",
-    "static/js/main.ce934168.js"
+    "static/css/main.941b66b8.css",
+    "static/js/main.0fceb247.js"
   ]
 }
