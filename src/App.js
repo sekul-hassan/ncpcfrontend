@@ -25,7 +25,7 @@ import PaymentStatus from "./Pages/PaymentStatus";
 import ContestPage from "./Pages/ContestPage";
 import { Refund } from './Pages/Refund';
 import { TeamPaymentStatus } from './Pages/TeamPaymentStatus';
-
+import Rules from "./Pages/Rules"
 
 
 function App() {
@@ -39,9 +39,9 @@ function App() {
             <Route path="/registration/:isShowResisterdTeam" element={<TeamListPage/>}/> */}
             {/* <Route path='registration-process' element={<RegistrationProcess/>}/> */}
             <Route path='transport' element={<TransportantionSchedule/>}/>
-            <Route path='accomodation' element={<Accomodation/>}/>
+            {/* <Route path='accomodation' element={<Accomodation/>}/> */}
             <Route path='status' element={<TeamStatus/>}/>
-            {/* <Route path="rules" element={<Rules/>}/> */}
+            <Route path="rules" element={<Rules/>}/>
             <Route path="payment" element={<PaymentPage/>}/>
             <Route path="team-payment-status" element={<TeamPaymentStatus/>}/>
             {/* <Route path="refund" element={<Refund/>}/> */}

@@ -1,6 +1,7 @@
 import { Table } from 'react-bootstrap';
 import React from 'react';
 import {Link} from "react-router-dom";
+import RegistrationButton from '../MyComponents/RegistrationButton';
 
 function OnsitePage() {
     const preliminaryContest = {
@@ -61,11 +62,8 @@ function OnsitePage() {
               </tr>
             </tbody>
           </Table>
-          <div>
-            <h3>Contest Rules:</h3>
-            <p>Will Be published soon</p>
-          </div>
-          {/* <RegistrationButton buttonText="Standings" linksTo={preliminaryContest.link} /> */}
+
+          <RegistrationButton buttonText="Onsite Contest Rules" linksTo="/rules" />
         </div>
       );
 }
