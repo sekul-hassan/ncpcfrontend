@@ -73,7 +73,7 @@ const EventDateWithNoticeBoard = () => {
         <div style={styles.card}>
             <div style={styles.content}>
                 <div style={styles.eventName}>Onsite Registration Payment</div>
-                <div style={styles.eventDate}>25 February, 2024 - 01 March, 2024</div>
+                <div style={styles.eventDate}>25 February, 2024 - 02 March, 2024</div>
             </div>
           </div>
 

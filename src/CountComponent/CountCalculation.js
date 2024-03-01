@@ -20,7 +20,7 @@ const CountCalculation = () => {
       const currentTime = new Date();
 
       // let birthdayDay = new Date(currentEventDate);
-      let birthdayDay = new Date(2024, 2, 9, 9, 0, 0);
+      let birthdayDay = new Date(2024, 2, 3, 0, 0, 0);
 
       // const timeRemaining = birthdayDay.getTime() - currentTime.getTime() - 6 * 60 * 60 * 1000
       const timeRemaining = birthdayDay.getTime() - currentTime.getTime();
