@@ -1,10 +1,11 @@
 
 const currentEvent = {
-    "name": "NCPC Onsite Contest Starts in", 
-    "date": "2024-02-22"
+    "name": "NCPC Onsite Registration ends in", 
+    "date": "2024-02-01"
 }
 
-const noticeBar = "Welcome to NCPC 2023, hosted by the Department of Computer Science and Engineering, Jahangirnagar University | Onsite Registration Payment (25 Feb, 2024 - 01 Mar, 2024)."
+// const noticeBar = "Welcome to NCPC 2023, hosted by the Department of Computer Science and Engineering, Jahangirnagar University | Onsite Registration Payment (25 Feb, 2024 - 01 Mar, 2024)."
+const noticeBar = "JU NCPC 2023 Onsite Registration Deadline Extended by 1 day. Please Confirm your Team by 2nd March 2024."
 
 
 
