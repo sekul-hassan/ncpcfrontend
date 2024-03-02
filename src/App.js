@@ -27,6 +27,7 @@ import { Refund } from './Pages/Refund';
 import { TeamPaymentStatus } from './Pages/TeamPaymentStatus';
 import Rules from "./Pages/Rules"
 import ContestEnvironment from "./Pages/ContestEnvironment"
+import Accommodation from "./Pages/Accommodation"
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
             <Route path='status' element={<TeamStatus/>}/>
             <Route path="rules" element={<Rules/>}/>
             <Route path="contest_environment" element={<ContestEnvironment/>}/>
+            <Route path="accommodation" element={<Accommodation/>}/>
             <Route path="payment" element={<PaymentPage/>}/>
             <Route path="team-payment-status" element={<TeamPaymentStatus/>}/>
             {/* <Route path="refund" element={<Refund/>}/> */}
