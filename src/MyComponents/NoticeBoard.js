@@ -30,7 +30,7 @@ const NoticeBoard = () => {
   const notices = [
     { id: 1, title: 'Onsite Contest Rules', link: '/rules' },
     { id: 2, title: 'Transportation Schedule', link: '/transport' },
-    { id: 3, title: 'Accommodation', link: '/accomodation' },
+    { id: 3, title: 'Accommodation', link: '/accommodation' },
     // { id: 4, title: 'Team Status', link: '/registration/true' },
     // { id: 4, title: 'Team Status', link: '/status' },
   ];
