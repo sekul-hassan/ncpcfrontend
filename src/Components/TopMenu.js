@@ -48,6 +48,7 @@ function TopMenu() {
                             <Nav.Link><Link to="/payment" className={css.navLink}>Payment</Link></Nav.Link>
                             <Nav.Link><Link to="/committee" className={css.navLink}>Committee</Link></Nav.Link> 
                             <Nav.Link><Link to="/gallery" className={css.navLink}>Gallery</Link></Nav.Link>
+                            <Nav.Link><Link to="/transport" className={css.navLink}>Transportation & Parking</Link></Nav.Link>
                             <Nav.Link><Link to="/sponsors" className={css.navLink}>Our Sponsors</Link></Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

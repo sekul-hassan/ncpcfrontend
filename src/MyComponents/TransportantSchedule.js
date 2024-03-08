@@ -4,7 +4,12 @@ import TopMenu from "../Components/TopMenu";
 import CustomButton from '../MyComponents/CustomButton';
 import InfoDiv from '../MyComponents/InfoDiv';
 
+import schedule from "../Assets/Images/schedule.png";
+import roadMap from "../Assets/Images/parking.jpg";
+
 function TransportantionSchedule(props) {
+
+
     const containerStyle = {
         width: '80%',
         margin: '0 auto', 
@@ -26,11 +31,12 @@ function TransportantionSchedule(props) {
                     <CustomButton buttonText="NCPC 2023 TRANSPORTATION SCHEDULE" linksTo="#"/>
                 </Row>
                 
-        
-                <InfoDiv className="title" info="Transporation schedule for NCPC 2023 will be available here."/>
-                {/* <Row className="text-center mx-0">
-                     <CustomButton buttonText="Registration Starts Soon!" linksTo="#"/>
-                </Row> */}
+                <Row className="mx-0">
+                    <img src={schedule} className="w-100 h-auto" alt=""/>
+                    <div className="text-center">
+                        <img src={roadMap} className="roadMap" alt=""/>
+                    </div>
+                </Row>
             </Container>
         </Fragment>
      );
