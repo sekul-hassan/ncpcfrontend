@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.2c620546.css",
-    "main.js": "/static/js/main.2784d7b5.js",
+    "main.js": "/static/js/main.37fb2f69.js",
     "static/js/787.2576cc47.chunk.js": "/static/js/787.2576cc47.chunk.js",
     "static/media/2015.jpg": "/static/media/2015.3846424296c3ce0be1a4.jpg",
     "static/media/2021.jpg": "/static/media/2021.1a4ad349bbb8f7357b06.jpg",
@@ -15,8 +15,8 @@
     "static/media/code_elevate_camp.jpg": "/static/media/code_elevate_camp.f126681e4042bb82ce5b.jpg",
     "static/media/codeElevate_302.jpg": "/static/media/codeElevate_302.c663249b7c37d946d8e4.jpg",
     "static/media/juLogoBlue.png": "/static/media/juLogoBlue.03324a7de1eeddaa6261.png",
+    "static/media/sched.jpg": "/static/media/sched.2b31ea4abca5fe240ae4.jpg",
     "static/media/mh.png": "/static/media/mh.f619d9aaa23138973244.png",
-    "static/media/sched.jpg": "/static/media/sched.960aeccca393608f1612.jpg",
     "static/media/first.png": "/static/media/first.b890d2bf1d55c7d9cb0b.png",
     "static/media/banner.png": "/static/media/banner.f6e304760c09e93fdc30.png",
     "static/media/5.png": "/static/media/5.1355b9c4ff762dc30c6e.png",
@@ -99,11 +99,11 @@
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "main.2c620546.css.map": "/static/css/main.2c620546.css.map",
-    "main.2784d7b5.js.map": "/static/js/main.2784d7b5.js.map",
+    "main.37fb2f69.js.map": "/static/js/main.37fb2f69.js.map",
     "787.2576cc47.chunk.js.map": "/static/js/787.2576cc47.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2c620546.css",
-    "static/js/main.2784d7b5.js"
+    "static/js/main.37fb2f69.js"
   ]
 }
