@@ -80,8 +80,8 @@ const EventDateWithNoticeBoard = () => {
           {/* event 2 */}
           <div style={styles.card}>
             <div style={styles.content}>
-                <div style={styles.eventName}>Preliminary Standings</div>
-                <RegistrationButton buttonText="Standings" linksTo="https://bapsoj.org/contests/ncpc-preliminary-ju-2023/standings"/>
+                <div style={styles.eventName}>On site contest running</div>
+                <RegistrationButton buttonText="Live" linksTo="https://bapsoj.org/contests/ncpc-onsite-2023-hosted-by-ju/standings" route="/"/>
             </div>
           </div>
 

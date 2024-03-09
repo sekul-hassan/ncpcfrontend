@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const RegistrationButton = ({ buttonText, linksTo }) => {
+const RegistrationButton = ({ buttonText, linksTo,route }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const buttonStyle = {
@@ -22,11 +22,12 @@ const RegistrationButton = ({ buttonText, linksTo }) => {
 
   return (
     <div>
-      <Link to={linksTo}>
+      <Link to={route}>
         <button
           style={{ ...buttonStyle, ...(isHovered ? buttonHoverStyle : null) }}
           onMouseOver={() => setIsHovered(true)}
           onMouseOut={() => setIsHovered(false)}
+          onClick={() => window.open(linksTo, "_blank")}
         >
           {buttonText}
         </button>

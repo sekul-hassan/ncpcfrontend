@@ -4,7 +4,7 @@ const currentEvent = {
     "date": "2024-03-09"
 }
 
-const noticeBar = "*** Transportation schedule published ***. Welcome to NCPC 2023, hosted by the Department of Computer Science and Engineering, Jahangirnagar University."
+const noticeBar = "*** Transportation schedule published ***. Welcome to NCPC 2023, hosted by the Department of Computer Science and Engineering, Jahangirnagar University. ** On site contest is on live **"
 // const noticeBar = "JU NCPC 2023 Onsite Registration Deadline Extended by 1 day. Please Confirm your Team by 2nd March 2024."
 
 
