@@ -4,11 +4,12 @@
 /node_modules
 /.pnp
 .pnp.js
+./build
+./idea
 
 # testing
 /coverage
 .env
-./build
 ./.idea
 
 # misc
